@@ -55,7 +55,7 @@ The *Taxon Navigator* displays the classifications and, within those, a hierarch
 
 You can change the order to alphabetical order of names in the Menu under *Window --\> Local Preferences -\> UI -\> Taxon Navigator*. Please note that you have to close and open the Navigator window for the changes to take effect.
 
-![](./media/image4.png){width="7cm"}
+![](./media/image4.png){width="15cm"}
 
 The taxon tree is indented according to the sequence of ranks, e.g. all families are listed below their order. However, you are free to insert names independent of their ranks at any place in the tree, thus forming new or mixed hierarchical levels. For example, some classifications may not cite the species for a given subspecies. The subspecies is then assigned directly to the genus and displayed on the same level as the rest of the species. You can also insert preliminary groupings or "pseudotaxa", such as species groups or clades. As a general principle, the program will alert you when it detects a deviation from nomenclatural rules, but it will not prevent you from entering the data you want to use.
 
