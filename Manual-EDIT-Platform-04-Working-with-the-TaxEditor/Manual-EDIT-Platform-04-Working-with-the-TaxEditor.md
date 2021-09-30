@@ -55,7 +55,7 @@ The *Taxon Navigator* displays the classifications and, within those, a hierarch
 
 You can change the order to alphabetical order of names in the Menu under *Window --\> Local Preferences -\> UI -\> Taxon Navigator*. Please note that you have to close and open the Navigator window for the changes to take effect.
 
-![](./media/image4.png){width="3.0669291338582676in" height="2.748031496062992in"}
+![](./media/image4.png){width="7cm"}
 
 The taxon tree is indented according to the sequence of ranks, e.g. all families are listed below their order. However, you are free to insert names independent of their ranks at any place in the tree, thus forming new or mixed hierarchical levels. For example, some classifications may not cite the species for a given subspecies. The subspecies is then assigned directly to the genus and displayed on the same level as the rest of the species. You can also insert preliminary groupings or "pseudotaxa", such as species groups or clades. As a general principle, the program will alert you when it detects a deviation from nomenclatural rules, but it will not prevent you from entering the data you want to use.
 
@@ -63,7 +63,9 @@ A double-click on a Taxon Node in the *Taxon Navigator* will open the *Taxon Edi
 
 ### Context menu options in the *Taxon Navigator*
 
-![](./media/image5.png){width="6.04375in" height="4.45in"}The context menu provides an overview of the operations that can be carried out with the *Taxon Navigator*. Note that, although you are effectively selecting a Taxon Node in the tree, the operations are actually carried out on the underlying taxon (except when you add a new child taxon).
+![](./media/image5.png){width="6.04375in" height="4.45in"}
+
+The context menu provides an overview of the operations that can be carried out with the *Taxon Navigator*. Note that, although you are effectively selecting a Taxon Node in the tree, the operations are actually carried out on the underlying taxon (except when you add a new child taxon).
 
 -   *New* allows to add a new child taxon to the selected taxon node or to create an entirely new classification.
 -   *Open in \...* gives access to a number of editors that allow you to change data of the selected taxon or data connected to that taxon (see 4.2.3).
@@ -143,7 +145,7 @@ Each individual synonym entry starts with a symbol indicating its nature:
 -   A homotypic synonym of the taxon name is indicated by an identity sign on a blue circle -- dark blue if the respective name is the basionym or replaced synonym in the homotypic group of the taxon.
 -   Heterotypic synonyms are indicated by dark or light green circles with an equal sign -- their homotypic synonyms are again carrying an identity sign.
 -   Invalid names or designations start with an en-dash in a green circle.
--   ![](./media/image11.png){width="6.205555555555556in" height="0.2513888888888889in"}![](./media/image12.png){width="6.208661417322834in" height="2.3858267716535435in"}Misapplied names start with MA in a purple circle
+-   ![](./media/image11.png){width="6.205555555555556in" height="0.2513888888888889in"}![](./media/image12.png){width="15cm"}Misapplied names start with MA in a purple circle
 ![](./media/image13.png){width="5.106299212598425in" height="2.641732283464567in"}The context menu of a synonym offers a number of options:
 -   *New* adds a new synonym line and lets you identify its type
 -   *Open in* offers the possibility to edit the name in the *Bulk editor* (see below) or open the *Referencing Objects View* (a subwindow opening below the *Details View* showing all relationships of the synonym).
