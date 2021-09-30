@@ -1,13 +1,21 @@
-![](./media/image1.png){width="6.527777777777778in" height="2.4618055555555554in"}
-
-User manual part 4:
-
-Using the TaxEditor
-
-Version: 15-Sept-2021
+---
+title: "User manual part 4 - Using the TaxEditor"
+subtitle: ""
+author: [Walter Berendsohn, Andreas Kohlbecker]
+subject: "EDIT Platform user manual 4"
+keywords: [EDIT Platform, TaxEditor]
+lang: "en"
+titlepage: true
+titlepage-text-color: "FFFFFF"
+titlepage-rule-color: "FFFFFF"
+titlepage-rule-height: 0
+titlepage-background: "Titel-A4.png"
+toc-own-page: true
+...
 
 Version history: 26-Aug-21: Major restructuring, excluded tutorial. 15-Sept-21: Additions to glossary, editorial, changed Name Editor to Taxon Editor, Taxonomic Editor to TaxEditor.
 
+----
 
 # Installing the TaxEditor
 

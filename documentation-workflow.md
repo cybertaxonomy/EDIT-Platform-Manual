@@ -28,7 +28,11 @@ see /usr/share/doc/pandoc/README.Debian
 ### export as pdf
 
 
-     pandoc Manual-EDIT-Platform-04-Working-with-the-TaxEditor.md -f markdown --pdf-engine=xelatex  -V 'mainfont:Arial Unicode MS' -V geometry:a4paper  -V geometry:margin=2cm --toc  --number-sections --template=../templates/eisvogel-2.0.0/eisvogel.latex -o Manual-EDIT-Platform-04-Working-with-the-TaxEditor.pdf
+     pandoc Manual-EDIT-Platform-04-Working-with-the-TaxEditor.md -f markdown --pdf-engine=xelatex  -V 'mainfont:Arial Unicode MS' -V geometry:a4paper  -V geometry:margin=2cm \
+     --toc  --number-sections \
+     --titlepage=true --titlepage-color=FFFFFF --titlepage-background=../layout/Title-A4.png\
+     --template=../templates/eisvogel-2.0.0/eisvogel.latex \
+     -o Manual-EDIT-Platform-04-Working-with-the-TaxEditor.pdf
 
 
 NOTES: 
