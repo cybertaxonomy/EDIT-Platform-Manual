@@ -3,6 +3,5 @@
 pandoc Manual-EDIT-Platform-04-Working-with-the-TaxEditor.md -f markdown --pdf-engine=xelatex  -V 'mainfont:Arial Unicode MS' -V geometry:a4paper  -V geometry:margin=2cm \
      --toc  --number-sections \
      --template=../templates/eisvogel-2.0.0/eisvogel.latex \
-     -V titlepage:true -V titlepage-color:FFFFFF -V titlepage-background:Titel-A4.png \
      -V date:$(date -I) \
      -o Manual-EDIT-Platform-04-Working-with-the-TaxEditor.pdf
