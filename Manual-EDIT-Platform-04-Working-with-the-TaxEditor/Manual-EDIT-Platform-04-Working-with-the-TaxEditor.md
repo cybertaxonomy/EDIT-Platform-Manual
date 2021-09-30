@@ -1,4 +1,4 @@
-![C:\\Users\\a.mueller\\Desktop\\piB\\Screenshots\\EDIT.png](./media/image1.png){width="6.527777777777778in" height="2.4618055555555554in"}
+![](./media/image1.png){width="6.527777777777778in" height="2.4618055555555554in"}
 
 User manual part 4:
 
@@ -8,125 +8,6 @@ Version: 15-Sept-2021
 
 Version history: 26-Aug-21: Major restructuring, excluded tutorial. 15-Sept-21: Additions to glossary, editorial, changed Name Editor to Taxon Editor, Taxonomic Editor to TaxEditor.
 
-Contents
-
-[1 Installing the TaxEditor 1](#installing-the-taxeditor)
-
-[2 The EDIT Platform demos 1](#the-edit-platform-demos)
-
-[3 An introduction to the TaxEditor 1](#an-introduction-to-the-taxeditor)
-
-[4 Working with the TaxEditor 1](#working-with-the-taxeditor)
-
-[4.1 Understanding the structure 1](#understanding-the-structure)
-
-[4.2 Working with the *Taxon Navigator* 2](#working-with-the-taxon-navigator)
-
-[4.2.1 Display 2](#display)
-
-[4.2.2 Context menu options in the *Taxon Navigator* 3](#context-menu-options-in-the-taxon-navigator)
-
-[4.2.3 The Taxon node edit dialogue in the *Taxon Navigator* 4](#the-taxon-node-edit-dialogue-in-the-taxon-navigator)
-
-[4.2.4 Adding a classification in the *Taxon Navigator* 5](#adding-a-classification-in-the-taxon-navigator)
-
-[4.2.5 Moving taxa in the *Taxon Navigator* 5](#moving-taxa-in-the-taxon-navigator)
-
-[4.2.6 Change the status of a name 5](#change-the-status-of-a-name)
-
-[4.3 General *Search* 6](#general-search)
-
-[4.4 Working with the *Taxon Editor* and its *Details View* 7](#working-with-the-taxon-editor-and-its-details-view)
-
-[4.4.1 Basics 7](#basics)
-
-[4.4.2 Editing or adding a name in the *Taxon Editor* subwindow 7](#editing-or-adding-a-name-in-the-taxon-editor-subwindow)
-
-[4.4.3 The synonym list in the *Taxon Editor* 8](#the-synonym-list-in-the-taxon-editor)
-
-[4.4.4 Misapplied names 8](#misapplied-names)
-
-[4.4.5 The *Details View* for scientific names 9](#the-details-view-for-scientific-names)
-
-[4.4.6 *Details View: Nomenclatural Source* 11](#details-view-nomenclatural-source)
-
-[4.4.7 *Details View: Nomenclatural status* 11](#details-view-nomenclatural-status)
-
-[4.4.8 *Details View: Name relationships* 11](#details-view-name-relationships)
-
-[4.4.9 *Details View: Type information* 11](#details-view-type-information)
-
-[4.4.10 Linking the *Taxon Editor* back to the *Taxon Navigator* 13](#linking-the-taxon-editor-back-to-the-taxon-navigator)
-
-[4.5 Additional information referring to a Name 14](#additional-information-referring-to-a-name)
-
-[5 Unstructured factual data 15](#unstructured-factual-data)
-
-[6 Adapting vocabularies and features for use 16](#adapting-vocabularies-and-features-for-use)
-
-[6.1 Defining the content of vocabularies: The *Term Editor* (admin) 16](#defining-the-content-of-vocabularies-the-term-editor-admin)
-
-[6.2 Adapting the available Features for factual data (local and admin) 17](#_Toc82607373)
-
-[6.3 Adapting the language selection for common names (local) 17](#adapting-the-language-selection-for-common-names-local)
-
-[6.4 Named area vocabularies for geographic distribution data (admin) 17](#named-area-vocabularies-for-geographic-distribution-data-admin)
-
-[6.5 Adapting the options for the distribution status (admin) 17](#adapting-the-options-for-the-distribution-status-admin)
-
-[6.6 Enable using multiple languages for Factual Data (admin and local) 17](#enable-using-multiple-languages-for-factual-data-admin-and-local)
-
-[7 Complex factual data 18](#complex-factual-data)
-
-[7.1 Area distribution using the *Factual Data* view 18](#area-distribution-using-the-factual-data-view)
-
-[7.2 Editing areal distributions with the Checklist Editor 19](#editing-areal-distributions-with-the-checklist-editor)
-
-[7.3 Identification Keys 21](#identification-keys)
-
-[7.4 Specimens 22](#specimens)
-
-[7.4.1 Introduction 22](#introduction)
-
-[7.4.2 Options for specimen data entry 22](#options-for-specimen-data-entry)
-
-[7.4.3 Type specimen entry 22](#type-specimen-entry)
-
-[**7.4.4** **Entering specimens as factual data** 23](#entering-specimens-as-factual-data)
-
-[7.5 Images 24](#images)
-
-[7.6 Structured descriptive data 24](#structured-descriptive-data)
-
-[8 The *Bulk Editor* and the Catalogues 24](#the-bulk-editor-and-the-catalogues)
-
-[8.1 Introduction 24](#introduction-1)
-
-[8.2 Persons and Person Teams 25](#persons-and-person-teams)
-
-[8.3 References 25](#references)
-
-[8.4 Names 26](#names)
-
-[8.5 Using the specimen (tree) *Bulk Editor* 26](#using-the-specimen-tree-bulk-editor)
-
-[8.5.1 Adding a new specimen 26](#adding-a-new-specimen)
-
-[8.5.2 Associating a specimen with a taxon 27](#associating-a-specimen-with-a-taxon)
-
-[8.5.3 Editing existing specimens 27](#editing-existing-specimens)
-
-[8.5.4 Adding media to specimens 27](#adding-media-to-specimens)
-
-[9 Working with Media 29](#working-with-media)
-
-[9.1 The Media Editor 29](#the-media-editor)
-
-[9.2 Multiple media representations 30](#multiple-media-representations)
-
-[10 Error handling and feedback 31](#error-handling-and-feedback)
-
-[11 Glossary 32](#glossary)
 
 # Installing the TaxEditor
 
@@ -152,7 +33,9 @@ A **Taxon** is a taxonomic group with the data that define its circumscription a
 The **syn.-sec. reference** indicates the reference that assigned the synonym to this taxon.\
 **Scientific names** (as well as the names given to pseudotaxa) are assigned to records representing taxa, synonyms or misapplied names. **Ranks of names** follow the hierarchy defined in the nomenclatural codes. However, in the taxonomic hierarchy you are free to insert further nodes at any place in the tree thus forming new or mixed hierarchical levels -- if these are not named according to the codes, we call them **Pseudotaxa**.
 
-## ![](./media/image3.png){width="3.7909722222222224in" height="5.434027777777778in"}Working with the *Taxon Navigator*
+## Working with the *Taxon Navigator*
+
+![](./media/image3.png){width="3.7909722222222224in" height="5.434027777777778in"}
 
 ### Display
 
@@ -171,36 +54,19 @@ A double-click on a Taxon Node in the *Taxon Navigator* will open the *Taxon Edi
 ![](./media/image5.png){width="6.04375in" height="4.45in"}The context menu provides an overview of the operations that can be carried out with the *Taxon Navigator*. Note that, although you are effectively selecting a Taxon Node in the tree, the operations are actually carried out on the underlying taxon (except when you add a new child taxon).
 
 -   *New* allows to add a new child taxon to the selected taxon node or to create an entirely new classification.
-
 -   *Open in \...* gives access to a number of editors that allow you to change data of the selected taxon or data connected to that taxon (see 4.2.3).
-
 -   *Change to synonym* can only be carried out with taxon nodes that do not contain any child taxa.
-
 -   *Move taxon (with child taxa)* allows to select a new parent taxon.
-
 -   *Move factual data to another taxon* allows to select a new taxon to which data such as the distribution, description etc. are to be linked.
-
 -   *Import* allows you to add data from external sources in various formats.
-
 -   *Export* allows you to export data and write them to a file in various formats.
-
 -   *Delete* will remove the taxon node and -- if not used elsewhere -- the taxon and the name, in case you choose the respective options.
-
 -   *Copy* creates a copy of the taxon node so that it can be pasted to another classification for example.
-
-*\
-*
-
 -   ![](./media/image6.png){width="2.7625in" height="0.6875in"}*Edit subtree* offers several options in a sub-menu
-
     -   *Set publish flag for subtree* allows you to set or unset the flag that determines if the affected names appear in output (e.g. on the portal). It affects all child taxa of the selected taxon and you can configure if synonyms are included.
-
     -   *Set secundum for subtree* allows to change the sec.-reference for the selected taxon and all its child taxa. You can configure is syn.-sec. references are to be affected, too.
-
     -   *Aggregate distributions* invokes an algorithm the calculates a distribution record for the selected taxon from its child taxa.
-
 -   *Set Flags ...* offers the options to set the taxonomic status flags *doubtful*, *unplaced*, and *excluded* for the selected taxon.
-
 -   *Refresh* causes the Taxonomic Navigator being refreshed by loading all visible information from the data base.
 
 Secundum reference, publish flag, and taxonomic status flags can also be edited via the *Taxon node edit dialog* which can be opened by choosing *Open in \...-\>Taxon node Dialog* (see below),
@@ -263,22 +129,17 @@ In the Taxon Editor, synonyms are grouped together in case they have been design
 Each individual synonym entry starts with a symbol indicating its nature:
 
 -   A homotypic synonym of the taxon name is indicated by an identity sign on a blue circle -- dark blue if the respective name is the basionym or replaced synonym in the homotypic group of the taxon.
-
 -   Heterotypic synonyms are indicated by dark or light green circles with an equal sign -- their homotypic synonyms are again carrying an identity sign.
-
 -   Invalid names or designations start with an en-dash in a green circle.
-
 -   ![](./media/image11.png){width="6.205555555555556in" height="0.2513888888888889in"}![](./media/image12.png){width="6.208661417322834in" height="2.3858267716535435in"}Misapplied names start with MA in a purple circle
-
 ![](./media/image13.png){width="5.106299212598425in" height="2.641732283464567in"}The context menu of a synonym offers a number of options:
-
 -   *New* adds a new synonym line and lets you identify its type
-
 -   *Open in* offers the possibility to edit the name in the *Bulk editor* (see below) or open the *Referencing Objects View* (a subwindow opening below the *Details View* showing all relationships of the synonym).
-
 -   *Change to* offers the possibility to change the type of the synonym.
 
-### ![](./media/image14.png){width="2.4788571741032372in" height="0.5207677165354331in"}Misapplied names
+### Misapplied names
+
+![](./media/image14.png){width="2.4788571741032372in" height="0.5207677165354331in"}
 
 A misapplied name entry in the synonym list is a concept relation to a taxon concept in a defined publication (the "sensu" reference) that was designated by a non-applicable name in that publication. For a misapplied name, a Misapplication reference can be entered, this is the reference that establishes the misapplication and the assignation to the taxon's synonym list.
 
@@ -499,11 +360,8 @@ This long introduction serves to explain why there are several ways to add and e
 The different possibilities for specimen data entry:
 
 -   As a type specimen in the name ***Details View***: see section 4.4.9 above and 7.4.3 below.
-
 -   Using the specimen ***Bulk Editors (tree)** or (list):* see section 9.4 below.
-
 -   Starting in the *Factual Data view*: currently not recommended[, but see]{.underline} [7.4.4 below]{.underline}
-
 -   Via the *Described Specimen* function in the *Details View* of the *Description* in the *Factual Data* view: Sorry, work in progress, please do not use!
 
 **The current recommendation for general specimen input** is to right click on a Name in T*axon Navigator --\> Open in \... --\> Specimen Editor (tree).*
@@ -681,7 +539,9 @@ Other software errors will be indicated by an error message. Please help us to i
 
 The error text itself may give you some indication of what had happened. For example, if you find an indication like \"NoHttpResponseException\" the error was not caused by the software, but the connection with the server was broken or interrupted. Usually, you can just continue to work, if necessary use the *Re-connect* function in the *General* menu.
 
-# ![](./media/image52.png){width="1.8229166666666667in" height="1.7805555555555554in"}Glossary 
+# Glossary 
+
+![](./media/image52.png){width="1.8229166666666667in" height="1.7805555555555554in"}
 
 **Cache -** ![](./media/image53.png){width="0.43680555555555556in" height="0.4263888888888889in"}For many data items the platform provides a concatenated view of the atomised elements of the item -- e.g. a species name that consists of the separately stored elements Genus, Species epithet, and Author team is shown in the *Name cache* as a single string that is automatically assembled from the atomised elements. The automatic assembly can be disabled and content can be written directly into this field; the content is protected by means of clicking and opening the little padlock on the right. This may be useful for preliminary entries or in cases where data is pasted or imported from non-atomised sources. However, the disadvantage is the loss of connection to the catalogues (e.g. the generic names already in the database) and consequently the lack of standardisation of data elements. The output, e.g. in the data portal, will always use the data shown in the cache.
 
@@ -709,9 +569,7 @@ The *Doubtful* placement flag is set in the *Taxon node dialogue.* It indicates 
 More specific cases of "exclusion" from placement in the core treatment are the following:
 
 -   "*Incertae sedis":* taxa that should probably be accepted, but their placement in a higher-ranked taxon is not clear. (In contrast, "doubtful placement" indicates that a decision on the placement of the taxon was taken, but with doubt).
-
 -   "unresolved names": names that (at present) could not be assigned to a taxon nor clarified as to their taxonomic and/or nomenclatural standing.
-
 -   "\[Name of\] uncertain application": This refers generally to names, although they can also be entered and displayed as pseudotaxa. Nomina nuda are also included in this category. These names cannot be reliably assigned to either accepted taxa or synonyms, for various reasons, e.g. because they lack types, the protologue is not sufficient or ambiguous, or similar reasons. This differs from the "unresolved names category" insofar, as the unresolved names could potentially be resolved during a taxonomic revision, while this not the case for the names of uncertain application
 
 In all cases, the *Placement reference* represents the source of the assignation to the category, while the Nodes' *sec.-reference* is actually used for the source of the name (e.g. a database like TPL).
