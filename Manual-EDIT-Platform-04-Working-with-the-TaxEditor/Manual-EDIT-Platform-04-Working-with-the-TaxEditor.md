@@ -13,7 +13,11 @@ titlepage-background: "Titel-A4.png"
 toc-own-page: true
 ...
 
-Version history: 26-Aug-21: Major restructuring, excluded tutorial. 15-Sept-21: Additions to glossary, editorial, changed Name Editor to Taxon Editor, Taxonomic Editor to TaxEditor.
+Version history: 
+
+* 26-Aug-21: Major restructuring, excluded tutorial. 
+
+* 15-Sept-21: Additions to glossary, editorial, changed Name Editor to Taxon Editor, Taxonomic Editor to TaxEditor.
 
 ----
 
@@ -500,7 +504,7 @@ Images and photos can be added to data objects like taxa (section 7.2), and spec
 Details of the media items are edited in an editor pane which offers a simple and an advanced mode:
 
   **Simple media editor**                                                             **Advanced media editor**
-  ----------------------------------------------------------------------------------- -----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------- -----------------------------------------------------------------------------------
   ![](./media/image46.png){width="2.34251968503937in" height="3.720472440944882in"}   ![](./media/image47.png){width="2.34251968503937in" height="4.988188976377953in"}
 
 \(1) This button toggles the media editor pane mode from simple to advanced and back.
