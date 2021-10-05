@@ -56,15 +56,15 @@ The **syn.-sec. reference** indicates the reference that assigned the synonym to
 
 ## Working with the *Taxon Navigator*
 
-![](./media/image3.png){width="3.7909722222222224in" height="5.434027777777778in"}
-
 ### Display
 
 The *Taxon Navigator* displays the classifications and, within those, a hierarchical tree of the contained taxon nodes, i.e. taxa. It won't display synonyms or other non-accepted names. In its default position, the *Taxon Navigator* Window is the leftmost subwindow ("view") in the TaxEditor interface. If you don't find it, remember that you can call up windows using the Menu: *Window --\> Show view --\> Taxon Navigator*.
 
+![](./media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image3.png){width="10cm"}
+
 You can change the order to alphabetical order of names in the Menu under *Window --\> Local Preferences -\> UI -\> Taxon Navigator*. Please note that you have to close and open the Navigator window for the changes to take effect.
 
-![](./media/image4.png){width="15cm"}
+![](./media/image4.png){width="67%"}
 
 The taxon tree is indented according to the sequence of ranks, e.g. all families are listed below their order. However, you are free to insert names independent of their ranks at any place in the tree, thus forming new or mixed hierarchical levels. For example, some classifications may not cite the species for a given subspecies. The subspecies is then assigned directly to the genus and displayed on the same level as the rest of the species. You can also insert preliminary groupings or "pseudotaxa", such as species groups or clades. As a general principle, the program will alert you when it detects a deviation from nomenclatural rules, but it will not prevent you from entering the data you want to use.
 
@@ -85,7 +85,7 @@ The context menu provides an overview of the operations that can be carried out 
 -   *Export* allows you to export data and write them to a file in various formats.
 -   *Delete* will remove the taxon node and -- if not used elsewhere -- the taxon and the name, in case you choose the respective options.
 -   *Copy* creates a copy of the taxon node so that it can be pasted to another classification for example.
--   ![](./media/image6.png){width="2.7625in" height="0.6875in"}*Edit subtree* offers several options in a sub-menu
+-   *Edit subtree* offers several options in a sub-menu ![](./media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image6.png)
     -   *Set publish flag for subtree* allows you to set or unset the flag that determines if the affected names appear in output (e.g. on the portal). It affects all child taxa of the selected taxon and you can configure if synonyms are included.
     -   *Set secundum for subtree* allows to change the sec.-reference for the selected taxon and all its child taxa. You can configure is syn.-sec. references are to be affected, too.
     -   *Aggregate distributions* invokes an algorithm the calculates a distribution record for the selected taxon from its child taxa.
@@ -96,12 +96,14 @@ Secundum reference, publish flag, and taxonomic status flags can also be edited 
 
 ### The Taxon node edit dialogue in the *Taxon Navigator*
 
-![](./media/image7.png){width="4.052083333333333in" height="4.329166666666667in"}The taxon node edit dialog can be opened from the *Taxonomic Navigator* via the context menu *Open in \...-\>Taxon node dialogue*
+The taxon node edit dialog can be opened from the *Taxonomic Navigator* via the context menu *Open in \...-\>Taxon node dialogue*
+
+ ![](./media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image7-16334485113351.png){width="67%"}
 
 The *Placement status* allows to mark a taxon in the classification as excluded, unplaced or doubtful and a reason for that classification may be stated in the *Status notes*. Excluded taxon nodes will remain in the hierarchy; excluded taxon nodes are displayed with a leading 'ø' character, unplaced with two interrogation marks '??' and doubtful with a single one '?'. Excluded taxon nodes are shifted to the end of the classification.
 Please note that the definition of these categories is currently being discussed. At present, pseudotaxon-nodes are inserted to categorise such taxa and names that are not considered to belong to the core taxonomic backbone.
 
-\[TO BE REVISED:\| Beside the options to modify the S*ecundum Reference*, *Publish Flag*, and taxonomic status flags of a single taxon node, this dialog also allows to change the *Taxon* to which the taxon node refers to and the *Parent Child Relation Source.* This source information references the publication or database in which the parent child relationship originally was published.
+\[**TO BE REVISED**:\| Beside the options to modify the S*ecundum Reference*, *Publish Flag*, and taxonomic status flags of a single taxon node, this dialog also allows to change the *Taxon* to which the taxon node refers to and the *Parent Child Relation Source.* This source information references the publication or database in which the parent child relationship originally was published.
 
 ### Adding a classification in the *Taxon Navigator*
 
@@ -120,7 +122,10 @@ Synonym to accepted: Use the context menu of the synonym in the *Taxon Editor.*
 
 ## General *Search*
 
-![](./media/image8.png){width="4.53125in" height="2.165277777777778in"}With the *Search* Function in the toolbar area of the TaxEditor you can search for scientific and common names in the database. Simply type a name into the textbox to the right of the save button and type \<enter\> or click on *Search.*
+With the *Search* Function in the toolbar area of the TaxEditor you can search for scientific and common names in the database. Simply type a name into the textbox to the right of the save button and type \<enter\> or click on *Search.*
+
+![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image8.png){width="4.53125in" height="2.165277777777778in"}
+
 The drop-down menu to the right can be used to restrict the search to certain categories of names, e.g. common names or types of scientific names (correct names of taxa, synonyms, names that have not been included in the classification, unpublished names). It also offers the choice of including the authors of scientific names. You can use the asterisk \* as a wildcard, so, for example, the entry "\* Mill." will return all names that have Miller as the last author (if the *With authors* option is tagged).
 
 ![](./media/image9.png){width="6.527777777777778in" height="2.5305555555555554in"}The search result appears in a subwindow below the *Taxon Navigator*.
@@ -154,23 +159,21 @@ Each individual synonym entry starts with a symbol indicating its nature:
 -   A homotypic synonym of the taxon name is indicated by an identity sign on a blue circle -- dark blue if the respective name is the basionym or replaced synonym in the homotypic group of the taxon.
 -   Heterotypic synonyms are indicated by dark or light green circles with an equal sign -- their homotypic synonyms are again carrying an identity sign.
 -   Invalid names or designations start with an en-dash in a green circle.
--   ![](./media/image11.png){width="6.205555555555556in" height="0.2513888888888889in"}![](./media/image12.png){width="15cm"}Misapplied names start with MA in a purple circle
-![](./media/image13.png){width="5.106299212598425in" height="2.641732283464567in"}The context menu of a synonym offers a number of options:
+-   Misapplied names start with MA in a purple circle![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/synonym-list.png) 
+The context menu of a synonym offers a number of options:
 -   *New* adds a new synonym line and lets you identify its type
 -   *Open in* offers the possibility to edit the name in the *Bulk editor* (see below) or open the *Referencing Objects View* (a subwindow opening below the *Details View* showing all relationships of the synonym).
 -   *Change to* offers the possibility to change the type of the synonym.
 
 ### Misapplied names
 
-![](./media/image14.png){width="2.4788571741032372in" height="0.5207677165354331in"}
-
-A misapplied name entry in the synonym list is a concept relation to a taxon concept in a defined publication (the "sensu" reference) that was designated by a non-applicable name in that publication. For a misapplied name, a Misapplication reference can be entered, this is the reference that establishes the misapplication and the assignation to the taxon's synonym list.
+A misapplied name entry in the synonym list is a concept relation to a taxon concept in a defined publication (the "sensu" reference) ![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image14.png){width="2.4788571741032372in" height="0.5207677165354331in"} that was designated by a non-applicable name in that publication. For a misapplied name, a Misapplication reference can be entered, this is the reference that establishes the misapplication and the assignation to the taxon's synonym list.
 
 ### The *Details View* for scientific names
 
 The *Details View* can be configured with various options, mainly to simplify its appearance. The one shown here is the one with all details enabled.
 
-![](./media/image15.png){width="4.004861111111111in" height="5.438194444444444in"} 
+![](./media/image15.png) 
 
 *Taxon* (or *Synonym*) section: This section refers to the name in its classification context, with the sec.- or syn.-sec. reference and the respective *Cache* entry.
 
@@ -184,15 +187,13 @@ The further sections all refer to the name.
 
 Please refer to part 3 of the manual for an explanation of the elements and symbols used in the interface. Most importantly, remember that the *Details View* also lets you access the catalogues, i.e. lists of data items that may be used in more than one place (e.g. authors). Catalogues are accessed by the following buttons:
 
-![](./media/image16.png){width="1.051388888888889in" height="0.6743055555555556in"}
 
-The *Browse existing* (folder) button opens a search interface for existing data items in a catalogue.
 
-![](./media/image17.png){width="1.0118055555555556in" height="0.75625in"}The *Edit* button directly opens the entry and lets you change it**[. Use it with caution:]** with full rights **the changes here** **will change all occurrences** of the entry in the database!
+![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image16.png){width="1.051388888888889in" height="0.6743055555555556in"}The *Browse existing* (folder) button opens a search interface for existing data items in a catalogue.
 
-![](./media/image18.png){width="1.0625in" height="0.71875in"}
+![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image17.png){width="1.0118055555555556in" height="0.75625in"}The *Edit* button directly opens the entry and lets you change it**. Use it with caution:** with full rights **the changes here** **will change all occurrences** of the entry in the database!
 
-The *Remove* (garbage bin) button will remove the selected item from this record -- it will not delete it from the database.
+![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image18.png){width="1.0625in" height="0.71875in"}The *Remove* (garbage bin) button will remove the selected item from this record -- it will not delete it from the database.
 
 Some of the fields in the *Details View* need further consideration:
 
