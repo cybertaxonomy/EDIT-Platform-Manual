@@ -1,16 +1,24 @@
 ---
 title: "User manual part 4 - Using the TaxEditor"
-subtitle: ""
+subtitle: "Version: 15-Sept-2021"
 author: [Walter Berendsohn, Andreas Kohlbecker]
 subject: "EDIT Platform user manual 4"
 keywords: [EDIT Platform, TaxEditor]
 lang: "en"
+linkcolor: blue
+citecolor: blue
+urlcolor: blue
+toccolor: black
 titlepage: true
 titlepage-text-color: "FFFFFF"
 titlepage-rule-color: "FFFFFF"
 titlepage-rule-height: 0
 titlepage-background: "Titel-A4.png"
 toc-own-page: true
+mainfont: "Arial Unicode MS"
+sansfont: DejaVuSans
+monofont: DejaVuSansMono
+mathfont: TeXGyreDejaVuMath-Regular
 ...
 
 Version history: 
@@ -19,7 +27,8 @@ Version history:
 
 * 15-Sept-21: Additions to glossary, editorial, changed Name Editor to Taxon Editor, Taxonomic Editor to TaxEditor.
 
-----
+\newpage
+
 
 # Installing the TaxEditor
 
@@ -161,23 +170,17 @@ A misapplied name entry in the synonym list is a concept relation to a taxon con
 
 The *Details View* can be configured with various options, mainly to simplify its appearance. The one shown here is the one with all details enabled.
 
-+------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ![](./media/image15.png){width="4.004861111111111in" height="5.438194444444444in"} | *Taxon* (or *Synonym*) section: This section refers to the name in its classification context, with the sec.- or syn.-sec. reference and the respective *Cache* entry.                                                                                                                                                                                                                                                                                                                                              |
-|                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|                                                                                    | \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_                                                                                                                                                                                                                                                                                                                                                                                        |
-|                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|                                                                                    | The further sections all refer to the name.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-|                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|                                                                                    | \(1) The *Name* itself (with its components according to rank -- in this case a species), its standardised authorship and the possibility to mark it as a hybrid.                                                                                                                                                                                                                                                                                                                                                   |
-|                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|                                                                                    | \(2) The standardised *Nomenclatural source*, with the *Reference* title that is maintained in a catalogue in atomised form and can be selected here, with the exact location in the publication (page number etc.) given in the *Detail* field; there is the possibility to specify an *Original Spelling* of the name in that publication, and one or more links to a website where an image of the reference of the nomenclatural *Protologue/Original Publication* can be consulted (e.g. in BHL) can be given. |
-|                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|                                                                                    | \(3) The possibility to declare a *Nomenclatural status* for the name (e.g. "nom. inval.", "nom. cons.") with some details (see below),                                                                                                                                                                                                                                                                                                                                                                             |
-|                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|                                                                                    | \(4) Specification of the *Type Information* of the name (see below), and                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-|                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|                                                                                    | \(5) Specification of *Name Relationships* (e.g. "is later homonym of", "is replaced synonym for")                                                                                                                                                                                                                                                                                                                                                                                                                  |
-+------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+![](./media/image15.png){width="4.004861111111111in" height="5.438194444444444in"} 
+
+*Taxon* (or *Synonym*) section: This section refers to the name in its classification context, with the sec.- or syn.-sec. reference and the respective *Cache* entry.
+
+The further sections all refer to the name.
+
+1. The *Name* itself (with its components according to rank -- in this case a species), its standardised authorship and the possibility to mark it as a hybrid.
+1.  The standardised *Nomenclatural source*, with the *Reference* title that is maintained in a catalogue in atomised form and can be selected here, with the exact location in the publication (page number etc.) given in the *Detail* field; there is the possibility to specify an *Original Spelling* of the name in that publication, and one or more links to a website where an image of the reference of the nomenclatural *Protologue/Original Publication* can be consulted (e.g. in BHL) can be given.                                                                                                                                                                                              
+1.  The possibility to declare a *Nomenclatural status* for the name (e.g. "nom. inval.", "nom. cons.") with some details (see below),                                                                                                                    
+1.  Specification of the *Type Information* of the name (see below), and                                                                                                                                                                                                                                        
+1.  Specification of *Name Relationships* (e.g. "is later homonym of", "is replaced synonym for") 
 
 Please refer to part 3 of the manual for an explanation of the elements and symbols used in the interface. Most importantly, remember that the *Details View* also lets you access the catalogues, i.e. lists of data items that may be used in more than one place (e.g. authors). Catalogues are accessed by the following buttons:
 
@@ -237,7 +240,7 @@ Type information should always be entered for the base name of a homotypic group
 
 ![](./media/image24.png){width="1.275in" height="0.5833333333333334in"}With the double-arrow in the upper right corner of the *Taxon Navigator*, you can establish a connection between the *Taxon Editor* and the *Taxon Navigator*. When it is enabled, the active taxon in the *Taxon Editor* will be selected in the *Taxon Navigator.* Note that currently this has quite an impact on performance.
 
-##  Additional information referring to a Name
+## Additional information referring to a Name
 
 When you select a taxon name or a synonym in the Name-Editor window, additional windows like the *Details View* or the *Supplemental Data View* will show the data referring to the taxon or synonym.
 
@@ -247,7 +250,7 @@ Subwindows affected by the change in focus include *Supplemental Data, Factual d
 
 # Unstructured factual data
 
-Factual data are visible in the *Factual Data View* that initially opens below the *Taxon Editor* subwindows. Factual data can be linked to either a taxon or a name (see 4.5 above), not, e.g., to synonyms.
+Factual data are visible in the *Factual Data View* that initially opens below the *Taxon Editor* subwindows. Factual data can be linked to either a taxon or a name (see [4.5 above](#additional-information-referring-to-a-name)), not, e.g., to synonyms.
 
 Unstructured factual data mainly consist of a single piece of text, such as a common name or a summary statement on something. This may be accompanied by some contextual information like language or scope (for example, the language of a common name and the geographical area where it is used). This contextual information may be standardised in a vocabulary which is given in a selection list (e.g. for languages). All factual data can be referenced individually to a source, or alternatively a source can be specified for the entire *Factual data set.* With the source entry, the name used in the respective publication may be specified, as it may differ from the accepted name in our treatment.
 
@@ -256,7 +259,7 @@ Unstructured factual data mainly consist of a single piece of text, such as a co
 With the focus set accordingly, additional data can be entered in the *Details View* for the entire Factual data set and for the individual Fact -- e.g. a source reference.\
 Several Factual data sets can be created for one and the same taxon or name. This is useful for example if data is entered from different sources that should be kept separate for the time being.
 
-![](./media/image27.png){width="3.4791666666666665in" height="2.9743055555555555in"}For some features, apart from the actual *Fact* and its *Source* (and a *Media* item) additional information may be specified, for example, for *Common Names* it is possible to state the language and the geographical area where it is used. By default, a great number of choices for languages are availble. See section 6.1 on how to restrict this.
+![](./media/image27.png){width="3.4791666666666665in" height="2.9743055555555555in"}For some features, apart from the actual *Fact* and its *Source* (and a *Media* item) additional information may be specified, for example, for *Common Names* it is possible to state the language and the geographical area where it is used. By default, a great number of choices for languages are availble. See section [6.1](#anchor-6_1) on how to restrict this.
 
 You can use HTML formatting in the free texts: for example, start a species name in Notes with \<i\> and end it with \</i\> and it will show up as italics in the portal and print output.
 
@@ -264,7 +267,7 @@ You can use HTML formatting in the free texts: for example, start a species name
 
 The terms used to standardise content entered into the database are highly configurable. To achieve productive collaboration, many of the settings are defined for the entire project and these can only be changed by a person with administrative rights. But various settings can also be selected as "local preferences".
 
-## Defining the content of vocabularies: The *Term Editor* (admin)
+## []{#anchor-6_1} Defining the content of vocabularies: The *Term Editor* (admin)
 
 The TaxEditor already comes with many terms and vocabularies, but for specific applications you may want to add new ones with the *Term Editor*. To edit the terms available in a vocabulary, go to the main menu Window -\> *Terms* -\> *Feature* or *NameFeature*. As an example, we add a new *Feature* for factual data:
 
@@ -274,7 +277,7 @@ Go to the menu, *Window -\> Terms -\> Feature*
 
 A new term with the label "Untitled" has been created and can be found close to the bottom of the term list, so you may need to scroll down to find it. Edit the new defined term in the *Details* window. For example, create a new feature "Uses as Food".
 
-![](./media/image29.png){width="0.2701388888888889in" height="0.28055555555555556in"}Set *Supports Text Data* (this will provide the functionality introduced as unstructured factual data in section above.
+![](./media/image29.png){width="0.2701388888888889in" height="0.28055555555555556in"}Set *Supports Text Data* (this will provide the functionality introduced as unstructured factual data in section [above](#Unstructured-factual-data).
 
 Don't forget to save!
 
@@ -291,7 +294,7 @@ Contact an administrator if a you want to define a new Feature.
 
 To restrict the number of languages shown, go to the main menu *Window* -\> *Local* *Preferences -\> Language -\> Common Name Languages*. By default, the server-sided settings are active, these include all standard ISO languages. Click on the selection button below the list and choose *Use local settings* to enable the checkboxes for editing. Now tag the languages that should be available for common names.
 
-## Named area vocabularies for geographic distribution data (admin)
+## []{#anchor-22} Named area vocabularies for geographic distribution data (admin)
 
 To select the Vocabularies that are available for structured distribution data go to the main menu Admin -\> *Server-sided* *Preferences* *-\> Factual Data -\> Distribution Data -\> Named area vocabularies* and tag the vocabularies desired.
 
@@ -309,13 +312,13 @@ In contrast to unstructured descriptive data, complex descriptive data are struc
 
 ## Area distribution using the *Factual Data* view
 
-Distribution by geographical areas is based on catalogues that may be created and maintained in the *Term Editor* (see section 6.1).
+Distribution by geographical areas is based on catalogues that may be created and maintained in the *Term Editor* (see section [6.1](#anchor-6_1)).
 
-Area input is either handled through the *Checklist editor* (see below) or, one by one, in the *Factual Data* window of the *Taxon Editor*, as follows:
+Area input is either handled through the *Checklist editor* (see [below](#Editing-areal-distributions-with-the-Checklist-Editor)) or, one by one, in the *Factual Data* window of the *Taxon Editor*, as follows:
 
 Right click on *Factual data for ...* in the *Factual Data* view*: New -\> Distribution (Area)*
 
-The Details View now shows the data entry form for a distribution record. You can select an area from the area vocabularies that have been selected for the database (see section 6.4). Next, for that area, select the Distribution status (e.g. native, introduced) and cite the Source for the information.
+The Details View now shows the data entry form for a distribution record. You can select an area from the area vocabularies that have been selected for the database (see section [6.4](#anchor-22)). Next, for that area, select the Distribution status (e.g. native, introduced) and cite the Source for the information.
 
 Note that this essentially refers to area records from literature, point locations given by specimens or well-documented observations are handled under specimens.
 
