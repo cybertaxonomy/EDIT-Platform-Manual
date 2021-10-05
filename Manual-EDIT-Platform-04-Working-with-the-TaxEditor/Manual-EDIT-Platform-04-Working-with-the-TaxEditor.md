@@ -48,10 +48,10 @@ Please refer to the TaxEditor User Manual part 3 (TaxEditor Introduction and Tut
 
 It is important to understand how some terms are used in the context of the EDIT Platform and the TaxEditor and how they are related.
 
-The **Classification** is the uppermost hierarchical element in the Platform's handling of taxa. Several classifications can reside in a single database. This is useful, for example, when there are alternative views on taxon circumscriptions (e.g. in the treatment of the general *Hieracium* and *Pilosella* in the *Cichorieae*, see [http://cichorieae.e-taxonomy.net/](http://cichorieae.e-taxonomy.net/)).\
-An accepted (correct) name nested within a classification designates a **Taxon Node,** representing a taxon in a given classification. If a taxon node is assigned to a taxon of a higher rank, the latter is referred to as the **parent taxon**, the former as the latter's **child taxon**.\
-A **Taxon** is a taxonomic group with the data that define its circumscription and describe its properties. The circumscription of the taxon is indicated by means of a circumscription or concept reference **("sec.-" or "secundum-" reference)**, normally a bibliographic reference clarifying the distinction of this taxon from other taxa. One and the same taxon may occur in several classifications, but it is also possible that two different taxa (taxon concepts) carry the same name in separate classifications. In themselves, classifications should be taxonomically consistent, i.e. every name should only occur once (as a taxon name or a synonym) in a given classification (except when cited as a misapplied name).\
-The **syn.-sec. reference** indicates the reference that assigned the synonym to this taxon.\
+The **Classification** is the uppermost hierarchical element in the Platform's handling of taxa. Several classifications can reside in a single database. This is useful, for example, when there are alternative views on taxon circumscriptions (e.g. in the treatment of the general *Hieracium* and *Pilosella* in the *Cichorieae*, see [http://cichorieae.e-taxonomy.net/](http://cichorieae.e-taxonomy.net/)).
+An accepted (correct) name nested within a classification designates a **Taxon Node,** representing a taxon in a given classification. If a taxon node is assigned to a taxon of a higher rank, the latter is referred to as the **parent taxon**, the former as the latter's **child taxon**.
+A **Taxon** is a taxonomic group with the data that define its circumscription and describe its properties. The circumscription of the taxon is indicated by means of a circumscription or concept reference **("sec.-" or "secundum-" reference)**, normally a bibliographic reference clarifying the distinction of this taxon from other taxa. One and the same taxon may occur in several classifications, but it is also possible that two different taxa (taxon concepts) carry the same name in separate classifications. In themselves, classifications should be taxonomically consistent, i.e. every name should only occur once (as a taxon name or a synonym) in a given classification (except when cited as a misapplied name).
+The **syn.-sec. reference** indicates the reference that assigned the synonym to this taxon.
 **Scientific names** (as well as the names given to pseudotaxa) are assigned to records representing taxa, synonyms or misapplied names. **Ranks of names** follow the hierarchy defined in the nomenclatural codes. However, in the taxonomic hierarchy you are free to insert further nodes at any place in the tree thus forming new or mixed hierarchical levels -- if these are not named according to the codes, we call them **Pseudotaxa**.
 
 ## Working with the *Taxon Navigator*
@@ -98,7 +98,7 @@ Secundum reference, publish flag, and taxonomic status flags can also be edited 
 
 ![](./media/image7.png){width="4.052083333333333in" height="4.329166666666667in"}The taxon node edit dialog can be opened from the *Taxonomic Navigator* via the context menu *Open in \...-\>Taxon node dialogue*
 
-The *Placement status* allows to mark a taxon in the classification as excluded, unplaced or doubtful and a reason for that classification may be stated in the *Status notes*. Excluded taxon nodes will remain in the hierarchy; excluded taxon nodes are displayed with a leading 'ø' character, unplaced with two interrogation marks '??' and doubtful with a single one '?'. Excluded taxon nodes are shifted to the end of the classification.\
+The *Placement status* allows to mark a taxon in the classification as excluded, unplaced or doubtful and a reason for that classification may be stated in the *Status notes*. Excluded taxon nodes will remain in the hierarchy; excluded taxon nodes are displayed with a leading 'ø' character, unplaced with two interrogation marks '??' and doubtful with a single one '?'. Excluded taxon nodes are shifted to the end of the classification.
 Please note that the definition of these categories is currently being discussed. At present, pseudotaxon-nodes are inserted to categorise such taxa and names that are not considered to belong to the core taxonomic backbone.
 
 \[TO BE REVISED:\| Beside the options to modify the S*ecundum Reference*, *Publish Flag*, and taxonomic status flags of a single taxon node, this dialog also allows to change the *Taxon* to which the taxon node refers to and the *Parent Child Relation Source.* This source information references the publication or database in which the parent child relationship originally was published.
@@ -109,7 +109,7 @@ To add a classification, go to the *Taxon Navigator and* open the context menu o
 
 ### Moving taxa in the *Taxon Navigator*
 
-You can move a taxon (actually: a taxon node) and its child-taxa simply by drag and drop. However, in a large taxon tree this may be tedious.\
+You can move a taxon (actually: a taxon node) and its child-taxa simply by drag and drop. However, in a large taxon tree this may be tedious.
 Alternatively, use the context menu: right click on the taxon you want to move, -\> *Move taxon (with child taxa),* then select the classification you want to move the taxon to, and search for the parent taxon in the chosen classification. With *OK* the taxon will be moved and becomes a child of the taxon selected in the dialogue.
 
 ### Change the status of a name
@@ -120,7 +120,7 @@ Synonym to accepted: Use the context menu of the synonym in the *Taxon Editor.*
 
 ## General *Search*
 
-![](./media/image8.png){width="4.53125in" height="2.165277777777778in"}With the *Search* Function in the toolbar area of the TaxEditor you can search for scientific and common names in the database. Simply type a name into the textbox to the right of the save button and type \<enter\> or click on *Search.*\
+![](./media/image8.png){width="4.53125in" height="2.165277777777778in"}With the *Search* Function in the toolbar area of the TaxEditor you can search for scientific and common names in the database. Simply type a name into the textbox to the right of the save button and type \<enter\> or click on *Search.*
 The drop-down menu to the right can be used to restrict the search to certain categories of names, e.g. common names or types of scientific names (correct names of taxa, synonyms, names that have not been included in the classification, unpublished names). It also offers the choice of including the authors of scientific names. You can use the asterisk \* as a wildcard, so, for example, the entry "\* Mill." will return all names that have Miller as the last author (if the *With authors* option is tagged).
 
 ![](./media/image9.png){width="6.527777777777778in" height="2.5305555555555554in"}The search result appears in a subwindow below the *Taxon Navigator*.
@@ -131,12 +131,12 @@ Names that are not part of the classification (i.e. that are not designated as a
 
 ### Basics
 
-The *Taxon Editor* is the place where you can edit names, either directly or in the respective *Details View*, (to the right in the original *Taxonomic* perspective). It also serves to manage the synonymy of a taxon. The *Details View* (and other windows that initially open to the left of the *Taxon Editor*) will always show the atomised information for the name in focus, i.e. the taxon name or synonym you clicked on in the *Taxon Editor* subwindow.\
+The *Taxon Editor* is the place where you can edit names, either directly or in the respective *Details View*, (to the right in the original *Taxonomic* perspective). It also serves to manage the synonymy of a taxon. The *Details View* (and other windows that initially open to the left of the *Taxon Editor*) will always show the atomised information for the name in focus, i.e. the taxon name or synonym you clicked on in the *Taxon Editor* subwindow.
 The subwindows that initially open below the *Taxon Editor*, such as *Factual Data* or *Media*, also refer to the name in focus, but that has to be the taxon name*.* When you set the focus to an item in these subwindows, the *Details View* and adjoined windows will show the information for that item.
 
 ### Editing or adding a name in the *Taxon Editor* subwindow
 
-To add a synonym, right-klick on the taxon to open the context menu: *New -\> Synonym* (here you can directly choose the type of synonym you want to add, or choose to add a misapplied name) and \<enter\>. A new synonym line of the chosen type will appear.\
+To add a synonym, right-klick on the taxon to open the context menu: *New -\> Synonym* (here you can directly choose the type of synonym you want to add, or choose to add a misapplied name) and \<enter\>. A new synonym line of the chosen type will appear.
 You can also simply put the cursor at the very end of an existing name and type \<enter\>. This will result in a line for a heterotypic synonym. You can change this to a homotypic synonym by dragging it to an existing name, thus adding it to a homotypic group. Use the context menu to change the synonym's type.
 
 You can now type or paste the name into the empty synonym line. The program will attempt to parse the names entered here into their atomised components automatically. You can see the result in the *Details View*. Certain conventions have to be observed in order for the parser to work correctly: The name itself has to follow the rules and conventions of the Code of Nomenclature. For the nomenclatural references, add "in" after the standard author if the publication is an article or a book section, put a comma here if it is a book. And put the year in the end after a full stop. The parser will indicate whenever it has difficulties with the structure of a name or nomenclatural reference -- a message will appear at the top of the *Details View*.
@@ -256,7 +256,7 @@ Unstructured factual data mainly consist of a single piece of text, such as a co
 
 ![](./media/image26.png){width="4.259722222222222in" height="0.9875in"}For a given taxon or name, a *Factual data set* contains the Description elements (= the actual facts) that belong to a certain category, here called a *Feature*. In the example, "Distribution (General)" is the *Feature*, "Paraguay" is the *Description Element*.
 
-With the focus set accordingly, additional data can be entered in the *Details View* for the entire Factual data set and for the individual Fact -- e.g. a source reference.\
+With the focus set accordingly, additional data can be entered in the *Details View* for the entire Factual data set and for the individual Fact -- e.g. a source reference.
 Several Factual data sets can be created for one and the same taxon or name. This is useful for example if data is entered from different sources that should be kept separate for the time being.
 
 ![](./media/image27.png){width="3.4791666666666665in" height="2.9743055555555555in"}For some features, apart from the actual *Fact* and its *Source* (and a *Media* item) additional information may be specified, for example, for *Common Names* it is possible to state the language and the geographical area where it is used. By default, a great number of choices for languages are availble. See section [6.1](#anchor-6_1) on how to restrict this.
@@ -287,7 +287,7 @@ Go back to the factual data view and see that the new features appear in the sel
 
 ## Adapting the available Features for factual data (local and admin)
 
-To select the features desired, go to the main menu *Window* -\> *Local* *Preferences -\> Factual Data -\> Features*. By default, the server-sided settings are active, these include all features defined by the editorial board of your project. Click on the selection button below the list and choose *Use local settings* to enable the checkboxes for editing. Now tag the features that you want to be shown when entering new factual data.\
+To select the features desired, go to the main menu *Window* -\> *Local* *Preferences -\> Factual Data -\> Features*. By default, the server-sided settings are active, these include all features defined by the editorial board of your project. Click on the selection button below the list and choose *Use local settings* to enable the checkboxes for editing. Now tag the features that you want to be shown when entering new factual data.
 Contact an administrator if a you want to define a new Feature.
 
 ## Adapting the language selection for common names (local)
@@ -395,8 +395,8 @@ The different possibilities for specimen data entry:
 
 Right click on *Factual data set for ..*[^1] in the *Factual Data* view *-\> New -\> Specimen.* Toggle open the feature set *Specimen* and select the newly created entry *No unit chosen.*
 
-In the *Details View* click on the *Browse existing* button for *Occurrence/Unit.\
-*Enter the asterisk'\*' character to check if the specimen has already been entered.\
+In the *Details View* click on the *Browse existing* button for *Occurrence/Unit.
+*Enter the asterisk'\*' character to check if the specimen has already been entered.
 If not, choose *New Field Unit/Derived Unit* below*.* Enter the atomised data as depicted.
 
 If you copy the *Latitude* / *Longitude* fields from a text using geographical (NSEW-) coordinates, for the time being please pay attention that you get the straight quotes for minutes and seconds (not: ' and ").
@@ -455,7 +455,7 @@ As with authors, deduplication and editing of the references catalogue is a freq
 
 In the *Names Bulk Editor,* you can edit names in the *Details View* as known from the TaxEditor. However, here you can also find names that have not (yet) received a status of synonym or taxon and you can introduce new names without relating them to a classification.
 
-An original spelling of a name is handled as a name without taxonomic status. If the name is not yet included, use the *Bulk Editor* for Names to create it. Once present, you add a *Name Relationship* in *the Details View,* with type of relationship "original spelling for" and relate it to the correctly spelled name. In the *Taxon Editor* the name than shows up with the appended original spelling, example:\
+An original spelling of a name is handled as a name without taxonomic status. If the name is not yet included, use the *Bulk Editor* for Names to create it. Once present, you add a *Name Relationship* in *the Details View,* with type of relationship "original spelling for" and relate it to the correctly spelled name. In the *Taxon Editor* the name than shows up with the appended original spelling, example:
 Acantholimon ahangarensis Rech.f. & Schiman-Czeika, Fl. Iranica 108: 72. 1974 \[as \"ahangarense\"\].
 
 Deduplication of names is not yet implemented. Workaround: Edit all occurrences of the name (e.g. in other classification, as a type, etc.) to refer to the same name instance. After that, you can delete the remaining duplicates (they should not have referencing objects apart from the standard *HomotypicalGroup*).
@@ -476,7 +476,7 @@ To create a new Field Unit, right click in the specimen (tree) content area and 
 
 A new *Field Unit* with a cryptic title has been created. The title will be updated to a more meaningful text while entering the corresponding data in the *Details View.*
 
-![](./media/image43.png){width="2.479861111111111in" height="4.35in"}![](./media/image44.png){width="3.3020833333333335in" height="1.6180555555555556in"}Now select the *Field Unit* and choose *Add ... \> Specimen* via the context menu to create a *Specimen.*\
+![](./media/image43.png){width="2.479861111111111in" height="4.35in"}![](./media/image44.png){width="3.3020833333333335in" height="1.6180555555555556in"}Now select the *Field Unit* and choose *Add ... \> Specimen* via the context menu to create a *Specimen.*
 Enter the details in the right pane and save the editor by *Ctrl + s*.
 
 ###  Associating a specimen with a taxon
@@ -487,7 +487,7 @@ This needs to be done via the *Factual Data View*, see section [7.4.4 above](#en
 
 Search for all specimen by entering "\*" into the *Title Cache* field of the search bar. You should see, for example, any type specimens that were entered already.
 
-Often, as a shortcut in the work process, specimens are entered as text in the Cache field. In the Details View depicted to the right, you can proceed to atomise the data present in the text, for example by copying and pasting them into the correct fields. When you are done click the lock icon of the *Title Cache* field.\
+Often, as a shortcut in the work process, specimens are entered as text in the Cache field. In the Details View depicted to the right, you can proceed to atomise the data present in the text, for example by copying and pasting them into the correct fields. When you are done click the lock icon of the *Title Cache* field.
 NB: Do not click the lock icon of the title cache field before you are finished. Doing so would set the *Title Cache* to be automatically generated from the individual atomic fields and you might lose some of the textual information.
 
 ### Adding media to specimens
@@ -576,13 +576,13 @@ CDM Instance - See Database
 
 **Dialogue** (Dialogue box) **-** A small window in the user interface that communicates information to the user and prompts them for a response.
 
-**Doubtful -** There are two indications of "doubt" in a name's standing that can be indicated by a flag: *Doubtful* status and *Doubtful* placement.\
-The *Doubtful* status flag is set in the *Details View* for the name of a taxon, synonym or misapplied name. It indicates that there exists a caveat in accepting the name as taxon or synonym with its accompanying nomenclatural status. It is generally indicated as an interrogation mark "?" in front of the respective name. There is no option to comment the status directly nor to state a source reference for its setting.\
+**Doubtful -** There are two indications of "doubt" in a name's standing that can be indicated by a flag: *Doubtful* status and *Doubtful* placement.
+The *Doubtful* status flag is set in the *Details View* for the name of a taxon, synonym or misapplied name. It indicates that there exists a caveat in accepting the name as taxon or synonym with its accompanying nomenclatural status. It is generally indicated as an interrogation mark "?" in front of the respective name. There is no option to comment the status directly nor to state a source reference for its setting.
 The *Doubtful* placement flag is set in the *Taxon node dialogue.* It indicates a caveat in the assignment of a taxon (!) to its place in the taxonomic hierarchy. Here, a free text to discuss the problem and the source reference of that statement and placement can be cited. The doubtful placement is indicated by two interrogation marks "??" in front of the taxon name in the *Taxon Navigator.*
 
 **EDIT Platform -** The EDIT Platform for Cybertaxonomy is a software suite supporting the entire taxonomic workflow. Moreover, the Platform is a powerful information broker for a broad range of taxonomic data providing solid, open and well documented interfaces including a Java programmer\'s library and a CDM Rest Service Layer.
 
-**Exclusion from the core treatment** - Excluded names and taxa are treated as taxon nodes to ensure their visibility in the resulting taxonomic treatments, but are not included in the core taxonomic hierarchy. They may be treated under separate pseudotaxa and/or be indicated by setting a placement flag, with the possibility to comment upon the reason for the exclusion from the treatment. These reasons, and their treatment in the database are largely editorial decisions. For example, in a flora treatment, taxa may be excluded because of they do not occur in the flora's geographical scope but have for some reason to be mentioned. In a monographic context, synonyms that actually do not belong to the taxon treated (but, e.g., have been ascribed to a genus in the treatment) may be marked as excluded. Names may be excluded as, for example, herbarium names (but these may also be included in the synonymy as invalid designations if their taxonomic context is known, the same applies to other nomina nuda).\
+**Exclusion from the core treatment** - Excluded names and taxa are treated as taxon nodes to ensure their visibility in the resulting taxonomic treatments, but are not included in the core taxonomic hierarchy. They may be treated under separate pseudotaxa and/or be indicated by setting a placement flag, with the possibility to comment upon the reason for the exclusion from the treatment. These reasons, and their treatment in the database are largely editorial decisions. For example, in a flora treatment, taxa may be excluded because of they do not occur in the flora's geographical scope but have for some reason to be mentioned. In a monographic context, synonyms that actually do not belong to the taxon treated (but, e.g., have been ascribed to a genus in the treatment) may be marked as excluded. Names may be excluded as, for example, herbarium names (but these may also be included in the synonymy as invalid designations if their taxonomic context is known, the same applies to other nomina nuda).
 More specific cases of "exclusion" from placement in the core treatment are the following:
 
 -   "*Incertae sedis":* taxa that should probably be accepted, but their placement in a higher-ranked taxon is not clear. (In contrast, "doubtful placement" indicates that a decision on the placement of the taxon was taken, but with doubt).
@@ -597,7 +597,7 @@ In all cases, the *Placement reference* represents the source of the assignation
 
 **Factual dataset** -- A collection of features and facts that can be assigend to a common source reference.
 
-**Feature** - Factual data are classified into *Features*. Examples include "Description", "Chromosome number", "Ecology" "Distribution", "Notes", etc. -- essentially anything that appears as a subtitle in the text following a taxon name in a Flora or Monograph can be defined as a *Feature*. But features may also apply to names themselves (e.g. nomenclatural notes) or to specimens.\
+**Feature** - Factual data are classified into *Features*. Examples include "Description", "Chromosome number", "Ecology" "Distribution", "Notes", etc. -- essentially anything that appears as a subtitle in the text following a taxon name in a Flora or Monograph can be defined as a *Feature*. But features may also apply to names themselves (e.g. nomenclatural notes) or to specimens.
 Features may be simple, i.e. consisting only of a text with accompanying references, or complex. Complex features are usually supported by catalogues, e.g. the hierarchy of geographical areas and the occurence status that characterises a distribution record.
 
 **Field Unit** -- An object in the field (an organism or population) from which samples or images were taken to produce -\>Derived units. Connected to the field unit is the information of the collection or observation event, including the geographic location, environmental data, collector-team, etc..
