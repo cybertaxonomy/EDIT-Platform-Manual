@@ -48,7 +48,7 @@ Please refer to the TaxEditor User Manual part 3 (TaxEditor Introduction and Tut
 
 It is important to understand how some terms are used in the context of the EDIT Platform and the TaxEditor and how they are related.
 
-The **Classification** is the uppermost hierarchical element in the Platform's handling of taxa. Several classifications can reside in a single database. This is useful, for example, when there are alternative views on taxon circumscriptions (e.g. in the treatment of the general *Hieracium* and *Pilosella* in the *Cichorieae*, see [[http://cichorieae.e-taxonomy.net/]{.underline}](http://cichorieae.e-taxonomy.net/)).\
+The **Classification** is the uppermost hierarchical element in the Platform's handling of taxa. Several classifications can reside in a single database. This is useful, for example, when there are alternative views on taxon circumscriptions (e.g. in the treatment of the general *Hieracium* and *Pilosella* in the *Cichorieae*, see [http://cichorieae.e-taxonomy.net/](http://cichorieae.e-taxonomy.net/)).\
 An accepted (correct) name nested within a classification designates a **Taxon Node,** representing a taxon in a given classification. If a taxon node is assigned to a taxon of a higher rank, the latter is referred to as the **parent taxon**, the former as the latter's **child taxon**.\
 A **Taxon** is a taxonomic group with the data that define its circumscription and describe its properties. The circumscription of the taxon is indicated by means of a circumscription or concept reference **("sec.-" or "secundum-" reference)**, normally a bibliographic reference clarifying the distinction of this taxon from other taxa. One and the same taxon may occur in several classifications, but it is also possible that two different taxa (taxon concepts) carry the same name in separate classifications. In themselves, classifications should be taxonomically consistent, i.e. every name should only occur once (as a taxon name or a synonym) in a given classification (except when cited as a misapplied name).\
 The **syn.-sec. reference** indicates the reference that assigned the synonym to this taxon.\
@@ -188,7 +188,7 @@ Please refer to part 3 of the manual for an explanation of the elements and symb
 
 The *Browse existing* (folder) button opens a search interface for existing data items in a catalogue.
 
-![](./media/image17.png){width="1.0118055555555556in" height="0.75625in"}The *Edit* button directly opens the entry and lets you change it**[. Use it with caution:]{.underline}** with full rights **the changes here** **will change all occurrences** of the entry in the database!
+![](./media/image17.png){width="1.0118055555555556in" height="0.75625in"}The *Edit* button directly opens the entry and lets you change it**[. Use it with caution:]** with full rights **the changes here** **will change all occurrences** of the entry in the database!
 
 ![](./media/image18.png){width="1.0625in" height="0.71875in"}
 
@@ -198,7 +198,7 @@ Some of the fields in the *Details View* need further consideration:
 
 ***Caches*:** For an explanation of the *Cache* fields and the functionality of these, please look at manual 3 section 4 and 5.
 
-The ***Appended phrase*** in the *Taxon/Synonym* section offers a possibility to add a non-standardised text to the name as used in this classification. It should [not]{.underline} be used for the following purposes, which are supported in a standardised form:
+The ***Appended phrase*** in the *Taxon/Synonym* section offers a possibility to add a non-standardised text to the name as used in this classification. It should [not] be used for the following purposes, which are supported in a standardised form:
 
 -   "auct." or "sensu \..." -- these misapplied names can be accommodated in the synonymy as misapplied names. If no original reference is given, "sensu auct." is added automatically by the system. However, more specific designations, such as "sensu auct. mex." may be placed here.
 
@@ -277,7 +277,7 @@ Go to the menu, *Window -\> Terms -\> Feature*
 
 A new term with the label "Untitled" has been created and can be found close to the bottom of the term list, so you may need to scroll down to find it. Edit the new defined term in the *Details* window. For example, create a new feature "Uses as Food".
 
-![](./media/image29.png){width="0.2701388888888889in" height="0.28055555555555556in"}Set *Supports Text Data* (this will provide the functionality introduced as unstructured factual data in section [above](#Unstructured-factual-data).
+![](./media/image29.png){width="0.2701388888888889in" height="0.28055555555555556in"}Set *Supports Text Data* (this will provide the functionality introduced as unstructured factual data in section [above](#unstructured-factual-data).
 
 Don't forget to save!
 
@@ -294,7 +294,7 @@ Contact an administrator if a you want to define a new Feature.
 
 To restrict the number of languages shown, go to the main menu *Window* -\> *Local* *Preferences -\> Language -\> Common Name Languages*. By default, the server-sided settings are active, these include all standard ISO languages. Click on the selection button below the list and choose *Use local settings* to enable the checkboxes for editing. Now tag the languages that should be available for common names.
 
-## []{#anchor-22} Named area vocabularies for geographic distribution data (admin)
+## []{#anchor-22}Named area vocabularies for geographic distribution data (admin)
 
 To select the Vocabularies that are available for structured distribution data go to the main menu Admin -\> *Server-sided* *Preferences* *-\> Factual Data -\> Distribution Data -\> Named area vocabularies* and tag the vocabularies desired.
 
@@ -314,11 +314,11 @@ In contrast to unstructured descriptive data, complex descriptive data are struc
 
 Distribution by geographical areas is based on catalogues that may be created and maintained in the *Term Editor* (see section [6.1](#anchor-6_1)).
 
-Area input is either handled through the *Checklist editor* (see [below](#Editing-areal-distributions-with-the-Checklist-Editor)) or, one by one, in the *Factual Data* window of the *Taxon Editor*, as follows:
+Area input is either handled through the *Checklist editor* (see [below](#editing-areal-distributions-with-the-checklist-editor)) or, one by one, in the *Factual Data* window of the *Taxon Editor*, as follows:
 
 Right click on *Factual data for ...* in the *Factual Data* view*: New -\> Distribution (Area)*
 
-The Details View now shows the data entry form for a distribution record. You can select an area from the area vocabularies that have been selected for the database (see section [6.4](#anchor-22)). Next, for that area, select the Distribution status (e.g. native, introduced) and cite the Source for the information.
+The Details View now shows the data entry form for a distribution record. You can select an area from the area vocabularies that have been selected for the database (see section [6.4](#named-area-vocabularies-for-geographic-distribution-data-admin)). Next, for that area, select the Distribution status (e.g. native, introduced) and cite the Source for the information.
 
 Note that this essentially refers to area records from literature, point locations given by specimens or well-documented observations are handled under specimens.
 
@@ -376,9 +376,9 @@ This long introduction serves to explain why there are several ways to add and e
 
 The different possibilities for specimen data entry:
 
--   As a type specimen in the name ***Details View***: see section 4.4.9 above and 7.4.3 below.
--   Using the specimen ***Bulk Editors (tree)** or (list):* see section 9.4 below.
--   Starting in the *Factual Data view*: currently not recommended[, but see]{.underline} [7.4.4 below]{.underline}
+-   As a type specimen in the name ***Details View***: see section [4.4.9](#details-view-type-information) above and [7.4.3 below](#type-specimen-entry) .
+-   Using the specimen ***Bulk Editors (tree)** or (list):* see section [9.4 below](#using-the-specimen-tree-bulk-editor).
+-   Starting in the *Factual Data view*: currently not recommended, but see [7.4.4 below](#entering-specimens-as-factual-data)
 -   Via the *Described Specimen* function in the *Details View* of the *Description* in the *Factual Data* view: Sorry, work in progress, please do not use!
 
 **The current recommendation for general specimen input** is to right click on a Name in T*axon Navigator --\> Open in \... --\> Specimen Editor (tree).*
@@ -405,13 +405,13 @@ As usual the Title Cache field can be used (when protected) to hold atomised tex
 
 ## Images
 
-Images are not stored directly in the CDM database, so they have to be available under an Internet address (URI) to become part of CDM data. Since images can be attached to a number of database objects (Taxa, Specimens, morphological characters, etc.), they are handled in different ways. For more details, see section 10 below.
+Images are not stored directly in the CDM database, so they have to be available under an Internet address (URI) to become part of CDM data. Since images can be attached to a number of database objects (Taxa, Specimens, morphological characters, etc.), they are handled in different ways. For more details, see section [10 below](#Structured-descriptive-data).
 
 To add an image to a taxon, first open the respective taxon in the *Taxon Editor* window. Next you go to the menu, *Windows -\> Show View -\> Media.* This opens the *Media* view. Select the taxon name and right click on the empty space within the Media view -\> *New Image Gallery.*
 
 Select the *empty media* item and add your data in the *Details View*.
 
-For specimens, see section 9.4.4 below
+For specimens, see section [9.4.4 below](#adding-media-to-äspecimens)
 
 ## Structured descriptive data
 
@@ -481,7 +481,7 @@ Enter the details in the right pane and save the editor by *Ctrl + s*.
 
 ###  Associating a specimen with a taxon
 
-This needs to be done via the *Factual Data View*, see section 7.4.4 above.
+This needs to be done via the *Factual Data View*, see section [7.4.4 above](#entering-specimens-as-factual-data).
 
 ### Editing existing specimens
 
@@ -498,11 +498,11 @@ Media of specimens, like for example scans, or photos, are treated as a derived 
 
 The *Existing Media* option in contrast will first open a selection dialog by which an existing media item can be chosen. After confirming the selection, a new *Media Specimen* is added to the physical specimen item and the media details are immediately filled. In this case the same *Media* object is actually being reused and shared by multiple referencing objects. Hence, modification of the media details will affect all contexts in which it is being used.
 
-For working with media in general, please refer to section 9. An example of how to handle specimen images from Jstor is given in Section 9.2.
+For working with media in general, please refer to section 9. An example of how to handle specimen images from Jstor is given in Section [9.2](#multiple-media-representations).
 
 # Working with Media
 
-Images and photos can be added to data objects like taxa (section 7.2), and specimens (section 8.5.4).
+Images and photos can be added to data objects like taxa ([section 7.2](#editing-areal-distributions-with-the-checklist-editor)), and specimens ([section 8.5.4](#adding-media-to-specimens)).
 
 ## The Media Editor
 
@@ -520,7 +520,7 @@ Details of the media items are edited in an editor pane which offers a simple an
 
 \(4) The preview image is shown as soon as the media URI has been entered and if the image is available.
 
-\(5) In the advanced mode it is possible to enter multiple representations of the same media object. These can be image files at different resolutions like full size and thumbnail resolutions of the same photo. But they may also represent a link to a web application like a dynamic image viewer (see 9.2).
+\(5) In the advanced mode it is possible to enter multiple representations of the same media object. These can be image files at different resolutions like full size and thumbnail resolutions of the same photo. But they may also represent a link to a web application like a dynamic image viewer (see [9.2](#multiple-media-representations)).
 
 \(6) The mime-type field is usually filled automatically by the TaxEditor. It recognizes common image formats correctly and sets the corresponding mime-type like *image/jpeg*, *image/gif*, *image/png*, etc. Other mime-types need to be added manually.
 
@@ -552,7 +552,7 @@ Create a new media item in the TaxEditor as explained above and switch the *Medi
 
 For Installation problems please refer to part 1 of the manual.
 
-Other software errors will be indicated by an error message. Please help us to improve the program by copying the error and sending it to the Platform team ([[EditSupport\@BGBM.ORG]{.underline}](mailto:EditSupport@BGBM.ORG)).
+Other software errors will be indicated by an error message. Please help us to improve the program by copying the error and sending it to the Platform team ([[EditSupport\@BGBM.ORG]](mailto:EditSupport@BGBM.ORG)).
 
 The error text itself may give you some indication of what had happened. For example, if you find an indication like \"NoHttpResponseException\" the error was not caused by the software, but the connection with the server was broken or interrupted. Usually, you can just continue to work, if necessary use the *Re-connect* function in the *General* menu.
 
