@@ -1,7 +1,19 @@
-#!/bin/bash
+#!/bin/bash -e
 
-pandoc Manual-EDIT-Platform-04-Working-with-the-TaxEditor.md -f markdown --pdf-engine=xelatex  -V 'mainfont:Arial Unicode MS' -V geometry:a4paper  -V geometry:margin=2cm \
-     --toc  --number-sections \
-     --template=../templates/eisvogel-2.0.0/eisvogel.latex \
-     -V date:$(date -I) \
-     -o Manual-EDIT-Platform-04-Working-with-the-TaxEditor.pdf
+export SCRIPTS=../scripts
+
+FILE_NAME='Manual-EDIT-Platform-04-Working-with-the-TaxEditor'
+
+echo "validating ..."
+$SCRIPTS/validate $FILE_NAME
+
+echo "makking pdf ..."
+$SCRIPTS/make-pdf $FILE_NAME
+
+# 
+# pandoc Manual-EDIT-Platform-04-Working-with-the-TaxEditor.md -f markdown+auto_identifiers+ascii_identifiers+gfm_auto_identifiers --pdf-engine=xelatex -V geometry:a4paper -V geometry:margin=2cm \
+#      --toc --number-sections \
+#      --template=../templates/eisvogel-2.0.0/eisvogel.latex \
+#      -V date:$(date -I) \
+#      -o Manual-EDIT-Platform-04-Working-with-the-TaxEditor.pdf
+# 
