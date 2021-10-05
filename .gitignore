@@ -1,3 +1,4 @@
 .directory
+*.pdf
 *.kate-swp
 target/
