@@ -1,0 +1,8 @@
+#!/bin/bash
+
+FILE_NAME=$1
+
+mkdir -p target
+pandoc $FILE_NAME.md -f markdown+auto_identifiers+ascii_identifiers+gfm_auto_identifiers -s -t latex -o target/$FILE_NAME.latex
+
+echo target/$FILE_NAME.latex

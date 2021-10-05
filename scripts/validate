@@ -1,0 +1,5 @@
+#!/bin/bash
+
+FILE_NAME=$1
+
+python $SCRIPTS/validate-latex-xrefs.py $($SCRIPTS/make-latex $FILE_NAME)
