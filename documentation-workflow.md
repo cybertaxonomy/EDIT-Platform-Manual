@@ -77,6 +77,11 @@ TODO
 * https://github.com/mb21/panwriter - unusable slow
 * https://www.writage.com/ - unusable with pandoc markdown
 
+#### Working with Typora
+
+* !!! **use proper presets* !!! --> ask Andreas
+* **DO NOT USE** the zoom image function as this will transform  markdown images `![]()` to html images `<img ...>` which will not work in our setup.
+
 ### simple git ui for windows?
 
 * https://gitextensions.github.io/ <-- Empfehlung AM & KL
