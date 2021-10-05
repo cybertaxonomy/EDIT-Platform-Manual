@@ -16,9 +16,6 @@ titlepage-rule-height: 0
 titlepage-background: "Titel-A4.png"
 toc-own-page: true
 mainfont: "Arial Unicode MS"
-sansfont: DejaVuSans
-monofont: DejaVuSansMono
-mathfont: TeXGyreDejaVuMath-Regular
 ...
 
 Version history: 
@@ -278,11 +275,13 @@ Go to the menu, *Window -\> Terms -\> Feature*
 
 A new term with the label "Untitled" has been created and can be found close to the bottom of the term list, so you may need to scroll down to find it. Edit the new defined term in the *Details* window. For example, create a new feature "Uses as Food".
 
-![](./media/image29.png){width="0.2701388888888889in" height="0.28055555555555556in"}Set *Supports Text Data* (this will provide the functionality introduced as unstructured factual data in section [above](#unstructured-factual-data).
+Set *Supports Text Data* (this will provide the functionality introduced as unstructured factual data in section [above](#unstructured-factual-data).
 
-Don't forget to save!
+Don't forget to save!![](./media/image29.png){width="0.2701388888888889in" height="0.28055555555555556in"}
 
-![](./media/image29.png){width="0.2701388888888889in" height="0.28055555555555556in"}![](./media/image30.png){width="2.623611111111111in" height="2.454861111111111in"}As an example for quantitative Data add a new feature "Leaf Length", select *Supports Quantitative Data*, and then you can add the recommended measurement unit and statistical measures.
+As an example for quantitative Data add a new feature "Leaf Length", select *Supports Quantitative Data*, and then you can add the recommended measurement unit and statistical measures.![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image30.png){width="2.623611111111111in" height="2.454861111111111in"}
+
+Don't forget to save!![](./media/image29.png){width="0.2701388888888889in" height="0.28055555555555556in"}
 
 Go back to the factual data view and see that the new features appear in the selection of features.
 
@@ -306,6 +305,8 @@ To restrict the number of options for the occurrence status (e.g. in the *Distri
 ## Enable using multiple languages for Factual Data (admin and local)
 
 To create a multilingual user interface in the portal, it is necessary to enter some factual data items in multiple languages. To enable multiple language support, go to the menu *Window -\> Local Preferences -\> Language -\> Multi-Language Support:* check *Enable Multiple Language Editing Capability*
+
+\newpage
 
 # Complex factual data
 
@@ -333,13 +334,19 @@ You can activate the Checklist Editor under *Window-\> Local Preferences -\> UI 
 
 ![](./media/image32.png){width="2.9805555555555556in" height="0.8645833333333334in"}
 
-![](./media/image33.png){width="6.830555555555556in" height="3.7125in"}Now you can access the Checklist Editor with a right-click on any taxon name with generic rank or higher in the *Taxon Navigator* and selecting *Open in Checklist Editor* (here at the example of the genus Buxus from the Flora de la República de Cuba)*.*
+Now you can access the Checklist Editor with a right-click on any taxon name with generic rank or higher in the *Taxon Navigator* and selecting *Open in Checklist Editor* (here at the example of the genus Buxus from the Flora de la República de Cuba)*.*
+
+![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image33.png){width="6.830555555555556in" height="3.7125in"}
 
 You will see a table with the first column listing all taxa belonging to (included in) the name you selected in the Taxon Navigator and the subsequent columns depicting areas.
 
-![](./media/image34.png){width="3.495833333333333in" height="0.7340277777777777in"}Now click on *Distribution Areas* in the header section of the *Distribution Editor* to open the *Distribution Selection Dialog* where you can select the Catalogue that is to be used for area input. You can use the buttons ![](./media/image35.png){width="0.5833333333333334in" height="0.3333333333333333in"} to toggle the selection for a parent area and its direct children or for the parent area and all children at the same time.
+![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image34.png){width="3.495833333333333in" height="0.7340277777777777in"}
 
-![](./media/image36.png){width="2.8976377952755907in" height="2.456692913385827in"}If you are familiar with the codes used in your database, it is a good idea to check the *Show Id \...* option, too.
+Now click on *Distribution Areas* in the header section of the *Distribution Editor* to open the *Distribution Selection Dialog* where you can select the Catalogue that is to be used for area input. You can use the buttons ![](./media/image35.png){width="0.5833333333333334in" height="0.3333333333333333in"} to toggle the selection for a parent area and its direct children or for the parent area and all children at the same time.
+
+If you are familiar with the codes used in your database, it is a good idea to check the *Show Id \...* option, too.
+
+![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image36.png){width="67%"}
 
 With the area catalogue(s) selected for your treatment and if you have set the *Show Id \...* options chosen to show the IDs for area and status in the settings page of the *Local Preferences*, the *Distribution Editor* might now look similar to this:
 
