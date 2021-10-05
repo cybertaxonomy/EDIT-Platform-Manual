@@ -7,7 +7,7 @@ FILE_NAME='Manual-EDIT-Platform-04-Working-with-the-TaxEditor'
 echo "validating ..."
 $SCRIPTS/validate $FILE_NAME
 
-echo "makking pdf ..."
+echo "making pdf ..."
 $SCRIPTS/make-pdf $FILE_NAME
 
 # 
