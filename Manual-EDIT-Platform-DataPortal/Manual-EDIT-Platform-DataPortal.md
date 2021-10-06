@@ -33,6 +33,16 @@ work-in-progress, includes notes taken from emails etc.
 
 # Working with Drupal
 
+## Passwords
+
+### I lost my password, how can I reset it?
+
+You can reset the passwords via these links here
+
+![](media/password-reset.png)
+
+to reset them. The "request new password" is available in every portal.
+
 ## Introduction
 
 An brief overview of menu functions is given in the "Drupal for dummies cheat sheet": [http://www.dummies.com/web-design-development/site-development/drupal-for-dummies-cheat-sheet/](http://www.dummies.com/web-design-development/site-development/drupal-for-dummies-cheat-sheet/).
@@ -43,14 +53,33 @@ If you don't find a Login on the home page, use use \[siteURL\]/user/login to en
 
 ### Creating a new page
 
-\.... How To \....
+Create a new "basic page" via the admin menu:
 
-du grundsätzlich einen **URL Alias angeben**. Dieser ist dann ein Alias für node/{node_id} in der URL. Das optimiert die Site nicht nur für Suchmaschinen:
+![](media/adminmenu-create-basic-page.png)
+
+A new page opens showing the editor for editing the title and content of the new page
+
+![](media/create-basic-page.png)
+
+### Editing page content
+
+Usually the WYSIWYG editor sould be activated for your data portal installation.
+
+### Creating links
+
+![](media/wysiwyg-add-link.png)
+
+... trägt man dann diesen Pfad Slash am Anfang ein, also **/credits/genera**
+
+![](media/wysiwyg-add-link-2.png)
+
+### Assigning an URL-alias
+
+...  grundsätzlich einen **URL Alias angeben**. Dieser ist dann ein Alias für node/{node_id} in der URL. Das optimiert die Site nicht nur für Suchmaschinen:
 
 z.B: [[http://portal.cybertaxonomy.org/salvador/node/3/edit#edit-actions]](http://portal.cybertaxonomy.org/salvador/node/3/edit#edit-actions)
 
 ![](./media/image2.png){width="6.633333333333334in" height="1.68125in"}
-
 
 ### Including a banner
 
@@ -97,16 +126,25 @@ The example uses the URL Alias "listado" for the data portal home page to be set
 
 ![](./media/image6.png){width="5.868055555555555in" height="3.0479166666666666in"}
 
-## Wie lösche ich einen Block?
+## Drupal Blocks
 
-Nicht mehr anzeigen: In der Liste der Blocks ein die Region \'- none -\' für den entsprechenden Block auswählen und ganz unten auf \"Save\" klicken. [[http://test.e-taxonomy.eu/dataportal/preview/test1/admin/structure/block]](http://test.e-taxonomy.eu/dataportal/preview/test1/admin/structure/block)
+### Hiding or deleting a Block
 
-Löschen: Eigentlich sollte eine \'delete\' option in der Blockliste angezeigt werden, so wie in diesem Beispiel zu sehen:
+**Hiding**: In the list of blocks, select a the region \'- none -\' for the corresponding block and click \"Save\" at the very bottom. [[http://test.e-taxonomy.eu/dataportal/preview/test1/admin/structure/block]](http://test.e-taxonomy.eu/dataportal/preview/test1/admin/structure/block)
+
+**Delete**: Actually, a \'delete\' option should be displayed in the blocklist, as seen in this example:
 
 ![](./media/image7.png){width="6.51875in" height="0.37569444444444444in"}
 
 Außer, der Block ist ein Menü-Block! Dieser verschwindet in dem man das Menü löscht:\
 [[http://test.e-taxonomy.eu/dataportal/preview/test1/admin/structure/menu/manage/menu-caryophyllales-2015/edit]](http://test.e-taxonomy.eu/dataportal/preview/test1/admin/structure/menu/manage/menu-caryophyllales-2015/edit)
+
+### I want to get rid of the  login box 
+
+You can also hide the login box completely, instead you could add a menu item "admin" or even omit it. In the latter case a login would then only be possible for "insiders" via URL, e.g.: https://caryophyllales.org/user or https://caryophyllales.org/caryophyllales_spp/user.
+The login block can be removed here: https://caryophyllales.org/admin/structure/block
+
+![](./media/hide-login-block.png)
 
 ## Bibliographic information
 
@@ -120,7 +158,7 @@ Bei dieser Gelegenheit schicke ich dir gleich die Information zum Einschalten de
 
 1. go to: [[http://caryophyllales.org/nepenthaceae/admin/config/cdm_dataportal/settings/layout]](http://caryophyllales.org/nepenthaceae/admin/config/cdm_dataportal/settings/layout)
 2. Check the option: **Original Source in bibliography**
-   
+  
    ![](./media/image8.png){width="5.15625in" height="2.03125in"}
 3. Whether the Original Source reference of a Feature Block is actually put into the bibliography also depends on the settings in the \"Taxon profile feature block settings\" ([[http://caryophyllales.org/nepenthaceae/admin/config/cdm_dataportal/settings/layout/taxon]](http://caryophyllales.org/nepenthaceae/admin/config/cdm_dataportal/settings/layout/taxon))
 
@@ -304,7 +342,6 @@ Und hier die Anleitung für das Aktivieren der External Links:
 1. [[http://caryophyllales.org/nepenthaceae/admin/modules]](http://caryophyllales.org/nepenthaceae/admin/modules) : Contextual Links modul aktivieren falls es nicht schon aktiv ist.
 2. [[http://caryophyllales.org/nepenthaceae/admin/structure/block]](http://caryophyllales.org/nepenthaceae/admin/structure/block) : Den External Links Block in der gewünschten Region (First-Sidebar) positionieren
 
- 
 
 ![](./media/image17.png){width="3.53125in" height="1.6541666666666666in"}
 
@@ -329,6 +366,12 @@ Wie schon in der letzten Mail zu diesem Thema geschrieben kannst du direkt auf d
 
 
 Das Modul selbst, also die einzelnen Links, kann man über Configuration \> CDM Dataportal \> External links einstellen.
+
+The external links can be configured at "admin/config/cdm_dataportal/ext_links"
+
+The order of the link entries can be adjusted by dragging them into a different position;
+
+![](media/Manual-EDIT-Platform-DataPortal/external-links-reordering.png)
 
 ## Maps
 
