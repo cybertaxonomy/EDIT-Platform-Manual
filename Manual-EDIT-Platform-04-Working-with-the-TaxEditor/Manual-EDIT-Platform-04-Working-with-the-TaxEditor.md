@@ -16,6 +16,13 @@ titlepage-rule-height: 0
 titlepage-background: "Titel-A4.png"
 toc-own-page: true
 mainfont: "Arial Unicode MS"
+header-includes:
+- \usepackage{wrapfig}
+- |
+    \usepackage[export]{adjustbox}
+    \let\includegraphicsbak\includegraphics
+    \renewcommand*{\includegraphics}[2][]{\includegraphicsbak[frame,#1]{#2}} 
+
 ...
 
 Version history: 
@@ -82,7 +89,7 @@ The context menu provides an overview of the operations that can be carried out 
 -   *Export* allows you to export data and write them to a file in various formats.
 -   *Delete* will remove the taxon node and -- if not used elsewhere -- the taxon and the name, in case you choose the respective options.
 -   *Copy* creates a copy of the taxon node so that it can be pasted to another classification for example.
--   *Edit subtree* offers several options in a sub-menu ![](./media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image6.png)
+-   *Edit subtree* offers several options in a sub-menu ![{r}](./media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image6.png)
     -   *Set publish flag for subtree* allows you to set or unset the flag that determines if the affected names appear in output (e.g. on the portal). It affects all child taxa of the selected taxon and you can configure if synonyms are included.
     -   *Set secundum for subtree* allows to change the sec.-reference for the selected taxon and all its child taxa. You can configure is syn.-sec. references are to be affected, too.
     -   *Aggregate distributions* invokes an algorithm the calculates a distribution record for the selected taxon from its child taxa.
@@ -93,9 +100,11 @@ Secundum reference, publish flag, and taxonomic status flags can also be edited 
 
 ### The Taxon node edit dialogue in the *Taxon Navigator*
 
+![The "Edit Taxon Node" Dialog{r}](./media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image7-16334485113351.png){width="50%"}
+
 The taxon node edit dialog can be opened from the *Taxonomic Navigator* via the context menu *Open in \...-\>Taxon node dialogue*
 
- ![](./media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image7-16334485113351.png){width="67%"}
+
 
 The *Placement status* allows to mark a taxon in the classification as excluded, unplaced or doubtful and a reason for that classification may be stated in the *Status notes*. Excluded taxon nodes will remain in the hierarchy; excluded taxon nodes are displayed with a leading 'ø' character, unplaced with two interrogation marks '??' and doubtful with a single one '?'. Excluded taxon nodes are shifted to the end of the classification.
 Please note that the definition of these categories is currently being discussed. At present, pseudotaxon-nodes are inserted to categorise such taxa and names that are not considered to belong to the core taxonomic backbone.
@@ -156,15 +165,19 @@ Each individual synonym entry starts with a symbol indicating its nature:
 -   A homotypic synonym of the taxon name is indicated by an identity sign on a blue circle -- dark blue if the respective name is the basionym or replaced synonym in the homotypic group of the taxon.
 -   Heterotypic synonyms are indicated by dark or light green circles with an equal sign -- their homotypic synonyms are again carrying an identity sign.
 -   Invalid names or designations start with an en-dash in a green circle.
--   Misapplied names start with MA in a purple circle![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/synonym-list.png) 
+-   Misapplied names start with MA in a purple circle
+    
+    ![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/synonym-list.png) 
+    
 The context menu of a synonym offers a number of options:
+
 -   *New* adds a new synonym line and lets you identify its type
 -   *Open in* offers the possibility to edit the name in the *Bulk editor* (see below) or open the *Referencing Objects View* (a subwindow opening below the *Details View* showing all relationships of the synonym).
 -   *Change to* offers the possibility to change the type of the synonym.
 
 ### Misapplied names
 
-A misapplied name entry in the synonym list is a concept relation to a taxon concept in a defined publication (the "sensu" reference) ![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image14.png){width="2.4788571741032372in" height="0.5207677165354331in"} that was designated by a non-applicable name in that publication. For a misapplied name, a Misapplication reference can be entered, this is the reference that establishes the misapplication and the assignation to the taxon's synonym list.
+![{r0cm}](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image14.png){width="2.4788571741032372in" height="0.5207677165354331in"} A misapplied name entry in the synonym list is a concept relation to a taxon concept in a defined publication (the "sensu" reference) that was designated by a non-applicable name in that publication. For a misapplied name, a Misapplication reference can be entered, this is the reference that establishes the misapplication and the assignation to the taxon's synonym list.
 
 ### The *Details View* for scientific names
 
@@ -177,9 +190,10 @@ The *Details View* can be configured with various options, mainly to simplify it
 The further sections all refer to the name.
 
 1. The *Name* itself (with its components according to rank -- in this case a species), its standardised authorship and the possibility to mark it as a hybrid.
-1.  The standardised *Nomenclatural source*, with the *Reference* title that is maintained in a catalogue in atomised form and can be selected here, with the exact location in the publication (page number etc.) given in the *Detail* field; there is the possibility to specify an *Original Spelling* of the name in that publication, and one or more links to a website where an image of the reference of the nomenclatural *Protologue/Original Publication* can be consulted (e.g. in BHL) can be given.                                                                                                                                                                                              
-1.  The possibility to declare a *Nomenclatural status* for the name (e.g. "nom. inval.", "nom. cons.") with some details (see below),                                                                                                                    
-1.  Specification of the *Type Information* of the name (see below), and                                                                                                                                                                                                                                        
+1.  The standardised *Nomenclatural source*, with the *Reference* title that is maintained in a catalogue in atomised form and can be selected here, with the exact location in the publication (page number etc.) given in the *Detail* field; there is the possibility to specify an *Original Spelling* of the name in that publication, and one or more links to a website where an image of the reference of the nomenclatural *Protologue/Original Publication* can be consulted (e.g. in BHL) can be given. 
+
+1.  The possibility to declare a *Nomenclatural status* for the name (e.g. "nom. inval.", "nom. cons.") with some details (see below),
+1.  Specification of the *Type Information* of the name (see below), and 
 1.  Specification of *Name Relationships* (e.g. "is later homonym of", "is replaced synonym for") 
 
 Please refer to part 3 of the manual for an explanation of the elements and symbols used in the interface. Most importantly, remember that the *Details View* also lets you access the catalogues, i.e. lists of data items that may be used in more than one place (e.g. authors). Catalogues are accessed by the following buttons:
@@ -208,7 +222,7 @@ The ***Appended phrase*** in the *Name* section should be used with even more ca
 
 ### *Details View: Nomenclatural Source*
 
-![](./media/image19.png){width="5.767716535433071in" height="2.177165354330709in"}The *Nomenclatural Source* is the citation of the original publication of the nomenclatural act that led to the establishment of the name or designation.
+![{r0cm}](./media/image19.png){width="10cm"}The *Nomenclatural Source* is the citation of the original publication of the nomenclatural act that led to the establishment of the name or designation.
 
 Note that the authors of the taxon are not connected to the authors of the publication.
 
@@ -226,13 +240,19 @@ These refer to the name as well, so this does not include synonym relationships 
 
 Type information should always be entered for the base name of a homotypic group only, i.e. for the basionym or replaced synonym.
 
-![](./media/image20.png){width="3.5826771653543306in" height="0.5196850393700787in"}The nomenclatural type of a name of species-rank and below is a specimen, for higher ranks it's a name. Accordingly, the data entry forms for types differ, you either select specimens or a name. In addition, there is the possibility to create a textual record, for example a copy of the text given in the original description. This is the reason why there are 2 data-entry "buttons" to the right of the Type Information section -- the larger + leads to a form for specimen/name selection, the smaller +' to a free text form.
+![{r0cm}](./media/image20.png){width="3.5826771653543306in" height="0.5196850393700787in"}The nomenclatural type of a name of species-rank and below is a specimen, for higher ranks it's a name. Accordingly, the data entry forms for types differ, you either select specimens or a name. In addition, there is the possibility to create a textual record, for example a copy of the text given in the original description. This is the reason why there are 2 data-entry "buttons" to the right of the Type Information section -- the larger + leads to a form for specimen/name selection, the smaller +' to a free text form.
 
-![](./media/image21.png){width="5.070833333333334in" height="1.8104166666666666in"}You can enter any text into the free text form, including longer statements about the search for a type etc. As usual, you can enter several such statements and individually ascribe them to a source reference:
+![{r0cm}](./media/image21.png){width="5.070833333333334in" height="1.8104166666666666in"}
 
-![](./media/image22.png){width="5.195138888888889in" height="2.2868055555555555in"}The form for selecting the type of a supraspecific name (e.g. a genus) lets you select a name from the names already entered into the database or, if necessary, add a new name. Note that in the case of a regional treatment, e.g. a Flora, this name may not occur in the taxonomic Classification, since the type species may not be present in the flora. This is one of the reasons for some names to exist only as names in the database.
+You can enter any text into the free text form, including longer statements about the search for a type etc. As usual, you can enter several such statements and individually ascribe them to a source reference:
 
-![](./media/image23.png){width="5.15748031496063in" height="2.248031496062992in"} The form for species and below is similar, only that you select a specimen, and, in case the type category ("*Designation status*") is lectotype or neotype, a designation reference may be given in addition to the source of the information.
+![{](./media/image22.png){width="5.195138888888889in" height="2.2868055555555555in"}
+
+The form for selecting the type of a supraspecific name (e.g. a genus) lets you select a name from the names already entered into the database or, if necessary, add a new name. Note that in the case of a regional treatment, e.g. a Flora, this name may not occur in the taxonomic Classification, since the type species may not be present in the flora. This is one of the reasons for some names to exist only as names in the database.
+
+![](./media/image23.png){width="5.15748031496063in" height="2.248031496062992in"}
+
+The form for species and below is similar, only that you select a specimen, and, in case the type category ("*Designation status*") is lectotype or neotype, a designation reference may be given in addition to the source of the information.
 
 ### Linking the *Taxon Editor* back to the *Taxon Navigator*
 
