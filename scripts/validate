@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 FILE_NAME=$1
 
