@@ -2,8 +2,15 @@
 
 FILE_NAME=$1
 
-pandoc $FILE_NAME.md -f markdown+auto_identifiers+ascii_identifiers --pdf-engine=xelatex -V geometry:a4paper -V geometry:margin=2cm \
-     --toc --number-sections \
-     --template=../templates/eisvogel-2.0.0/eisvogel.latex \
-     -V date:$(date -I) \
-     -o $FILE_NAME.pdf
+
+echo "making $FILE_NAME ..."
+
+FILTERS_FOLDER=../pandoc-filters
+
+pandoc $FILE_NAME.md -f markdown+auto_identifiers+ascii_identifiers --pdf-engine=xelatex \
+    --filter $FILTERS_FOLDER/pandoc-wrapfig-master/pandoc-wrapfig.py\
+    -V geometry:a4paper -V geometry:margin=2cm \
+    --toc --number-sections \
+    --template=../templates/eisvogel-2.0.0/eisvogel.latex \
+    -V date:$(date -I) \
+    -o $FILE_NAME.pdf

@@ -4,8 +4,5 @@ export SCRIPTS=../scripts
 
 FILE_NAME='Manual-EDIT-Platform-DataPortal'
 
-echo "validating ..."
 $SCRIPTS/validate $FILE_NAME
-
-echo "making pdf ..."
 $SCRIPTS/make-pdf $FILE_NAME

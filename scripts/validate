@@ -2,4 +2,7 @@
 
 FILE_NAME=$1
 
+
+echo "validating $FILE_NAME ..."
+
 python $SCRIPTS/validate-latex-xrefs.py $($SCRIPTS/make-latex $FILE_NAME)
