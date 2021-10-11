@@ -81,6 +81,9 @@ z.B: [[http://portal.cybertaxonomy.org/salvador/node/3/edit#edit-actions]](http:
 
 ![](./media/image2.png){width="6.633333333333334in" height="1.68125in"}
 
+
+## Appearance
+
 ### Including a banner
 
 den Banner kann man hier [[http://portal.cybertaxonomy.org/salvador/admin/appearance/settings/zen_dataportal#edit-zen-dataportal-banner]](http://portal.cybertaxonomy.org/salvador/admin/appearance/settings/zen_dataportal#edit-zen-dataportal-banner) hochladen. Banner und das EDIT-Logo sind zwei getrennte Bilder und können unabhängig von einander konfiguriert werden. \[Image size mit Logo: 852x93 pixel\]
@@ -104,7 +107,26 @@ Und den Font des Texts? Das geht bisher nur über die \"User defined styles\" au
 
 ### Menus
 
-secondary menu:
+Here we are covering only some selected tasks which will suite for many common needs. For a full and elaborated description on the menu system please refert to [](https://www.drupal.org/docs/7/working-with-menus/)
+
+## Adding a link to the main menu
+
+You can add link directly into the Menu (see below: "Menus > Main menu > Add Link") or open the menu link list (see below: "Menus > Main menu" and click the button.
+
+![Accessing the main menu](./media/menu-main-add-link.png)
+
+The menu item editor form will show up:
+
+![Menu item editor](./media/new-menu-item.png){width=15cm}
+
+1. In the Menu link title field, enter the title as it will be displayed in the menu.
+1. In the Path field, enter a path for the link. This can be an internal Drupal path such as node/add (see "Before you begin" above) or an external URL such as http://example.com. Enter <front> to link to the front page. This can also be a URL Alias that has been defined for a page (see [](#assigning-an-url-alias))
+1. In the Description field, enter the text that will be displayed when a user hovers over the link.
+1. In the **Parent link** list, select the parent of the link. Usually you will choose `<Main Menu>` here to place the item in the menu below the site header. The  **Weight** list allows to position the iterm in the menu. Links with the "lightest" weight will display higher, or more left hand in a menu. Links with the same weight will display in alphabetical  order.
+
+Click **Save**.
+
+### Adding secondary menus
 
 1. Hier [[http://portal.cybertaxonomy.org/salvador/admin/structure/menu]](http://portal.cybertaxonomy.org/salvador/admin/structure/menu) Add menu
 2. Ein Menu ist immer als Block verfügbar und kann als solcher beliebig auf im Layout plaziert werden. Für die Alphabetleiste und Untertitelstruktur eignet sich entweder der Content- oder Highlight-Bereich .
@@ -136,7 +158,7 @@ The example uses the URL Alias "listado" for the data portal home page to be set
 
 ![](./media/image7.png){width="6.51875in" height="0.37569444444444444in"}
 
-Außer, der Block ist ein Menü-Block! Dieser verschwindet in dem man das Menü löscht:\
+Außer, der Block i, select the relative  weight of the linkst ein Menü-Block! Dieser verschwindet in dem man das Menü löscht:\
 [[http://test.e-taxonomy.eu/dataportal/preview/test1/admin/structure/menu/manage/menu-caryophyllales-2015/edit]](http://test.e-taxonomy.eu/dataportal/preview/test1/admin/structure/menu/manage/menu-caryophyllales-2015/edit)
 
 ### I want to get rid of the  login box 
@@ -150,11 +172,7 @@ The login block can be removed here: https://caryophyllales.org/admin/structure/
 
 leere Bibliographien sollten natürlich ausgeblendet werden. Ich habe dafür gleich mal ein Ticke angelegt.
 
- 
-
 Bei dieser Gelegenheit schicke ich dir gleich die Information zum Einschalten des Bibliographie Blocks:
-
- 
 
 1. go to: [[http://caryophyllales.org/nepenthaceae/admin/config/cdm_dataportal/settings/layout]](http://caryophyllales.org/nepenthaceae/admin/config/cdm_dataportal/settings/layout)
 2. Check the option: **Original Source in bibliography**
@@ -186,7 +204,6 @@ For a normal user, make sure that under *Roles* only the (default) option *authe
 
 Finally, click *Create new account.*
 
-
 ### Drupal Menu in Portal
 
 Wenn ein User keine Admin Rechte hat, dann erscheinen auch die Tabs (Edit etc.) und das Drupal Menü nicht?
@@ -202,12 +219,9 @@ siehe:
 
 und die Setting in der Rubrik \"**Node**\":
 
-
 ### Wie richte ich einen read-only User ein?
 
-
 Über Drupal Menü: People -\> Add User einen neuen User anlegen und ihm die nur die Rolle \'authenticated user\' geben, das ist auch der Standart.
-
 
 ![](./media/image12.png){width="1.4638888888888888in" height="1.1340277777777779in"}
 
@@ -371,7 +385,7 @@ The external links can be configured at "admin/config/cdm_dataportal/ext_links"
 
 The order of the link entries can be adjusted by dragging them into a different position;
 
-![](media/Manual-EDIT-Platform-DataPortal/external-links-reordering.png)
+![](./media/external-links-reordering.png)
 
 ## Maps
 
