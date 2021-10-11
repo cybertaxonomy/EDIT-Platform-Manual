@@ -37,7 +37,8 @@ https://opensource.com/article/18/9/pandoc-research-paper
 
 see /usr/share/doc/pandoc/README.Debian
 
-    apt-get install pandoc pandoc-citeproc texlive-latex-extra texlive-xetex texlive-fonts-extra texlive-lang-arabic
+    apt-get install pandoc pandoc-citeproc 
+    apt-get install texlive-latex-extra texlive-xetex texlive-fonts-extra texlive-lang-arabic
 
 ### export as pdf
 

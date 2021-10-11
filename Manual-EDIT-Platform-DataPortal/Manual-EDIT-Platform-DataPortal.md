@@ -105,11 +105,11 @@ den Banner kann man hier [[http://portal.cybertaxonomy.org/salvador/admin/appear
 
 Und den Font des Texts? Das geht bisher nur über die \"User defined styles\" auf der \"[[CDM DataPortal base theme\"]](http://test.e-taxonomy.eu/dataportal/preview/test1/admin/appearance/settings/zen_dataportal) Seite:
 
-### Menus
+## Menus
 
 Here we are covering only some selected tasks which will suite for many common needs. For a full and elaborated description on the menu system please refert to [](https://www.drupal.org/docs/7/working-with-menus/)
 
-## Adding a link to the main menu
+### Adding a link to the main menu
 
 You can add link directly into the Menu (see below: "Menus > Main menu > Add Link") or open the menu link list (see below: "Menus > Main menu" and click the button.
 
