@@ -68,6 +68,14 @@ TODO
 
 ### For pandoc markdown
 
+* Atom
+    * install: https://flight-manual.atom.io/getting-started/sections/installing-atom/#platform-windows
+    * plugins:
+        * https://atom.io/packages/document-outline
+        * https://flight-manual.atom.io/using-atom/sections/github-package/
+        * https://atom.io/packages/pandoc   
+    * guides:
+        * https://www.portent.com/blog/content/atom-markdown.htm
 * https://www.typora.io/ - excellent with few limitations 
     * ToDo Tets
         * image adding 
@@ -82,6 +90,15 @@ TODO
 
 * !!! **use proper presets* !!! --> ask Andreas
 * **DO NOT USE** the zoom image function as this will transform  markdown images `![]()` to html images `<img ...>` which will not work in our setup.
+
+### git 
+
+**!!!!!**
+
+~~~
+ git config --global pull.rebase true
+~~~
+
 
 ### simple git ui for windows?
 

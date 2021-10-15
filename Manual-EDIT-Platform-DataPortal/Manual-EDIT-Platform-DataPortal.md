@@ -21,7 +21,7 @@ header-includes:
 - |
     \usepackage[export]{adjustbox}
     \let\includegraphicsbak\includegraphics
-    \renewcommand*{\includegraphics}[2][]{\includegraphicsbak[frame,#1]{#2}} 
+    \renewcommand*{\includegraphics}[2][]{\includegraphicsbak[frame,#1]{#2}}
 ...
 
 
@@ -51,11 +51,23 @@ If you don't find a Login on the home page, use use \[siteURL\]/user/login to en
 
 ## Managing pages
 
+### Setting the homepage for the Data Portal
+
+Open the  "*Configuration > System > Site information*" via the admin menu which sits at the top of the Data Portal pages when you are logged in.
+
+![](./media/admin-menu.png)
+
+Find the "*Default front page*" field in "*Site information*"" settings page:
+
+!["*Default front page*" field set to URL alias `home`](./media/siteinformation-frontpage.png)
+
+Enter the [URL alias](#assigning_an_url_alias_to_a_page) or the node/{node_id} path of the page.
+
 ### Creating a new page
 
 Create a new "basic page" via the admin menu:
 
-![](media/adminmenu-create-basic-page.png)
+![](./media/adminmenu-create-basic-page.png)
 
 A new page opens showing the editor for editing the title and content of the new page
 
@@ -73,14 +85,20 @@ Usually the WYSIWYG editor sould be activated for your data portal installation.
 
 ![](media/wysiwyg-add-link-2.png)
 
-### Assigning an URL-alias
+### Assigning an URL alias to a page
 
-...  grundsätzlich einen **URL Alias angeben**. Dieser ist dann ein Alias für node/{node_id} in der URL. Das optimiert die Site nicht nur für Suchmaschinen:
+It is highly recommended to always define an **URL alias** for every page. Aliases replace the technical page identifier `node/{node_id}` that is otherwise used in the page URL. This optimizes the site for search engines and makes it more user friendly. The the "Credits" page you may want to use the URL alias `credits`
 
-z.B: [[http://portal.cybertaxonomy.org/salvador/node/3/edit#edit-actions]](http://portal.cybertaxonomy.org/salvador/node/3/edit#edit-actions)
+The corresponding form is found in the lower part of the page editors. While being on the page to be edited, click the "*Edit*" tab and scroll down:
 
-![](./media/image2.png){width="6.633333333333334in" height="1.68125in"}
 
+![The URL path settings in the page editor](./media/image2.png){width="6.633333333333334in" height="1.68125in"}
+
+(Example link: [http://portal.cybertaxonomy.org/salvador/node/3/edit#edit-actions](http://portal.cybertaxonomy.org/salvador/node/3/edit#edit-actions))
+
+**HINT**: You can use the slash character to create hierarchical `/` URL aliases, like for example `glossary/area-terms`
+
+URL aliases can be used to [create links to pages](#creating_links) and for [menu items](#adding_a_link_to_the_main_menu)
 
 ## Appearance
 
@@ -88,7 +106,7 @@ z.B: [[http://portal.cybertaxonomy.org/salvador/node/3/edit#edit-actions]](http:
 
 den Banner kann man hier [[http://portal.cybertaxonomy.org/salvador/admin/appearance/settings/zen_dataportal#edit-zen-dataportal-banner]](http://portal.cybertaxonomy.org/salvador/admin/appearance/settings/zen_dataportal#edit-zen-dataportal-banner) hochladen. Banner und das EDIT-Logo sind zwei getrennte Bilder und können unabhängig von einander konfiguriert werden. \[Image size mit Logo: 852x93 pixel\]
 
-#### Banner ersetzen:
+#### Banner image
 
 ![](./media/image3.png){width="3.359722222222222in" height="0.8402777777777778in"}
 
@@ -107,7 +125,7 @@ Und den Font des Texts? Das geht bisher nur über die \"User defined styles\" au
 
 ## Menus
 
-Here we are covering only some selected tasks which will suite for many common needs. For a full and elaborated description on the menu system please refert to [](https://www.drupal.org/docs/7/working-with-menus/)
+Here we are covering only some selected tasks which will suite for many common needs. For a full and elaborated description on the menu system please refer to [](https://www.drupal.org/docs/7/working-with-menus/)
 
 ### Adding a link to the main menu
 
@@ -120,7 +138,7 @@ The menu item editor form will show up:
 ![Menu item editor](./media/new-menu-item.png){width=15cm}
 
 1. In the Menu link title field, enter the title as it will be displayed in the menu.
-1. In the Path field, enter a path for the link. This can be an internal Drupal path such as node/add (see "Before you begin" above) or an external URL such as http://example.com. Enter <front> to link to the front page. This can also be a URL Alias that has been defined for a page (see [](#assigning-an-url-alias))
+1. In the Path field, enter a path for the link. This can be an internal Drupal path such as node/add (see "Before you begin" above) or an external URL such as http://example.com. Enter `<front>` to link to the front page. This can also be a URL Alias that has been [defined for a page](#assigning_an_url_alias_to_a_page).
 1. In the Description field, enter the text that will be displayed when a user hovers over the link.
 1. In the **Parent link** list, select the parent of the link. Usually you will choose `<Main Menu>` here to place the item in the menu below the site header. The  **Weight** list allows to position the iterm in the menu. Links with the "lightest" weight will display higher, or more left hand in a menu. Links with the same weight will display in alphabetical  order.
 
@@ -134,19 +152,6 @@ Click **Save**.
 
 bibliography/a, bibliography/b, bibliography/c, \... und background/chapter1, background/chapter2 uns so weiter. In der Block Konfiguration kannst du dann die Anzeige auf Seiten einschränken die dem Pattern bibliography/\* und background/\* entsprechen
 
-### Setting the homepage for the Data Portal
-
-Das ist der Eintrag \'Default front page\' : [[http://portal.cybertaxonomy.org/salvador/admin/config/system/site-information#edit-site-frontpage]](http://portal.cybertaxonomy.org/salvador/admin/config/system/site-information#edit-site-frontpage)
-
-Dort trägst du den Alias oder node/{node_id} der gewünschten Seite ein.
-
-Configure the Classification-Block so that the Data Portal (Search, Taxon tree, etc.) is shown only on the respective pages. Access the configuration with the following path (replace "salvador" with your portal path).
-
-[[http://portal.cybertaxonomy.org/salvador/admin/structure/block/manage/cdm_taxontree/cdm_tree/configur#edit-actions]](http://portal.cybertaxonomy.org/salvador/admin/structure/block/manage/cdm_taxontree/cdm_tree/configur#edit-actions)
-
-The example uses the URL Alias "listado" for the data portal home page to be set.
-
-![](./media/image6.png){width="5.868055555555555in" height="3.0479166666666666in"}
 
 ## Drupal Blocks
 
@@ -161,12 +166,22 @@ The example uses the URL Alias "listado" for the data portal home page to be set
 Außer, der Block i, select the relative  weight of the linkst ein Menü-Block! Dieser verschwindet in dem man das Menü löscht:\
 [[http://test.e-taxonomy.eu/dataportal/preview/test1/admin/structure/menu/manage/menu-caryophyllales-2015/edit]](http://test.e-taxonomy.eu/dataportal/preview/test1/admin/structure/menu/manage/menu-caryophyllales-2015/edit)
 
-### I want to get rid of the  login box 
+### I want to get rid of the  login box
 
 You can also hide the login box completely, instead you could add a menu item "admin" or even omit it. In the latter case a login would then only be possible for "insiders" via URL, e.g.: https://caryophyllales.org/user or https://caryophyllales.org/caryophyllales_spp/user.
 The login block can be removed here: https://caryophyllales.org/admin/structure/block
 
 ![](./media/hide-login-block.png)
+
+### Show a block only on selected packages
+
+Blocks can be configured to show up on specific pages or to be hidden there.
+
+Therfore you can configure the search, classification or any other block to shown up only on the respective pages (or ot be hidden there). Access the configuration via the admin menu "*Strcucture > Blocks*". The list of blocks will be shown, click on the "*Congure*" link to access the block editor and scroll down to the "*Pages*" form.  
+
+(Example link: [http://portal.cybertaxonomy.org/salvador/admin/structure/block/manage/cdm_taxontree/cdm_tree/configur#edit-actions](http://portal.cybertaxonomy.org/salvador/admin/structure/block/manage/cdm_taxontree/cdm_tree/configur#edit-actions))
+
+![](./media/image6.png){width="5.868055555555555in" height="3.0479166666666666in"}
 
 ## Bibliographic information
 
@@ -176,7 +191,7 @@ Bei dieser Gelegenheit schicke ich dir gleich die Information zum Einschalten de
 
 1. go to: [[http://caryophyllales.org/nepenthaceae/admin/config/cdm_dataportal/settings/layout]](http://caryophyllales.org/nepenthaceae/admin/config/cdm_dataportal/settings/layout)
 2. Check the option: **Original Source in bibliography**
-  
+
    ![](./media/image8.png){width="5.15625in" height="2.03125in"}
 3. Whether the Original Source reference of a Feature Block is actually put into the bibliography also depends on the settings in the \"Taxon profile feature block settings\" ([[http://caryophyllales.org/nepenthaceae/admin/config/cdm_dataportal/settings/layout/taxon]](http://caryophyllales.org/nepenthaceae/admin/config/cdm_dataportal/settings/layout/taxon))
 
@@ -184,7 +199,7 @@ For more information please refer to the description on the settings \"Sources a
 
 ## Images
 
-### Wie lösche ich denn hochgeladene Images wieder vom Server? 
+### Wie lösche ich denn hochgeladene Images wieder vom Server?
 
 In deiner User-Seite gibt es ein Tab \"Filebrowser\":
 
@@ -248,7 +263,7 @@ Alternatively, to completely eliminate the TOC:
 
 ~~~css
 #synonymy h2 {
-    display:none; 
+    display:none;
 }
 #page-toc {
     display:none;
@@ -271,7 +286,7 @@ Die entsprechenden Einstellungen sind hier zu finden:
 
 Synonymy hat einen Wert der größer dem des General Tabs ist. Damit die Synonymie vor General angezeigt wird muss der Wert kleiner sein. Bei den Nepenthes ist dies korrekt eingestellt.
 
-## Features (blocks of "factual data" content in the General Tab) 
+## Features (blocks of "factual data" content in the General Tab)
 
 ### Defining an independent feature tree for the Portal
 
@@ -300,8 +315,8 @@ This can be configured via the theme settings in the css. Under the following UR
 In this case, the statement is the following:
 
 ~~~css
-#block-cdm-dataportal-feature-common-name .language-label{\
-display:none;\
+#block-cdm-dataportal-feature-common-name .language-label{
+  display:none;
 }
 ~~~
 
@@ -429,7 +444,7 @@ Die Caption des Bildes ist immer der Title wie er als Media.title eingegebene is
 
 Das ist kein Problem , sofern der \"Default image viewer\" und nicht der \"FSI Viewer\" verwendet wird. Das ist im übrigen auch die Voraussetzung dafür, dass alles anderen Features, die wir hier besprochen haben funktionieren.
 
-#### Wie schalte ich die „Media Representations" ab? 
+#### Wie schalte ich die „Media Representations" ab?
 
 Dafür gibt es noch keinen Knopf, aber man kann diesen Teil per css ausblenden:
 
