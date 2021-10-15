@@ -138,9 +138,9 @@ The menu item editor form will show up:
 ![Menu item editor](./media/new-menu-item.png){width=15cm}
 
 1. In the Menu link title field, enter the title as it will be displayed in the menu.
-1. In the Path field, enter a path for the link. This can be an internal Drupal path such as node/add (see "Before you begin" above) or an external URL such as http://example.com. Enter `<front>` to link to the front page. This can also be a URL Alias that has been [defined for a page](#assigning_an_url_alias_to_a_page).
+1. In the Path field, enter a path for the link. This can be an internal Drupal path such as `node/add` or an external URL such as http://example.com. Enter `<front>` to link to the front page. This can also be a URL alias that has been [defined for a page](#assigning_an_url_alias_to_a_page).
 1. In the Description field, enter the text that will be displayed when a user hovers over the link.
-1. In the **Parent link** list, select the parent of the link. Usually you will choose `<Main Menu>` here to place the item in the menu below the site header. The  **Weight** list allows to position the iterm in the menu. Links with the "lightest" weight will display higher, or more left hand in a menu. Links with the same weight will display in alphabetical  order.
+1. In the **Parent link** list, select the parent of the link. Usually you will choose `<Main Menu>` here to place the item in the menu below the site header. The  **Weight** list allows to position the item in the menu. Links with the "lightest" weight will display higher, or more left hand in a menu. Links with the same weight will display in alphabetical  order.
 
 Click **Save**.
 
