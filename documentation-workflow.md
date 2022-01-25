@@ -42,7 +42,6 @@ see /usr/share/doc/pandoc/README.Debian
 
 ### export as pdf
 
-
      pandoc Manual-EDIT-Platform-04-Working-with-the-TaxEditor.md -f markdown --pdf-engine=xelatex  -V 'mainfont:Arial Unicode MS' -V geometry:a4paper  -V geometry:margin=2cm \
      --toc  --number-sections \
      --titlepage=true --titlepage-color=FFFFFF --titlepage-background=../layout/Title-A4.png\
@@ -62,7 +61,8 @@ TODO
 * cross-references
     * https://github.com/lierdakil/pandoc-crossref
     * https://opensource.com/article/18/9/pandoc-research-paper
-
+* better handling of images at page breaks
+    
 
 ## Markdown WYSIWYG TaxEditor
 
