@@ -2,7 +2,7 @@
 
 ## Authors guide
 
-see [](AUTHORING.md)
+see [AUTHORING.md](AUTHORING.md)
 
 ## Manuals on the EDIT Platform for Cybertaxonomy
 
