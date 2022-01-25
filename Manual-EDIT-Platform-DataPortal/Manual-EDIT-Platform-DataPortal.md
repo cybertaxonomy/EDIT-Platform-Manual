@@ -110,7 +110,7 @@ den Banner kann man hier [[http://portal.cybertaxonomy.org/salvador/admin/appear
 
 ![](./media/image3.png){width="3.359722222222222in" height="0.8402777777777778in"}
 
-![](./media/image4.png){width="4.827083333333333in" height="3.6798611111111112in"}
+![](./media/image4.png){width="12.3cm"}
 
 #### Logo abschalten:
 
