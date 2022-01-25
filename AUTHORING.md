@@ -74,9 +74,12 @@ The actual content is preceded by a document header (blue rectangle). In this he
 
 ##### Images
 
+Images for a specific manual like `Manual-EDIT-Platform-04-Working-with-the-TaxEditor` need to be stored in the according `./media/`-sub-folder and are references in the markdown by the relative file path: `![](./media/my-image.png){width="10cm"}`. Therefor it is im portant to configure Typora so that it always uses this relative path (see above). 
+The `width` property in curly brackets can be used to scale the image to a fixed with (e.g.: `{width="10cm"}`) or relative to the page width (`{width="33%"}`).
+
 **IMPORTANT**
 
-* **DO NOT USE** the zoom image function as this will transform  markdown images `![]()` to html images `<img ...>` which will not work in our setup.
+* **YOU NEVER MUST USE** the **zoom image** function as this will transform  markdown images `![]()` to html images `<img ...>` which will not work in our setup.
 
 ### GitHub Desktop 
 
