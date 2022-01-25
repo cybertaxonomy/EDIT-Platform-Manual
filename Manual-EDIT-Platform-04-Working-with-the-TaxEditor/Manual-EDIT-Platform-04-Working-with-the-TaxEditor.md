@@ -64,7 +64,7 @@ The **syn.-sec. reference** indicates the reference that assigned the synonym to
 
 The *Taxon Navigator* displays the classifications and, within those, a hierarchical tree of the contained taxon nodes, i.e. taxa. It won't display synonyms or other non-accepted names. In its default position, the *Taxon Navigator* Window is the leftmost subwindow ("view") in the TaxEditor interface. If you don't find it, remember that you can call up windows using the Menu: *Window --\> Show view --\> Taxon Navigator*.
 
-![](./media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image3.png){width="10cm"}
+![](./media/image3.png){width="10cm"}
 
 You can change the order to alphabetical order of names in the Menu under *Window --\> Local Preferences -\> UI -\> Taxon Navigator*. Please note that you have to close and open the Navigator window for the changes to take effect.
 
@@ -89,7 +89,7 @@ The context menu provides an overview of the operations that can be carried out 
 -   *Export* allows you to export data and write them to a file in various formats.
 -   *Delete* will remove the taxon node and -- if not used elsewhere -- the taxon and the name, in case you choose the respective options.
 -   *Copy* creates a copy of the taxon node so that it can be pasted to another classification for example.
--   *Edit subtree* offers several options in a sub-menu ![{r}](./media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image6.png)
+-   *Edit subtree* offers several options in a sub-menu ![{r}](./media/image6.png)
     -   *Set publish flag for subtree* allows you to set or unset the flag that determines if the affected names appear in output (e.g. on the portal). It affects all child taxa of the selected taxon and you can configure if synonyms are included.
     -   *Set secundum for subtree* allows to change the sec.-reference for the selected taxon and all its child taxa. You can configure is syn.-sec. references are to be affected, too.
     -   *Aggregate distributions* invokes an algorithm the calculates a distribution record for the selected taxon from its child taxa.
@@ -100,10 +100,9 @@ Secundum reference, publish flag, and taxonomic status flags can also be edited 
 
 ### The Taxon node edit dialogue in the *Taxon Navigator*
 
-![The "Edit Taxon Node" Dialog{r}](./media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image7-16334485113351.png){width="50%"}
+![The "Edit Taxon Node" Dialog{r}](./media/image7.png){width="50%"}
 
 The taxon node edit dialog can be opened from the *Taxonomic Navigator* via the context menu *Open in \...-\>Taxon node dialogue*
-
 
 
 The *Placement status* allows to mark a taxon in the classification as excluded, unplaced or doubtful and a reason for that classification may be stated in the *Status notes*. Excluded taxon nodes will remain in the hierarchy; excluded taxon nodes are displayed with a leading 'ø' character, unplaced with two interrogation marks '??' and doubtful with a single one '?'. Excluded taxon nodes are shifted to the end of the classification.
@@ -130,7 +129,7 @@ Synonym to accepted: Use the context menu of the synonym in the *Taxon Editor.*
 
 With the *Search* Function in the toolbar area of the TaxEditor you can search for scientific and common names in the database. Simply type a name into the textbox to the right of the save button and type \<enter\> or click on *Search.*
 
-![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image8.png){width="4.53125in" height="2.165277777777778in"}
+![](./media/image8.png){width="4.53125in" height="2.165277777777778in"}
 
 The drop-down menu to the right can be used to restrict the search to certain categories of names, e.g. common names or types of scientific names (correct names of taxa, synonyms, names that have not been included in the classification, unpublished names). It also offers the choice of including the authors of scientific names. You can use the asterisk \* as a wildcard, so, for example, the entry "\* Mill." will return all names that have Miller as the last author (if the *With authors* option is tagged).
 
@@ -166,9 +165,10 @@ Each individual synonym entry starts with a symbol indicating its nature:
 -   Heterotypic synonyms are indicated by dark or light green circles with an equal sign -- their homotypic synonyms are again carrying an identity sign.
 -   Invalid names or designations start with an en-dash in a green circle.
 -   Misapplied names start with MA in a purple circle
+  
+    ![](./media/synonym-list.png) 
     
-    ![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/synonym-list.png) 
-    
+
 The context menu of a synonym offers a number of options:
 
 -   *New* adds a new synonym line and lets you identify its type
@@ -177,7 +177,7 @@ The context menu of a synonym offers a number of options:
 
 ### Misapplied names
 
-![{r0cm}](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image14.png){width="2.4788571741032372in" height="0.5207677165354331in"} A misapplied name entry in the synonym list is a concept relation to a taxon concept in a defined publication (the "sensu" reference) that was designated by a non-applicable name in that publication. For a misapplied name, a Misapplication reference can be entered, this is the reference that establishes the misapplication and the assignation to the taxon's synonym list.
+![{r0cm}](./media/image14.png){width="2.4788571741032372in" height="0.5207677165354331in"} A misapplied name entry in the synonym list is a concept relation to a taxon concept in a defined publication (the "sensu" reference) that was designated by a non-applicable name in that publication. For a misapplied name, a Misapplication reference can be entered, this is the reference that establishes the misapplication and the assignation to the taxon's synonym list.
 
 ### The *Details View* for scientific names
 
@@ -200,11 +200,11 @@ Please refer to part 3 of the manual for an explanation of the elements and symb
 
 
 
-![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image16.png){width="1.051388888888889in" height="0.6743055555555556in"}The *Browse existing* (folder) button opens a search interface for existing data items in a catalogue.
+![](./media/image16.png){width="1.051388888888889in" height="0.6743055555555556in"}The *Browse existing* (folder) button opens a search interface for existing data items in a catalogue.
 
-![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image17.png){width="1.0118055555555556in" height="0.75625in"}The *Edit* button directly opens the entry and lets you change it**. Use it with caution:** with full rights **the changes here** **will change all occurrences** of the entry in the database!
+![](./media/image17.png){width="1.0118055555555556in" height="0.75625in"}The *Edit* button directly opens the entry and lets you change it**. Use it with caution:** with full rights **the changes here** **will change all occurrences** of the entry in the database!
 
-![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image18.png){width="1.0625in" height="0.71875in"}The *Remove* (garbage bin) button will remove the selected item from this record -- it will not delete it from the database.
+![](./media/image18.png){width="1.0625in" height="0.71875in"}The *Remove* (garbage bin) button will remove the selected item from this record -- it will not delete it from the database.
 
 Some of the fields in the *Details View* need further consideration:
 
@@ -299,7 +299,7 @@ Set *Supports Text Data* (this will provide the functionality introduced as unst
 
 Don't forget to save!![](./media/image29.png){width="0.2701388888888889in" height="0.28055555555555556in"}
 
-As an example for quantitative Data add a new feature "Leaf Length", select *Supports Quantitative Data*, and then you can add the recommended measurement unit and statistical measures.![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image30.png){width="2.623611111111111in" height="2.454861111111111in"}
+As an example for quantitative Data add a new feature "Leaf Length", select *Supports Quantitative Data*, and then you can add the recommended measurement unit and statistical measures.![](./media/image30.png){width="2.623611111111111in" height="2.454861111111111in"}
 
 Don't forget to save!![](./media/image29.png){width="0.2701388888888889in" height="0.28055555555555556in"}
 
@@ -356,17 +356,17 @@ You can activate the Checklist Editor under *Window-\> Local Preferences -\> UI 
 
 Now you can access the Checklist Editor with a right-click on any taxon name with generic rank or higher in the *Taxon Navigator* and selecting *Open in Checklist Editor* (here at the example of the genus Buxus from the Flora de la República de Cuba)*.*
 
-![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image33.png){width="6.830555555555556in" height="3.7125in"}
+![](./media/image33.png){width="6.830555555555556in" height="3.7125in"}
 
 You will see a table with the first column listing all taxa belonging to (included in) the name you selected in the Taxon Navigator and the subsequent columns depicting areas.
 
-![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image34.png){width="3.495833333333333in" height="0.7340277777777777in"}
+![](./media/image34.png){width="3.495833333333333in" height="0.7340277777777777in"}
 
 Now click on *Distribution Areas* in the header section of the *Distribution Editor* to open the *Distribution Selection Dialog* where you can select the Catalogue that is to be used for area input. You can use the buttons ![](./media/image35.png){width="0.5833333333333334in" height="0.3333333333333333in"} to toggle the selection for a parent area and its direct children or for the parent area and all children at the same time.
 
 If you are familiar with the codes used in your database, it is a good idea to check the *Show Id \...* option, too.
 
-![](media/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/image36.png){width="67%"}
+![](./media/image36.png){width="67%"}
 
 With the area catalogue(s) selected for your treatment and if you have set the *Show Id \...* options chosen to show the IDs for area and status in the settings page of the *Local Preferences*, the *Distribution Editor* might now look similar to this:
 
