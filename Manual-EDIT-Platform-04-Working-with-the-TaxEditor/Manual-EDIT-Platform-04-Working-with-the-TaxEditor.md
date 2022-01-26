@@ -21,13 +21,13 @@ header-includes:
 - |
     \usepackage[export]{adjustbox}
     \let\includegraphicsbak\includegraphics
-    \renewcommand*{\includegraphics}[2][]{\includegraphicsbak[frame,#1]{#2}} 
+    \renewcommand*{\includegraphics}[2][]{\includegraphicsbak[frame,#1]{#2}}
 
 ...
 
-Version history: 
+Version history:
 
-* 26-Aug-21: Major restructuring, excluded tutorial. 
+* 26-Aug-21: Major restructuring, excluded tutorial.
 
 * 15-Sept-21: Additions to glossary, editorial, changed Name Editor to Taxon Editor, Taxonomic Editor to TaxEditor.
 
@@ -137,7 +137,7 @@ The drop-down menu to the right can be used to restrict the search to certain ca
 
 Names that are not part of the classification (i.e. that are not designated as a taxon name or part of a synonym list) appear first in larger script. A black square before the name indicates a taxon, a green circle a synonym. Both will take you to the respective taxon in the *Taxon Editor* upon double-click.
 
-## Working with the *Taxon Editor* and its *Details View* 
+## Working with the *Taxon Editor* and its *Details View*
 
 ### Basics
 
@@ -165,9 +165,9 @@ Each individual synonym entry starts with a symbol indicating its nature:
 -   Heterotypic synonyms are indicated by dark or light green circles with an equal sign -- their homotypic synonyms are again carrying an identity sign.
 -   Invalid names or designations start with an en-dash in a green circle.
 -   Misapplied names start with MA in a purple circle
-  
-    ![](./media/synonym-list.png) 
-    
+
+    ![](./media/synonym-list.png)
+
 
 The context menu of a synonym offers a number of options:
 
@@ -183,18 +183,18 @@ The context menu of a synonym offers a number of options:
 
 The *Details View* can be configured with various options, mainly to simplify its appearance. The one shown here is the one with all details enabled.
 
-![](./media/image15.png) 
+![](./media/image15.png)
 
 *Taxon* (or *Synonym*) section: This section refers to the name in its classification context, with the sec.- or syn.-sec. reference and the respective *Cache* entry.
 
 The further sections all refer to the name.
 
 1. The *Name* itself (with its components according to rank -- in this case a species), its standardised authorship and the possibility to mark it as a hybrid.
-1.  The standardised *Nomenclatural source*, with the *Reference* title that is maintained in a catalogue in atomised form and can be selected here, with the exact location in the publication (page number etc.) given in the *Detail* field; there is the possibility to specify an *Original Spelling* of the name in that publication, and one or more links to a website where an image of the reference of the nomenclatural *Protologue/Original Publication* can be consulted (e.g. in BHL) can be given. 
+1.  The standardised *Nomenclatural source*, with the *Reference* title that is maintained in a catalogue in atomised form and can be selected here, with the exact location in the publication (page number etc.) given in the *Detail* field; there is the possibility to specify an *Original Spelling* of the name in that publication, and one or more links to a website where an image of the reference of the nomenclatural *Protologue/Original Publication* can be consulted (e.g. in BHL) can be given.
 
 1.  The possibility to declare a *Nomenclatural status* for the name (e.g. "nom. inval.", "nom. cons.") with some details (see below),
-1.  Specification of the *Type Information* of the name (see below), and 
-1.  Specification of *Name Relationships* (e.g. "is later homonym of", "is replaced synonym for") 
+1.  Specification of the *Type Information* of the name (see below), and
+1.  Specification of *Name Relationships* (e.g. "is later homonym of", "is replaced synonym for")
 
 Please refer to part 3 of the manual for an explanation of the elements and symbols used in the interface. Most importantly, remember that the *Details View* also lets you access the catalogues, i.e. lists of data items that may be used in more than one place (e.g. authors). Catalogues are accessed by the following buttons:
 
@@ -405,7 +405,7 @@ This long introduction serves to explain why there are several ways to add and e
 The different possibilities for specimen data entry:
 
 -   As a type specimen in the name ***Details View***: see section [4.4.9](#details-view-type-information) above and [7.4.3 below](#type-specimen-entry) .
--   Using the specimen ***Bulk Editors (tree)** or (list):* see section [9.4 below](#using-the-specimen-tree-bulk-editor).
+-   Using the specimen **Bulk Editors (tree)** or (list):* see section [9.4 below](#using-the-specimen-tree-bulk-editor).
 -   Starting in the *Factual Data view*: currently not recommended, but see [7.4.4 below](#entering-specimens-as-factual-data)
 -   Via the *Described Specimen* function in the *Details View* of the *Description* in the *Factual Data* view: Sorry, work in progress, please do not use!
 
@@ -488,9 +488,9 @@ Acantholimon ahangarensis Rech.f. & Schiman-Czeika, Fl. Iranica 108: 72. 1974 \[
 
 Deduplication of names is not yet implemented. Workaround: Edit all occurrences of the name (e.g. in other classification, as a type, etc.) to refer to the same name instance. After that, you can delete the remaining duplicates (they should not have referencing objects apart from the standard *HomotypicalGroup*).
 
-## Using the specimen (tree) *Bulk Editor* 
+## Using the specimen (tree) *Bulk Editor*
 
-The TaxEditor has two different Bulk Editors for specimens and occurrences. The *Specimen (list) Editor* presents them in a flat list. The ***Specimen (tree)** Editor*, in contrast, shows the derivation hierarchy of the items, that is, a list of derivation trees which are initially collapsed. An item of the type *Field Unit* is the root of each derivation tree.
+The TaxEditor has two different Bulk Editors for specimens and occurrences. The *Specimen (list) Editor* presents them in a flat list. The **Specimen (tree)** Editor*, in contrast, shows the derivation hierarchy of the items, that is, a list of derivation trees which are initially collapsed. An item of the type *Field Unit* is the root of each derivation tree.
 
 The editor can be opened in the menu: *Window -\> Bulk Editor -\> Specimen Editor (tree)*
 
@@ -554,7 +554,7 @@ Details of the media items are edited in an editor pane which offers a simple an
 
 \(7) In the advanced mode technical numerical meta-data like size, height, width and further key data is shown. These data are extracted from the image, as far it is available at the supplied URI.
 
-## Multiple media representations 
+## Multiple media representations
 
 Using multiple representations of the same media is useful when data is published via the *EDIT Data Portal*. Specimen images are often available as image file and also embedded in a dynamic image viewer, which allows exploring the photo in the depth of its full resolution. Institutional natural history collections often publish their digitized specimens in this dual way.
 
@@ -584,7 +584,7 @@ Other software errors will be indicated by an error message. Please help us to i
 
 The error text itself may give you some indication of what had happened. For example, if you find an indication like \"NoHttpResponseException\" the error was not caused by the software, but the connection with the server was broken or interrupted. Usually, you can just continue to work, if necessary use the *Re-connect* function in the *General* menu.
 
-# Glossary 
+# Glossary
 
 ![](./media/image52.png){width="1.8229166666666667in" height="1.7805555555555554in"}
 
