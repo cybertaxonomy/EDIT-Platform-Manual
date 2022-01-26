@@ -12,7 +12,7 @@ This conversion process has been automated. Once changes to the source documents
 
 The markdown documents can be edited in the github site, where new images also can be uploaded.
 
-For a more comfortable editing experience you can use [Typora](https://www.typora.io/) a markdown editor (see next chapter)
+For a more comfortable editing experience you can use [Typora](https://www.typora.io/) a markdown WYSIWIG editor or the [**Atom**](https://atom.io/) Editor (see next chapter)
 
 ## Tools
 
@@ -74,15 +74,78 @@ The actual content is preceded by a document header (blue rectangle). In this he
 
 ##### Images
 
-Images for a specific manual like `Manual-EDIT-Platform-04-Working-with-the-TaxEditor` need to be stored in the according `./media/`-sub-folder and are references in the markdown by the relative file path: `![](./media/my-image.png){width="10cm"}`. Therefor it is im portant to configure Typora so that it always uses this relative path (see above).
+Images for a specific manual like `Manual-EDIT-Platform-04-Working-with-the-TaxEditor` need to be stored in the according `./media/`-sub-folder and are references in the markdown by the relative file path: `![](./media/my-image.png){width="10cm"}`. Therefor it is important to configure Typora so that it always uses this relative path (see above).
 The `width` property in curly brackets can be used to scale the image to a fixed with (e.g.: `{width="10cm"}`) or relative to the page width (`{width="33%"}`).
 
 **IMPORTANT**
 
-* **YOU NEVER MUST USE** the **zoom image** function as this will transform  markdown images `![]()` to html images `<img ...>` which will not work in our setup.
+* **YOU NEVER MUST USE** the **zoom image** function as this will transform  markdown images `![]()` to html images `<img ...>` which will not work in our setup. (This will maybe improved in future, see https://github.com/typora/typora-issues/issues/249)
 
 ### GitHub Desktop
 
-https://desktop.github.com/
+GitHub Desktop makes it easy to psyancush your changes to git hub and to keep track of the modifications that have been applied by others.
 
-GitHub Desktop makes it easy to push your changes to git hub and to keep track of the modifications that have been applied by others.
+[GitHub Desktop](https://desktop.github.com/) for runs on Winows and Mac OS. The Windows edition can be dwnloaded from [https://central.github.com/deployments/desktop/desktop/latest/win32](https://central.github.com/deployments/desktop/desktop/latest/win32).
+
+The process of installing GitHub Desktop and git, as well as setting up a GitHub account is described in [Setting up GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/setting-up-github-desktop).  
+
+For working with GitHub Desktop the documentation on [Committing and reviewing changes to your project](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project) and [Pushing changes to GitHub](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/pushing-changes-to-github) should be sufficient to get started.
+
+## Atom editor
+
+### Installation and setup
+
+#### 1. Prepare Atom
+
+Download from https://atom.io/ and install the application as usually.
+
+Start the editor and click on "Install a Package" in the right pane below "Get to know Atom", or press the keyboard shortcut `CTRL ,` to open settings page.
+Click on *Install* and enter "sync-settings" in the search field and install this package
+by clicking on the blue *Install* button.
+
+![](./media/atom-settings-install.png)
+
+Once the pacakge is installed: Click on Settings or Package Settings:
+
+![](./media/atom-settings-sync-restore-command-palette.png)
+
+Enter the following Gist ID `25324d74e342f66c8536d9e09e6ed183` in the settings form:
+
+![](./media/atom-settings-sync-settings.png)
+
+Now you are prepared to import the settings from the Gist. Open the command palette with the key combination `CTRL SHIFT p`, enter "sync" and click on  "Sync Settings: Restore"
+
+![](./media/atom-settings-sync-restore-command-palette.png)
+
+Now you should be ready to get started with editing. All required plugins should be installed and configured
+
+#### 2. Clone the EDIT-Platform-Manual project
+
+**Prequisite:** You need a GitHub account. In case you don't habe an Accoujnt at GitHub yet, it is time to sign [up now](https://github.com/signup): 
+
+Press `CTRL SHIFT 8` to open the GitHub tab and folow the insructions to enter the authentication token. **Note**: Once you are on the github page to "Authorize Atom GitHub package" you need to make shure **cybertaxonomy** is checked in the **Organization access** section!
+
+Now the github tab offers the option to clone a github repository:
+
+![](./media/atom-github-clone.png)
+
+
+Click on "Clone existing repository and enter `https://github.com/cybertaxonomy/EDIT-Platform-Manual.git` in the "Clone from" field in the following dialog.
+You may also want to change the "To directory" path, to let Atom clone the repository to a folder of your choice.
+
+![](./media/atom-github-clone.png)
+
+Now click "Clone" and the content of the EDIT-Platform-Manual project tree should appear in the left hand "Project" pane:
+
+![](./media/atom-project-pane.png)
+
+You are ready to start editing now.
+
+#### 3. Editing pandoc markdown with Atom
+
+The individual manuals are in the subfolders prefixed with `Manual-EDIT-Platform-`. Open the manual folder you want to work on and double-click the markdown file (`*.md`). The file will open in the central editor.
+
+Open the the markdown preview for the file by cliking on the "markdown-preview-plus:toggle" button in the  command toolbar above the editor, or use the command pallete `CTRL SHIFT P` > "markdown-preview":
+
+![](./media/atom-open-markdown-preview.png)
+
