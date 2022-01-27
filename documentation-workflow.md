@@ -93,9 +93,16 @@ TODO
 **Packages**
 
 * https://flight-manual.atom.io/using-atom/sections/github-package/
-* https://atom.io/packages/command-toolbar
+* toolbar 
+    * https://atom.io/packages/command-toolbar
+    * https://atom.io/packages/flex-tool-bar <-- better!!!
 * https://atom.io/packages/markdown-preview-plus
 * https://atom.io/packages/pandoc
+* working with images
+    * https://atom.io/packages/atom-image-resize 
+    * https://atom.io/packages/markdown-image-assistant -  drag and drop and copy/paste support for images to markdown files
+    * https://atom.io/packages/markdown-image-paste
+    
 
 **Shortcuts**
 
