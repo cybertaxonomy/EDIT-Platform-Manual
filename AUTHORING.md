@@ -121,7 +121,7 @@ Now you should be ready to get started with editing. All required plugins should
 
 #### 2. Clone the EDIT-Platform-Manual project
 
-**Prequisite:** You need a GitHub account. In case you don't habe an Accoujnt at GitHub yet, it is time to sign [up now](https://github.com/signup): 
+**Prequisite:** You need a GitHub account. In case you don't habe an Accoujnt at GitHub yet, it is time to sign [up now](https://github.com/signup):
 
 Press `CTRL SHIFT 8` to open the GitHub tab and folow the insructions to enter the authentication token. **Note**: Once you are on the github page to "Authorize Atom GitHub package" you need to make shure **cybertaxonomy** is checked in the **Organization access** section!
 
@@ -143,9 +143,6 @@ You are ready to start editing now.
 
 #### 3. Editing pandoc markdown with Atom
 
-The individual manuals are in the subfolders prefixed with `Manual-EDIT-Platform-`. Open the manual folder you want to work on and double-click the markdown file (`*.md`). The file will open in the central editor.
-
-Open the the markdown preview for the file by cliking on the "markdown-preview-plus:toggle" button in the  command toolbar above the editor, or use the command pallete `CTRL SHIFT P` > "markdown-preview":
+The individual manuals are in the subfolders prefixed with `Manual-EDIT-Platform-`. Open the manual folder you want to work on and double-click the markdown file (`*.md`). The file will open in the central editor and a set of buttons for working with markdown documents show up in the toolbar. Clicking the "Markdown preview" button (as shown in the screenshot below) will toggle the preview, to the right of the editor (alteratively you can use the command palette: `CTRL SHIFT P` > "markdown-preview")
 
 ![](./media/atom-open-markdown-preview.png)
-
