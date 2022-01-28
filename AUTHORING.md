@@ -93,7 +93,7 @@ For working with GitHub Desktop the documentation on [Committing and reviewing c
 
 ## Atom editor
 
-Atom is a free and open-source editor for macOS, Linux, and Microsoft Windows with support for plug-ins. It is highly customizable and can be adapted to as very userfriendly  Markdown Editor.
+Atom is a free and open-source editor for macOS, Linux, and Microsoft Windows with support for plug-ins. It is highly customizable and can be adapted to as very user friendly  Markdown Editor.
 
 ### Installation and setup
 
@@ -101,7 +101,7 @@ The Installation and setup procedure involved three steps.
 
 At first, we will download the editor and configure it using the **sync-settings** plugin. The presets are stored in a gist : [https://gist.github.com/akohlbecker/25324d74e342f66c8536d9e09e6ed183](https://gist.github.com/akohlbecker/25324d74e342f66c8536d9e09e6ed183) from where the plugin will fetch definions on required plugins and sensible default settings.
 
-Finally the *EDIT-Platform-Manual* project will be cloned to your local filesystem, so that you can start editing.
+Finally the *EDIT-Platform-Manual* project will be cloned to your local file system, so that you can start editing.
 
 #### 1. Download and install Atom
 
@@ -130,9 +130,9 @@ Now you should be ready to get started with editing. All required plugins should
 
 #### 2. Clone the EDIT-Platform-Manual project
 
-**Requirements:** You need a GitHub account. In case you don't habe an Accoujnt at GitHub yet, it is time to sign [up now](https://github.com/signup):
+**Requirements:** You need a GitHub account. In case you don't have an Account at GitHub yet, it is time to sign [up now](https://github.com/signup):
 
-Press `CTRL SHIFT 8` to open the GitHub tab and folow the insructions to enter the authentication token. **Note**: Once you are on the github page to "Authorize Atom GitHub package" you need to make shure **cybertaxonomy** is checked in the **Organization access** section!
+Press `CTRL SHIFT 8` to open the GitHub tab and follow the instructions to enter the authentication token. **Note**: Once you are on the github page to "Authorize Atom GitHub package" you need to make sure **cybertaxonomy** is checked in the **Organization access** section!
 
 Now the github tab offers the option to clone a github repository:
 
@@ -151,9 +151,11 @@ You are ready to start editing now.
 
 ### Editing pandoc markdown with Atom
 
-The individual manuals are in the subfolders prefixed with `Manual-EDIT-Platform-`. Open the manual folder you want to work on and double-click the markdown file (`*.md`). The file will open in the central editor and a set of buttons for working with markdown documents show up in the toolbar. Clicking the "Markdown preview" button (as shown in the screenshot below) will toggle the preview, to the right of the editor (alteratively you can use the command palette: `CTRL SHIFT P` > "markdown-preview")
+The individual manuals are in the sub folders prefixed with `Manual-EDIT-Platform-`. Open the manual folder you want to work on and double-click the markdown file (`*.md`). The file will open in the central editor and a set of buttons for working with markdown documents show up in the toolbar. Clicking the "Markdown preview" button (as shown in the screenshot below) will toggle the preview, to the right of the editor (alternatively you can use the command palette: `CTRL SHIFT P` > "markdown-preview")
 
 ![](./media/atom-open-markdown-preview.png)
 
-* https://github.com/zhuochun/md-writer
+#### Documentation on selected Atom plugins
+
+* [Markdown-Writer for Atom](https://github.com/zhuochun/md-writer) - Adds tons of features to make Atom a better Markdown editor. Essential commands are available in toolbar.
 *

@@ -86,23 +86,27 @@ TODO
 * https://github.com/mb21/panwriter - unusable slow
 * https://www.writage.com/ - unusable with pandoc markdown
 
+
 #### Atom Editor
 
 * Sharing and synchronizing settings and packages: https://stackoverflow.com/questions/30877289/how-to-share-transfer-an-atom-installation-packages-and-settings-from-one-mac#30972738
 
 **Packages**
 
+[atom as markdown editor}(https://www.andbible.com/post/atom-markdown-editor/)
+
 * https://flight-manual.atom.io/using-atom/sections/github-package/
-* toolbar 
+* toolbar
     * https://atom.io/packages/command-toolbar
     * https://atom.io/packages/flex-tool-bar <-- better!!!
 * https://atom.io/packages/markdown-preview-plus
 * https://atom.io/packages/pandoc
+* * https://atom.io/packages/markdown-file-linker
 * working with images
-    * https://atom.io/packages/atom-image-resize 
+    * https://atom.io/packages/atom-image-resize
     * https://atom.io/packages/markdown-image-assistant -  drag and drop and copy/paste support for images to markdown files
     * https://atom.io/packages/markdown-image-paste
-    
+
 
 **Shortcuts**
 
