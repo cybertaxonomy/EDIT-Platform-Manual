@@ -140,7 +140,7 @@ Now you should be ready to get started with editing. All required plugins should
 
 **Requirements:** You need a GitHub account. In case you don't have an Account at GitHub yet, it is time to sign [up now](https://github.com/signup):
 
-Press `CTRL SHIFT 8` to open the GitHub tab and follow the instructions to enter the authentication token. **Note**: Once you are on the github page to "Authorize Atom GitHub package" you need to make sure **cybertaxonomy** is checked in the **Organization access** section!
+Press `Ctrl+Shift+8` to open the GitHub tab and follow the instructions to enter the authentication token. **Note**: Once you are on the github page to "Authorize Atom GitHub package" you need to make sure **cybertaxonomy** is checked in the **Organization access** section!
 
 Now the github tab offers the option to clone a github repository:
 
