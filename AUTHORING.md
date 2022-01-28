@@ -221,7 +221,35 @@ More advanced positioning of images can be achieved by making use of "[pandoc wr
 
 Images can be added by using this toolbar button ![](media/AUTHORING-5e41e745.png), the dialog that will open up. Even if this dialog is offering field for "Width", "Height", and "Alignment", entered values are not applied - Reason unknown.
 
-### Comitting and pushing your changes
+### Committing and pushing your changes
 
 
-Open the "Git view" either via the toolbar or by pressing `Ctrl+Shift+9` 
+Open the "Git Tab" either via the toolbar or by pressing `Ctrl+Shift+9`.
+
+The "Git Tab" will show all modified, added or removed files in the "Unstaged Changes" pane:
+
+![](media/01fd0c72.png)
+
+1. To **stage** your changes, click on "Stage All"
+2. Enter a commit message to briefly describe your changes
+3. **Commit** the changes to main
+
+Now your local clone of the git repository has been updated. As last step you now need to **push** your changes to the remote repository at github, which is the reference repository in our workflow.
+
+![](media/79756ad0.png)
+
+The git history log shows all commits which have not yet been pushed with an "Undo" button. To push these Changes  
+
+4. Click on "Push" in the footer bar. The number to the right of the button label indicates how many commits will be pushed.
+
+However, if someone else intermittently has pushed changes to the git repository the push action will fail with the following message:
+
+![](media/2340f4fe.png)
+
+Even if the dialog mentions the option to **force push, you should never do so!!!!**
+
+**NOTE:** Force push will overwrite the changes of others!
+
+![](media/067408c9.png)
+
+Click again on the same button, which now has changed its label to ""**pull**""
