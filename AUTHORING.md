@@ -93,19 +93,28 @@ For working with GitHub Desktop the documentation on [Committing and reviewing c
 
 ## Atom editor
 
+Atom is a free and open-source editor for macOS, Linux, and Microsoft Windows with support for plug-ins. It is highly customizable and can be adapted to as very userfriendly  Markdown Editor.
+
 ### Installation and setup
 
-#### 1. Prepare Atom
+The Installation and setup procedure involved three steps.
 
-Download from https://atom.io/ and install the application as usually.
+At first, we will download the editor and configure it using the **sync-settings** plugin. The presets are stored in a gist : [https://gist.github.com/akohlbecker/25324d74e342f66c8536d9e09e6ed183](https://gist.github.com/akohlbecker/25324d74e342f66c8536d9e09e6ed183) from where the plugin will fetch definions on required plugins and sensible default settings.
+
+Finally the *EDIT-Platform-Manual* project will be cloned to your local filesystem, so that you can start editing.
+
+#### 1. Download and install Atom
+
+Download from https://atom.io/ and install the application as usually on your operation system.
+
+#### 2. Install plugins and setup the editor
 
 Start the editor and click on "Install a Package" in the right pane below "Get to know Atom", or press the keyboard shortcut `CTRL ,` to open settings page.
-Click on *Install* and enter "sync-settings" in the search field and install this package
-by clicking on the blue *Install* button.
+Click on *Install* and enter "**sync-settings**" in the search field and install this package by clicking on the blue *Install* button.
 
 ![](./media/atom-settings-install.png)
 
-Once the pacakge is installed: Click on Settings or Package Settings:
+Once the package is installed: Click on Settings or Package Settings:
 
 ![](./media/atom-settings-sync-restore-command-palette.png)
 
@@ -121,14 +130,13 @@ Now you should be ready to get started with editing. All required plugins should
 
 #### 2. Clone the EDIT-Platform-Manual project
 
-**Prequisite:** You need a GitHub account. In case you don't habe an Accoujnt at GitHub yet, it is time to sign [up now](https://github.com/signup):
+**Requirements:** You need a GitHub account. In case you don't habe an Accoujnt at GitHub yet, it is time to sign [up now](https://github.com/signup):
 
 Press `CTRL SHIFT 8` to open the GitHub tab and folow the insructions to enter the authentication token. **Note**: Once you are on the github page to "Authorize Atom GitHub package" you need to make shure **cybertaxonomy** is checked in the **Organization access** section!
 
 Now the github tab offers the option to clone a github repository:
 
 ![](./media/atom-github-clone.png)
-
 
 Click on "Clone existing repository and enter `https://github.com/cybertaxonomy/EDIT-Platform-Manual.git` in the "Clone from" field in the following dialog.
 You may also want to change the "To directory" path, to let Atom clone the repository to a folder of your choice.
@@ -141,8 +149,11 @@ Now click "Clone" and the content of the EDIT-Platform-Manual project tree shoul
 
 You are ready to start editing now.
 
-#### 3. Editing pandoc markdown with Atom
+### Editing pandoc markdown with Atom
 
 The individual manuals are in the subfolders prefixed with `Manual-EDIT-Platform-`. Open the manual folder you want to work on and double-click the markdown file (`*.md`). The file will open in the central editor and a set of buttons for working with markdown documents show up in the toolbar. Clicking the "Markdown preview" button (as shown in the screenshot below) will toggle the preview, to the right of the editor (alteratively you can use the command palette: `CTRL SHIFT P` > "markdown-preview")
 
 ![](./media/atom-open-markdown-preview.png)
+
+* https://github.com/zhuochun/md-writer
+*
