@@ -97,8 +97,9 @@ TODO
 
 * https://flight-manual.atom.io/using-atom/sections/github-package/
 * toolbar
-    * https://atom.io/packages/command-toolbar
-    * https://atom.io/packages/flex-tool-bar <-- better!!!
+    * https://atom.io/packages/flex-tool-bar
+* git
+    * https://atom.io/packages/git-controlhub <-- git commands via toolbar
 * https://atom.io/packages/markdown-preview-plus
 * https://atom.io/packages/pandoc
 * * https://atom.io/packages/markdown-file-linker

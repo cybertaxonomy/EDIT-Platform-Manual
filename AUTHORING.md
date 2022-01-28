@@ -21,15 +21,22 @@ For easily editing the platform manuals offline we recommend using two tools:
 * Typora
 * Atom editor
 
-The Atom editor has the advantage of being a fully integrated solution of a markdown editor with a preview view and the tool set to work with the git repository.
+**Which one to choose?**
+
+The Atom editor has the advantage of being a fully integrated solution of a markdown editor with preview and all tool required for working with the git repository.
 
 Typora has no built in git support but impresses with a WYSIWYG markdown editor for the pandoc markdown syntax. The image scaling feature of the pandoc markdown ( e.g.: `![](./image.png){width="12.3cm"}`) is not supported so that it can be hard to stay on top of things when working with many images which are not sized perfectly.
+The latter problem losing overview does not exist in Atom, since images are scaled correctly. Markdown code and preview can are shown side by side in Atom.
 
-The latter problem losing overview does not exist in Typora, since markdown and preview can be viewed side by side.
+Typora is not open source and longer fee of charge.
+
+Even if Typora seems to excel at first glance due to the WYSIWYG editor it falls behind Atom after a short time of working with both editors.  
 
 ### Typora
 
-**NOTE:** Using Typora is no longer fee of charge. You only can get 15 days free trial. After that you need to purchase the application for $ 14.99.
+**NOTE:** Typora is no longer fee of charge. You only can get 15 days free trial. After that you need to purchase the application for $ 14.99.
+
+**NOTE:** You may want to try the Atom editor fist! See next chapter.
 
 Typora will support you while editing the manuals by providing an editable preview of the documents. The preview does not reproduce the resulting layout perfectly but you might find it much more comfortable than editing the plain markdown.
 
@@ -71,7 +78,6 @@ After opening a EDIT Manual markdown file like `./EDIT-Platform-Manual/Manual-ED
 
 The actual content is preceded by a document header (blue rectangle). In this header document metadata are defined as well as important configuration parameters for the final layout. This header must not be modified expect you exactly know what you are doing.
 
-
 ##### Images
 
 Images for a specific manual like `Manual-EDIT-Platform-04-Working-with-the-TaxEditor` need to be stored in the according `./media/`-sub-folder and are references in the markdown by the relative file path: `![](./media/my-image.png){width="10cm"}`. Therefor it is important to configure Typora so that it always uses this relative path (see above).
@@ -83,9 +89,9 @@ The `width` property in curly brackets can be used to scale the image to a fixed
 
 ### GitHub Desktop
 
-GitHub Desktop makes it easy to psyancush your changes to git hub and to keep track of the modifications that have been applied by others.
+GitHub Desktop makes it easy to commit and push your changes to GitHub and to keep track of the modifications that have been applied by others.
 
-[GitHub Desktop](https://desktop.github.com/) for runs on Winows and Mac OS. The Windows edition can be dwnloaded from [https://central.github.com/deployments/desktop/desktop/latest/win32](https://central.github.com/deployments/desktop/desktop/latest/win32).
+[GitHub Desktop](https://desktop.github.com/) for runs on Winows and Mac OS. The Windows edition can be downloaded from [https://central.github.com/deployments/desktop/desktop/latest/win32](https://central.github.com/deployments/desktop/desktop/latest/win32).
 
 The process of installing GitHub Desktop and git, as well as setting up a GitHub account is described in [Setting up GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/setting-up-github-desktop).  
 
@@ -93,13 +99,15 @@ For working with GitHub Desktop the documentation on [Committing and reviewing c
 
 ## Atom editor
 
-Atom is a free and open-source editor for macOS, Linux, and Microsoft Windows with support for plug-ins. It is highly customizable and can be adapted to as very user friendly  Markdown Editor.
+![](media/41dd01d1.png)
+
+Atom is a free and open-source editor for Mac OS, Linux, and Microsoft Windows with support for plug-ins. It is highly customizable and can be adapted to as very user friendly  Markdown Editor.
 
 ### Installation and setup
 
 The Installation and setup procedure involved three steps.
 
-At first, we will download the editor and configure it using the **sync-settings** plugin. The presets are stored in a gist : [https://gist.github.com/akohlbecker/25324d74e342f66c8536d9e09e6ed183](https://gist.github.com/akohlbecker/25324d74e342f66c8536d9e09e6ed183) from where the plugin will fetch definions on required plugins and sensible default settings.
+At first, we will download the editor and configure it using the **sync-settings** plugin. The presets are stored in a gist : [https://gist.github.com/akohlbecker/25324d74e342f66c8536d9e09e6ed183](https://gist.github.com/akohlbecker/25324d74e342f66c8536d9e09e6ed183) from where the plugin will fetch definitions on required plugins and sensible default settings.
 
 Finally the *EDIT-Platform-Manual* project will be cloned to your local file system, so that you can start editing.
 
@@ -153,9 +161,62 @@ You are ready to start editing now.
 
 The individual manuals are in the sub folders prefixed with `Manual-EDIT-Platform-`. Open the manual folder you want to work on and double-click the markdown file (`*.md`). The file will open in the central editor and a set of buttons for working with markdown documents show up in the toolbar. Clicking the "Markdown preview" button (as shown in the screenshot below) will toggle the preview, to the right of the editor (alternatively you can use the command palette: `CTRL SHIFT P` > "markdown-preview")
 
-![](./media/atom-open-markdown-preview.png)
+![](./media/atom-toolbar-commands-1.png)
 
-#### Documentation on selected Atom plugins
+Above screenshot depicts other useful commands in the toolbar that help managing the editor UI:
 
-* [Markdown-Writer for Atom](https://github.com/zhuochun/md-writer) - Adds tons of features to make Atom a better Markdown editor. Essential commands are available in toolbar.
-*
+* "Toggle git tab"
+* "Toggle document outline"
+* "Synchronize markdown preview"
+* "Toggle markdown preview"
+
+An Atom editor equipped with the [Markdown-Writer for Atom](https://github.com/zhuochun/md-writer) plugin makes it easy to work with markdown documents, since it adds tons of features.
+Essential commands are available in toolbar provided by the [Toolbar for Markdown-Writer](https://github.com/zhuochun/tool-bar-md-writer). This toolbar makes common markdown syntax elements accessible by a simple click or dialog, so that it is not needed to consult the [Official Pandoc markdown syntax](https://pandoc.org/MANUAL.html#pandocs-markdown), even for  the unexperienced author:
+
+![](media/AUTHORING-a456babe.png)
+
+### Writing documents in Pandoc markdown
+
+Reference documentation:
+
+* [Official Pandoc markdown syntax](https://pandoc.org/MANUAL.html#pandocs-markdown)
+
+Pandoc markdown is almost 100% compliant to other well known markdown flavors, but also extends the standard markdown syntax by crucial feature that are important for scientific writing. This includes capabilities to express layout rules for images, citations, etc.
+
+##### Images
+
+Images for a specific manual like `Manual-EDIT-Platform-04-Working-with-the-TaxEditor` need to be stored in the according `./media/`-sub-folder and are references in the markdown by the relative file path: `![](./media/my-image.png){width="10cm"}`.
+
+The syntax for adding images in markdown will add an image in full size either inline in the text flow ...
+
+~~~
+An image ![Image caption](image-file.jpg) in the text flow
+~~~
+
+or as new paragraph:
+
+~~~
+A new image paragraph
+
+![Image alt text](image-file.jpg)
+~~~
+
+Pandoc markdown allows to resize images. The `width` property in curly brackets can be used to scale the image to a fixed with (e.g.: `{width="10cm"}`) or relative to the page width (`{width="33%"}`).
+
+~~~
+![An image proportionally scaled to 50px width](image-file.jpg){witdh=50px}
+
+![An image proportionally scaled to 1/3 of the page with](image-file.jpg){witdh=33%}
+~~~
+
+More advanced positioning of images can be achieved by making use of "[pandoc wrapfig](pnadoc-filters/pandoc-wrapfig-master/README.md)". This pandoc filter extends the pandoc syntax by the option. This image for example is scaled to a width of 5cm and right aligned  ![{r0cm}](./media/bgbm_gewaechshaeuser_0.jpg){width="5cm"}. It is wrapped by the text in which it is placed and the words are flowing nicely around it. Unfortunately this is not (yet?) visible in the Atom editor preview, since "pandoc wrapfig" support has not yet been configured. Andvanced pandoc filters like "pandoc wrapfig" are only applied when the final document is being rendered.
+
+**Images can be added by the following ways:**
+
+1. Enter the image markdown syntax manually
+1. Copy an Image to the clipboard and paste in to the markdown script. The Image will automatically be saved in the `./media` sub-folder relative to the document.
+2. Drag an image from your system file explorer to the markdown script. The Image will copied to the `./media` sub-folder relative to the document.
+
+**Note**: The above image copy, save and naming schema can be changed in the "Markdown Image Assistant" settings.
+
+Images can be added by using this toolbar button ![](media/AUTHORING-5e41e745.png), the dialog that will open up. Even if this dialog is offering field for "Width", "Height", and "Alignment", entered values are not applied - Reason unknown.

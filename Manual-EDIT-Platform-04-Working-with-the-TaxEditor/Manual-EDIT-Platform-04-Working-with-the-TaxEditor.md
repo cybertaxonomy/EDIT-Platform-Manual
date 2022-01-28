@@ -246,7 +246,7 @@ Type information should always be entered for the base name of a homotypic group
 
 You can enter any text into the free text form, including longer statements about the search for a type etc. As usual, you can enter several such statements and individually ascribe them to a source reference:
 
-![{](./media/image22.png){width="5.195138888888889in" height="2.2868055555555555in"}
+![](./media/image22.png){width="5.195138888888889in" height="2.2868055555555555in"}
 
 The form for selecting the type of a supraspecific name (e.g. a genus) lets you select a name from the names already entered into the database or, if necessary, add a new name. Note that in the case of a regional treatment, e.g. a Flora, this name may not occur in the taxonomic Classification, since the type species may not be present in the flora. This is one of the reasons for some names to exist only as names in the database.
 
