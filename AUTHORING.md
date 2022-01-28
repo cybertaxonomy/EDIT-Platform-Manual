@@ -252,4 +252,4 @@ Even if the dialog mentions the option to **force push, you should never do so!!
 
 ![](media/067408c9.png)
 
-Click again on the same button, which now has changed its label to ""**pull**""
+Click again on the same button, which now has changed its label to ""**pull**"". Once the remote changes an integrated in your local clone you can push your changes.
