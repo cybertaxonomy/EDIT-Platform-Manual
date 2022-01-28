@@ -183,7 +183,7 @@ Reference documentation:
 
 Pandoc markdown is almost 100% compliant to other well known markdown flavors, but also extends the standard markdown syntax by crucial feature that are important for scientific writing. This includes capabilities to express layout rules for images, citations, etc.
 
-##### Images
+#### Images
 
 Images for a specific manual like `Manual-EDIT-Platform-04-Working-with-the-TaxEditor` need to be stored in the according `./media/`-sub-folder and are references in the markdown by the relative file path: `![](./media/my-image.png){width="10cm"}`.
 
@@ -220,3 +220,8 @@ More advanced positioning of images can be achieved by making use of "[pandoc wr
 **Note**: The above image copy, save and naming schema can be changed in the "Markdown Image Assistant" settings.
 
 Images can be added by using this toolbar button ![](media/AUTHORING-5e41e745.png), the dialog that will open up. Even if this dialog is offering field for "Width", "Height", and "Alignment", entered values are not applied - Reason unknown.
+
+### Comitting and pushing your changes
+
+
+Open the "Git view" either via the toolbar or by pressing `Ctrl+Shift+9` 
