@@ -101,8 +101,9 @@ TODO
 * git
     * https://atom.io/packages/git-controlhub <-- git commands via toolbar
 * https://atom.io/packages/markdown-preview-plus
+* [~~markdown-scroll-sync~~](https://github.com/vincentcn/markdown-scroll-sync) -  no longer compatible with markdown preview plus
 * https://atom.io/packages/pandoc
-* * https://atom.io/packages/markdown-file-linker
+   * https://atom.io/packages/markdown-file-linker
 * working with images
     * https://atom.io/packages/atom-image-resize
     * https://atom.io/packages/markdown-image-assistant -  drag and drop and copy/paste support for images to markdown files

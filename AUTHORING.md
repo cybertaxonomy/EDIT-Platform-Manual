@@ -185,6 +185,8 @@ Above screenshot depicts other useful commands in the toolbar that help managing
 * "Synchronize markdown preview"
 * "Toggle markdown preview"
 
+**NOTE**: The synchronization between markdown and preview can have a significant offset, expecially in longer documents with many images. This is a known limitation, see [markdown-preview-plus issue 106](https://github.com/atom-community/markdown-preview-plus/issues/106)
+
 An Atom editor equipped with the [Markdown-Writer for Atom](https://github.com/zhuochun/md-writer) plugin makes it easy to work with markdown documents, since it adds tons of features.
 Essential commands are available in toolbar provided by the [Toolbar for Markdown-Writer](https://github.com/zhuochun/tool-bar-md-writer). This toolbar makes common markdown syntax elements accessible by a simple click or dialog, so that it is not needed to consult the [Official Pandoc markdown syntax](https://pandoc.org/MANUAL.html#pandocs-markdown), even for  the unexperienced author:
 
