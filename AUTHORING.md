@@ -136,6 +136,14 @@ Now you are prepared to import the settings from the Gist. Open the command pale
 
 Now you should be ready to get started with editing. All required plugins should be installed and configured
 
+Quit ( Main menu : File > Quit or Exit; `Ctrl+q`) the Atom editor and start it again before proceeding to make the "Welcome" Windows and others disappear.
+
+After the reboot of the Atom editor you will see the a "Sync-Settings" popup dialog:
+
+![](atom-sync-settings-popup.png)
+
+Click on "Restore" to update the settings and close the next green dialog by clicking the "x" in the top right corner. 
+
 #### 2. Clone the EDIT-Platform-Manual project
 
 **Requirements:** You need a GitHub account. In case you don't have an Account at GitHub yet, it is time to sign [up now](https://github.com/signup):
