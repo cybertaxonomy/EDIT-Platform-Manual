@@ -1,4 +1,4 @@
-# Authors guide
+Shift+Ctrl+# Authors guide
 
 This guide is dedicated to authors contributing to the "EDIT Platform manuals".
 
@@ -103,7 +103,12 @@ For working with GitHub Desktop the documentation on [Committing and reviewing c
 
 Atom is a free and open-source editor for Mac OS, Linux, and Microsoft Windows with support for plug-ins. It is highly customizable and can be adapted to as very user friendly  Markdown Editor.
 
-### Installation and setup
+#### Pre: Install Pandoc
+
+Pandoc is needed to render the preview view of the markdown documents in the Atom editor. Since pandoc is not distributable as Atom plugin, we need to install it as native application for your OS. For installing Pandoc please follow the instructions in
+[https://pandoc.org/installing.html](https://pandoc.org/installing.html).
+
+### Installing Atom and setup
 
 The Installation and setup procedure involved three steps.
 
@@ -117,7 +122,7 @@ Download from https://atom.io/ and install the application as usually on your op
 
 #### 2. Install plugins and setup the editor
 
-Start the editor and click on "Install a Package" in the right pane below "Get to know Atom", or press the keyboard shortcut `CTRL ,` to open settings page.
+Start the editor and click on "Install a Package" in the right pane below "Get to know Atom", or press the keyboard shortcut `Ctrl+,` to open settings page.
 Click on *Install* and enter "**sync-settings**" in the search field and install this package by clicking on the blue *Install* button.
 
 ![](./media/atom-settings-install.png)
@@ -130,7 +135,7 @@ Enter the following Gist ID `25324d74e342f66c8536d9e09e6ed183` in the settings f
 
 ![](./media/atom-settings-sync-settings.png)
 
-Now you are prepared to import the settings from the Gist. Open the command palette with the key combination `CTRL SHIFT p`, enter "sync" and click on  "Sync Settings: Restore"
+Now you are prepared to import the settings from the Gist. Open the command palette with the key combination `Ctrl+Shift+p`, enter "sync" and click on  "Sync Settings: Restore"
 
 ![](./media/atom-settings-sync-restore-command-palette.png)
 
@@ -144,14 +149,7 @@ After the reboot of the Atom editor you will see the a "Sync-Settings" popup dia
 
 Click on "Restore" to update the settings and close the next green dialog by clicking the "x" in the top right corner.
 
-#### 3. Install Pandoc
-
-Pandoc is needed to render the preview view of the markdown documents. Since pandoc is not distributable as Atom plugin, we need to install it as native application for your OS. For installing Pandoc please follow the instructions in
-[https://pandoc.org/installing.html](https://pandoc.org/installing.html).
-
-**IMPORTANT!**: After installing Pandoc, you will need to restart the Atom editor so that it recognizes the pandoc command.
-
-#### 4. Clone the EDIT-Platform-Manual project
+#### 3. Clone the EDIT-Platform-Manual project
 
 **Requirements:** You need a GitHub account. In case you don't have an Account at GitHub yet, it is time to sign [up now](https://github.com/signup):
 
@@ -174,7 +172,7 @@ You are ready to start editing now.
 
 ### Editing pandoc markdown with Atom
 
-The individual manuals are in the sub folders prefixed with `Manual-EDIT-Platform-`. Open the manual folder you want to work on and double-click the markdown file (`*.md`). The file will open in the central editor and a set of buttons for working with markdown documents show up in the toolbar. Clicking the "Markdown preview" button (as shown in the screenshot below) will toggle the preview, to the right of the editor (alternatively you can use the command palette: `CTRL SHIFT P` > "markdown-preview")
+The individual manuals are in the sub folders prefixed with `Manual-EDIT-Platform-`. Open the manual folder you want to work on and double-click the markdown file (`*.md`). The file will open in the central editor and a set of buttons for working with markdown documents show up in the toolbar. Clicking the "Markdown preview" button (as shown in the screenshot below) will toggle the preview, to the right of the editor (alternatively you can use the command palette: `Ctrl+Shift+p` > "markdown-preview")
 
 ![](./media/atom-toolbar-commands-1.png)
 
@@ -227,6 +225,8 @@ Pandoc markdown allows to resize images. The `width` property in curly brackets 
 ~~~
 
 More advanced positioning of images can be achieved by making use of "[pandoc wrapfig](pnadoc-filters/pandoc-wrapfig-master/README.md)". This pandoc filter extends the pandoc syntax by the option. This image for example is scaled to a width of 5cm and right aligned  ![{r0cm}](./media/bgbm_gewaechshaeuser_0.jpg){width="5cm"}. It is wrapped by the text in which it is placed and the words are flowing nicely around it. Unfortunately this is not (yet?) visible in the Atom editor preview, since "pandoc wrapfig" support has not yet been configured. Andvanced pandoc filters like "pandoc wrapfig" are only applied when the final document is being rendered.
+
+Wrapfig
 
 **Images can be added the following ways:**
 
