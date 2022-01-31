@@ -140,11 +140,18 @@ Quit ( Main menu : File > Quit or Exit; `Ctrl+q`) the Atom editor and start it a
 
 After the reboot of the Atom editor you will see the a "Sync-Settings" popup dialog:
 
-![](atom-sync-settings-popup.png)
+![](./media/atom-sync-settings-popup.png)
 
-Click on "Restore" to update the settings and close the next green dialog by clicking the "x" in the top right corner. 
+Click on "Restore" to update the settings and close the next green dialog by clicking the "x" in the top right corner.
 
-#### 2. Clone the EDIT-Platform-Manual project
+#### 3. Install Pandoc
+
+Pandoc is needed to render the preview view of the markdown documents. Since pandoc is not distributable as Atom plugin, we need to install it as native application for your OS. For installing Pandoc please follow the instructions in
+[https://pandoc.org/installing.html](https://pandoc.org/installing.html).
+
+**IMPORTANT!**: After installing Pandoc, you will need to restart the Atom editor so that it recognizes the pandoc command.
+
+#### 4. Clone the EDIT-Platform-Manual project
 
 **Requirements:** You need a GitHub account. In case you don't have an Account at GitHub yet, it is time to sign [up now](https://github.com/signup):
 
@@ -157,7 +164,7 @@ Now the github tab offers the option to clone a github repository:
 Click on "Clone existing repository and enter `https://github.com/cybertaxonomy/EDIT-Platform-Manual.git` in the "Clone from" field in the following dialog.
 You may also want to change the "To directory" path, to let Atom clone the repository to a folder of your choice.
 
-![](./media/atom-github-clone.png)
+![](./media/atom-github-clone-2.png)
 
 Now click "Clone" and the content of the EDIT-Platform-Manual project tree should appear in the left hand "Project" pane:
 
@@ -219,7 +226,7 @@ Pandoc markdown allows to resize images. The `width` property in curly brackets 
 
 More advanced positioning of images can be achieved by making use of "[pandoc wrapfig](pnadoc-filters/pandoc-wrapfig-master/README.md)". This pandoc filter extends the pandoc syntax by the option. This image for example is scaled to a width of 5cm and right aligned  ![{r0cm}](./media/bgbm_gewaechshaeuser_0.jpg){width="5cm"}. It is wrapped by the text in which it is placed and the words are flowing nicely around it. Unfortunately this is not (yet?) visible in the Atom editor preview, since "pandoc wrapfig" support has not yet been configured. Andvanced pandoc filters like "pandoc wrapfig" are only applied when the final document is being rendered.
 
-**Images can be added by the following ways:**
+**Images can be added the following ways:**
 
 1. Enter the image markdown syntax manually
 1. Copy an Image to the clipboard and paste in to the markdown script. The Image will automatically be saved in the `./media` sub-folder relative to the document.
@@ -229,8 +236,15 @@ More advanced positioning of images can be achieved by making use of "[pandoc wr
 
 Images can be added by using this toolbar button ![](media/AUTHORING-5e41e745.png), the dialog that will open up. Even if this dialog is offering field for "Width", "Height", and "Alignment", entered values are not applied - Reason unknown.
 
-### Committing and pushing your changes
+#### Cross-references
 
+**TODO** ...
+
+#### Footnotes
+
+**TODO** ...
+
+### Committing and pushing your changes
 
 Open the "Git Tab" either via the toolbar or by pressing `Ctrl+Shift+9`.
 
