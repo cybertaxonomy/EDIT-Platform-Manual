@@ -124,7 +124,7 @@ Click on *Install* and enter "**sync-settings**" in the search field and install
 
 Once the package is installed: Click on Settings or Package Settings:
 
-![](./media/atom-settings-sync-restore-command-palette.png)
+![](./media/atom-install-sync-settings.png)
 
 Enter the following Gist ID `25324d74e342f66c8536d9e09e6ed183` in the settings form:
 
