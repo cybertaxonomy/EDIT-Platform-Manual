@@ -1,13 +1,29 @@
 #!/bin/bash
-
+PROJECT_ROOT=..
 FILTERS_FOLDER=../pandoc-filters
 
 pandoc test.md -f markdown+auto_identifiers --pdf-engine=xelatex -V geometry:a4paper -V geometry:margin=2cm \
      --toc --number-sections \
-     --filter $FILTERS_FOLDER/pandoc-wrapfig-master/pandoc-wrapfig.py\
+     --filter $FILTERS_FOLDER/pandoc-wrapfig/pandoc-wrapfig.py\
      --template=../templates/eisvogel-2.0.0/eisvogel.latex \
      -V date:$(date -I) \
      -o test.pdf
+
+ #
+ # output as latex to test wrapfigure
+ #
+ pandoc test.md -f markdown+auto_identifiers \
+      --filter $FILTERS_FOLDER/pandoc-wrapfig/pandoc-wrapfig.py\
+      -t latex -o test-pandoc-wrapfig.latex
+
+#
+# Without wrapfigure
+#
+#pandoc test.md -f markdown+auto_identifiers --pdf-engine=xelatex -V geometry:a4paper -V geometry:margin=2cm \
+#    --toc --number-sections \
+#    --template=../templates/eisvogel-2.0.0/eisvogel.latex \
+#    -V date:$(date -I) \
+#    -o test.pdf
 
 
 pandoc test.md -f markdown+auto_identifiers+ascii_identifiers+gfm_auto_identifiers -s -t latex -o _check.latex
