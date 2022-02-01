@@ -22,17 +22,16 @@ header-includes:
     \usepackage[export]{adjustbox}
     \let\includegraphicsbak\includegraphics
     \renewcommand*{\includegraphics}[2][]{\includegraphicsbak[frame,#1]{#2}}
-
+    \BeforeBeginEnvironment{wrapfigure}{\setlength{\intextsep}{0pt}}
 ...
 
 Version history:
 
 * 26-Aug-21: Major restructuring, excluded tutorial.
-
+*
 * 15-Sept-21: Additions to glossary, editorial, changed Name Editor to Taxon Editor, Taxonomic Editor to TaxEditor.
 
 \newpage
-
 
 # Installing the TaxEditor
 
