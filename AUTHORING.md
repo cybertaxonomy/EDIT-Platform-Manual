@@ -1,4 +1,4 @@
-Shift+Ctrl+# Authors guide
+# Authors guide
 
 This guide is dedicated to authors contributing to the "EDIT Platform manuals".
 
@@ -101,7 +101,7 @@ For working with GitHub Desktop the documentation on [Committing and reviewing c
 
 ![](media/41dd01d1.png)
 
-Atom is a free and open-source editor for Mac OS, Linux, and Microsoft Windows with support for plug-ins. It is highly customizable and can be adapted to as very user friendly  Markdown Editor.
+Atom is a free and open-source editor for Mac OS, Linux, and Microsoft Windows with support for plug-ins. It is highly customizable and can be adapted to as very user friendly Markdown Editor.
 
 #### Pre: Install Pandoc
 
@@ -183,12 +183,20 @@ Above screenshot depicts other useful commands in the toolbar that help managing
 * "Synchronize markdown preview"
 * "Toggle markdown preview"
 
-**NOTE**: The synchronization between markdown and preview can have a significant offset, expecially in longer documents with many images. This is a known limitation, see [markdown-preview-plus issue 106](https://github.com/atom-community/markdown-preview-plus/issues/106)
-
 An Atom editor equipped with the [Markdown-Writer for Atom](https://github.com/zhuochun/md-writer) plugin makes it easy to work with markdown documents, since it adds tons of features.
 Essential commands are available in toolbar provided by the [Toolbar for Markdown-Writer](https://github.com/zhuochun/tool-bar-md-writer). This toolbar makes common markdown syntax elements accessible by a simple click or dialog, so that it is not needed to consult the [Official Pandoc markdown syntax](https://pandoc.org/MANUAL.html#pandocs-markdown), even for  the unexperienced author:
 
 ![](media/AUTHORING-a456babe.png)
+
+#### markdown preview
+
+**NOTE** The markdown preview is not a prefect representation of what will be the finally resulting PDF document after rendering the markdown files through the full pandoc/Latex rendering pipeline.
+
+There are two limitations which should be noted here:  
+
+The **synchronization** between markdown and preview can have a significant offset, expecially in longer documents with many images. This is a known limitation, see [markdown-preview-plus issue 106](https://github.com/atom-community/markdown-preview-plus/issues/106)
+
+Floating of text around images, which is provided by the **Wrapfig** module (see also below) can not be reproduced in the preview.
 
 ### Writing documents in Pandoc markdown
 
@@ -197,6 +205,15 @@ Reference documentation:
 * [Official Pandoc markdown syntax](https://pandoc.org/MANUAL.html#pandocs-markdown)
 
 Pandoc markdown is almost 100% compliant to other well known markdown flavors, but also extends the standard markdown syntax by crucial feature that are important for scientific writing. This includes capabilities to express layout rules for images, citations, etc.
+
+#### Pagebreaks
+
+pandoc markdown uses standard LaTeX tags for this purpose:
+
+* `\newpage` : demand a pagebreak
+* `\pagebreak` : request for a pagebreak
+
+See [http://www.personal.ceu.hu/tex/breaking.htm](http://www.personal.ceu.hu/tex/breaking.htm) for additional infor on LaTeX Line and Page Breaking.
 
 #### Images
 
@@ -224,9 +241,32 @@ Pandoc markdown allows to resize images. The `width` property in curly brackets 
 ![An image proportionally scaled to 1/3 of the page with](image-file.jpg){witdh=33%}
 ~~~
 
-More advanced positioning of images can be achieved by making use of "[pandoc wrapfig](pnadoc-filters/pandoc-wrapfig-master/README.md)". This pandoc filter extends the pandoc syntax by the option. This image for example is scaled to a width of 5cm and right aligned  ![{r0cm}](./media/bgbm_gewaechshaeuser_0.jpg){width="5cm"}. It is wrapped by the text in which it is placed and the words are flowing nicely around it. Unfortunately this is not (yet?) visible in the Atom editor preview, since "pandoc wrapfig" support has not yet been configured. Andvanced pandoc filters like "pandoc wrapfig" are only applied when the final document is being rendered.
+##### Wrapfig
 
-Wrapfig
+More advanced positioning of images can be achieved by making use of "[pandoc wrapfig](https://github.com/akohlbecker/pandoc-wrapfig)". This pandoc filter extends the pandoc syntax by the option to use the [LateX wrapfig](https://www.ctan.org/tex-archive/macros/latex/contrib/wrapfig) module. The image in this paragraph is scaled to the width of 5cm and is positioned right aligned  ![{R0cm}](./media/bgbm_gewaechshaeuser_0.jpg){width="5cm"}. The text will be floating around the image if the markdown document is processed with the required pandoc and Latex parameters. Unfortunately this is not (yet?) possible in the Atom editor preview, since "pandoc wrapfig" support has not yet been configured. Andvanced pandoc filters like "pandoc wrapfig" are only applied when the final document is being rendered. This the final result can only be seen in the pdf files that are produced by the `make-pdf` scripts in the respective manual sub folders.
+
+**Usage**
+
+Simply include ` {x}` at the end of the captions for figures that are to be
+wrapped. `x` is a number that specifies the width of the wrap in inches. Setting
+it to 0 will cause the width of the figure to be used (as per the wrapfig
+package instructions). Figures without the tag will float as usual.
+
+Optionally precede x with a character in the set `{l,r,i,o}` to set wrapfig's placement parameter, or the uppercase variants `{L,R,I,O}` to let the image flow in the wrapfig box. By using the float feature images hanging over page breaks can
+be avoided. **default is `'L'`. . Optionally follow ?  with a '-' and another width
+specification to set wrapfig's overhang parameter and push the figure that far
+into the margin.
+
+placement parameters:
+
+fixed | float | description
+------|-------|-----------------------------------------------------
+r     | R     | right side of the text
+l     | L     | left side of the text
+i     | I     | inside edge–near the binding (if [twoside] document)
+o     | O     | outside edge–far from the binding
+
+fro more information please see the [pandoc-wrapfig README.md](./pandoc-filters/pandoc-wrapfig/README.md)
 
 **Images can be added the following ways:**
 
