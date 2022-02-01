@@ -1,0 +1,3 @@
+[submodule "pandoc-filters/pandoc-wrapfig"]
+	path = pandoc-filters/pandoc-wrapfig
+	url = https://github.com/scotthartley/pandoc-wrapfig
