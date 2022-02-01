@@ -194,7 +194,7 @@ Essential commands are available in toolbar provided by the [Toolbar for Markdow
 
 There are two limitations which should be noted here:  
 
-The **synchronization** between markdown and preview can have a significant offset, expecially in longer documents with many images. This is a known limitation, see [markdown-preview-plus issue 106](https://github.com/atom-community/markdown-preview-plus/issues/106)
+The **synchronization** between markdown and preview can have a significant offset, especially in longer documents with many images. This is a known limitation, see [markdown-preview-plus issue 106](https://github.com/atom-community/markdown-preview-plus/issues/106)
 
 Floating of text around images, which is provided by the **Wrapfig** module (see also below) can not be reproduced in the preview.
 
@@ -213,7 +213,7 @@ pandoc markdown uses standard LaTeX tags for this purpose:
 * `\newpage` : demand a pagebreak
 * `\pagebreak` : request for a pagebreak
 
-See [http://www.personal.ceu.hu/tex/breaking.htm](http://www.personal.ceu.hu/tex/breaking.htm) for additional infor on LaTeX Line and Page Breaking.
+See [http://www.personal.ceu.hu/tex/breaking.htm](http://www.personal.ceu.hu/tex/breaking.htm) for additional information on "LaTeX Line and Page Breaking".
 
 #### Images
 
@@ -243,7 +243,7 @@ Pandoc markdown allows to resize images. The `width` property in curly brackets 
 
 ##### Wrapfig
 
-More advanced positioning of images can be achieved by making use of "[pandoc wrapfig](https://github.com/akohlbecker/pandoc-wrapfig)". This pandoc filter extends the pandoc syntax by the option to use the [LateX wrapfig](https://www.ctan.org/tex-archive/macros/latex/contrib/wrapfig) module. The image in this paragraph is scaled to the width of 5cm and is positioned right aligned  ![{R0cm}](./media/bgbm_gewaechshaeuser_0.jpg){width="5cm"}. The text will be floating around the image if the markdown document is processed with the required pandoc and Latex parameters. Unfortunately this is not (yet?) possible in the Atom editor preview, since "pandoc wrapfig" support has not yet been configured. Andvanced pandoc filters like "pandoc wrapfig" are only applied when the final document is being rendered. This the final result can only be seen in the pdf files that are produced by the `make-pdf` scripts in the respective manual sub folders.
+More advanced positioning of images can be achieved by making use of "[pandoc wrapfig](https://github.com/akohlbecker/pandoc-wrapfig)". This pandoc filter extends the pandoc syntax by the option to use the [LateX wrapfig](https://www.ctan.org/tex-archive/macros/latex/contrib/wrapfig) module. The image in this paragraph is scaled to the width of 5cm and is positioned right aligned  ![{R0cm}](./media/bgbm_gewaechshaeuser_0.jpg){width="5cm"}. The text will be floating around the image if the markdown document is processed with the required pandoc and Latex parameters. Unfortunately this is not (yet?) possible in the Atom editor preview, since "pandoc wrapfig" support has not yet been configured. Advanced pandoc filters like "pandoc wrapfig" are only applied when the final document is being rendered. This the final result can only be seen in the pdf files that are produced by the `make-pdf` scripts in the respective manual sub folders.
 
 **Usage**
 
