@@ -66,7 +66,7 @@ See sub-folder `./test/` for the , resuting [test.pdf](./test/test.pdf) on test 
 * cross-references
     * https://github.com/lierdakil/pandoc-crossref
     * https://opensource.com/article/18/9/pandoc-research-paper
-* better handling of images at page breaks
+* better handling of images at page breaks --> see "pandoc-wrapfig" chapter below
 
 ## Pandoc Templates
 
@@ -99,7 +99,7 @@ and executing pandoc with the filter option:
 
 * https://tex.stackexchange.com/questions/56176/handling-of-wrapfig-pictures-in-latex#56177
 * vertical align wrapfig with text
-  * https://tex.stackexchange.com/questions/415398/adjust-intextsep-for-wrapfigure-only - this solution is being used by now. 
+  * https://tex.stackexchange.com/questions/415398/adjust-intextsep-for-wrapfigure-only - this solution is being used by now.
   * https://tex.stackexchange.com/questions/365753/wrap-figure-vertical-alignment-of-text#365764
 
 ## Markdown WYSIWYG TaxEditor
