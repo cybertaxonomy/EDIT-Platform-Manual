@@ -72,6 +72,36 @@ See sub-folder `./test/` for the , resuting [test.pdf](./test/test.pdf) on test 
 
 * https://github.com/Wandmalfarbe/pandoc-latex-template --> Eisvogel !!! see `./templates/eisvogel-2.0.0/`
 
+## Pandoc filters
+
+### pandoc-wrapfig
+
+A pandoc filter for pdf/LaTeX export with the wrapfig package, which brings [latex wrapfig](https://www.ctan.org/tex-archive/macros/latex/contrib/wrapfig) for pandoc.
+
+Original from https://github.com/scotthartley/pandoc-wrapfig forked to https://github.com/akohlbecker/pandoc-wrapfig/ and improved by wrapping the image by a rasisebox.
+
+Cloned to `./pandoc-filters/pandoc-wrapfig` as [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+
+To be activated in pandoc markdown by adding to the header:
+
+~~~
+header-includes:
+- \usepackage{wrapfig}
+~~~
+
+and executing pandoc with the filter option:
+
+~~~
+--filter $FILTERS_FOLDER/pandoc-wrapfig/pandoc-wrapfig.py
+~~~
+
+**Trouble shooting**:
+
+* https://tex.stackexchange.com/questions/56176/handling-of-wrapfig-pictures-in-latex#56177
+* vertical align wrapfig with text
+  * https://tex.stackexchange.com/questions/415398/adjust-intextsep-for-wrapfigure-only - this solution is being used by now. 
+  * https://tex.stackexchange.com/questions/365753/wrap-figure-vertical-alignment-of-text#365764
+
 ## Markdown WYSIWYG TaxEditor
 
 ### For pandoc markdown
