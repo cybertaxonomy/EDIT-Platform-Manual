@@ -1,5 +1,6 @@
 ## Convert docx to Markdown
 
+
 **from docx**
 
     NAME='Manual-EDIT-Platform-04-Working-with-the-TaxEditor'
@@ -14,8 +15,9 @@
     cd $NAME
     pandoc -f odt -t markdown ../../../$NAME.odt --output=$NAME.odt.md --markdown-headings=atx --wrap=none --extract-media="."
 
-==> this path yields better results as compared with using docx as source format, e.g. cross-references are not lost! The **odt must be produced with MS Word**  via the "save as ..." function since LibreOffice introduces a couple of problems
+==> odt yields better results as compared with using docx as source format, e.g. cross-references are not lost! The **odt must be produced with MS Word**  via the "save as ..." function since LibreOffice introduces a couple of problems
 
+See also `sripts/convert-docx2md.sh` for a script which could be used to to the conversion from docx. 
 
 **export type:**
 
@@ -34,11 +36,22 @@ https://opensource.com/article/18/9/pandoc-research-paper
 
 ### install dependencies
 
-see /usr/share/doc/pandoc/README.Debian
+For pandoc see /usr/share/doc/pandoc/README.Debian
+
+
+For general installation instruction of texlive on Debian and Ubuntu see: https://www.tug.org/texlive/debian.html
 
 ~~~
 apt-get install pandoc pandoc-citeproc
 apt-get install texlive-latex-extra texlive-xetex texlive-fonts-extra texlive-lang-arabic
+~~~
+
+
+pdfTeX vesion as installed on the develper machine:
+
+~~~
+pdfTeX 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian)
+kpathsea version 6.3.1
 ~~~
 
 ### export as pdf
