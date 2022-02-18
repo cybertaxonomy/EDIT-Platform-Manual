@@ -16,26 +16,13 @@ For a more comfortable editing experience you can use [Typora](https://www.typor
 
 ## Tools
 
-For easily editing the platform manuals offline we recommend using two tools:
-
-* Typora
-* Atom editor
-
-**Which one to choose?**
+For easily editing the platform manuals offline we recommend to use the  Atom editor
 
 The Atom editor has the advantage of being a fully integrated solution of a markdown editor with preview and all tool required for working with the git repository.
 
-Typora has no built in git support but impresses with a WYSIWYG markdown editor for the pandoc markdown syntax. The image scaling feature of the pandoc markdown ( e.g.: `![](./image.png){width="12.3cm"}`) is not supported so that it can be hard to stay on top of things when working with many images which are not sized perfectly.
-The latter problem losing overview does not exist in Atom, since images are scaled correctly. Markdown code and preview can are shown side by side in Atom.
+In Atom provides a side by side view of markdown and a preview. Images are scaled correctly in the preview.
 
-Typora is not open source and longer fee of charge.
-
-Even if Typora seems to excel at first glance due to the WYSIWYG editor it falls behind Atom after a short time of working with both editors.  
-
-NOTE: The chapter on Typora has been moved to the end of this document.
-
-
-## Atom editor
+### Atom editor
 
 ![](media/41dd01d1.png)
 
@@ -46,7 +33,7 @@ Atom is a free and open-source editor for Mac OS, Linux, and Microsoft Windows w
 Pandoc is needed to render the preview view of the markdown documents in the Atom editor. Since pandoc is not distributable as Atom plugin, we need to install it as native application for your OS. For installing Pandoc please follow the instructions in
 [https://pandoc.org/installing.html](https://pandoc.org/installing.html).
 
-### Installing Atom and setup
+#### Installing Atom and setup
 
 The Installation and setup procedure involved three steps.
 
@@ -54,11 +41,11 @@ At first, we will download the editor and configure it using the **sync-settings
 
 Finally the *EDIT-Platform-Manual* project will be cloned to your local file system, so that you can start editing.
 
-#### 1. Download and install Atom
+##### 1. Download and install Atom
 
 Download from https://atom.io/ and install the application as usually on your operation system.
 
-#### 2. Install plugins and setup the editor
+##### 2. Install plugins and setup the editor
 
 Start the editor and click on "Install a Package" in the right pane below "Get to know Atom", or press the keyboard shortcut `Ctrl+,` to open settings page.
 Click on *Install* and enter "**sync-settings**" in the search field and install this package by clicking on the blue *Install* button.
@@ -87,7 +74,7 @@ After the reboot of the Atom editor you will see the a "Sync-Settings" popup dia
 
 Click on "Restore" to update the settings and close the next green dialog by clicking the "x" in the top right corner.
 
-#### 3. Clone the EDIT-Platform-Manual project
+##### 3. Clone the EDIT-Platform-Manual project
 
 **Requirements:** You need a GitHub account. In case you don't have an Account at GitHub yet, it is time to sign [up now](https://github.com/signup):
 
@@ -108,7 +95,7 @@ Now click "Clone" and the content of the EDIT-Platform-Manual project tree shoul
 
 You are ready to start editing now.
 
-### Editing pandoc markdown with Atom
+#### Editing pandoc markdown with Atom
 
 The individual manuals are in the sub folders prefixed with `Manual-EDIT-Platform-`. Open the manual folder you want to work on and double-click the markdown file (`*.md`). The file will open in the central editor and a set of buttons for working with markdown documents show up in the toolbar. Clicking the "Markdown preview" button (as shown in the screenshot below) will toggle the preview, to the right of the editor (alternatively you can use the command palette: `Ctrl+Shift+p` > "markdown-preview")
 
@@ -255,68 +242,3 @@ Even if the dialog mentions the option to **force push, you should never do so!!
 ![](media/067408c9.png)
 
 Click again on the same button, which now has changed its label to ""**pull**"". Once the remote changes an integrated in your local clone you can push your changes.
-
-### Typora
-
-**NOTE:** Typora is no longer fee of charge. You only can get 15 days free trial. After that you need to purchase the application for $ 14.99.
-
-**NOTE:** You may want to try the Atom editor fist! See next chapter.
-
-Typora will support you while editing the manuals by providing an editable preview of the documents. The preview does not reproduce the resulting layout perfectly but you might find it much more comfortable than editing the plain markdown.
-
-Since Typora has no built in git support, you may also want to install a user friendly git application like GitHub Desktop.
-
-#### Installation and setup
-
-Download the Typora for [https://www.typora.io/#windows](Windows), [Mac](https://www.typora.io/download/Typora.dmg) or [Linux](https://www.typora.io/#linux) and install the application.
-
-It is highly recommended to adjust the setting before you start editing the EDIT Platform manual:
-
-Open the *Preferences* via the main menu: *File > Preferences ...*:
-
-**Appearance:**
-
-![](./media/typora-prefs-appearance.png)
-
-
-**Editor:**
-
-![](./media/typora-prefs-editor.png)
-
-**Image**
-
-These settings are EXTREMELY IMPORTANT!!!
-
-![](./media/typora-prefs-image.png)
-
-**Editor:**
-
-![](./media/typora-prefs-markdown.png)
-
-
-#### Authoring in Typora
-
-After opening a EDIT Manual markdown file like `./EDIT-Platform-Manual/Manual-EDIT-Platform-04-Working-with-the-TaxEditor/Manual-EDIT-Platform-04-Working-with-the-TaxEditor.md` you will see the document in the WYSIWIG editor in the right part of the application window and the **Overview** on the document structure in the left hand pane:
-
-![](./media/typora-editing-overview.png)
-
-The actual content is preceded by a document header (blue rectangle). In this header document metadata are defined as well as important configuration parameters for the final layout. This header must not be modified expect you exactly know what you are doing.
-
-##### Images
-
-Images for a specific manual like `Manual-EDIT-Platform-04-Working-with-the-TaxEditor` need to be stored in the according `./media/`-sub-folder and are references in the markdown by the relative file path: `![](./media/my-image.png){width="10cm"}`. Therefor it is important to configure Typora so that it always uses this relative path (see above).
-The `width` property in curly brackets can be used to scale the image to a fixed with (e.g.: `{width="10cm"}`) or relative to the page width (`{width="33%"}`).
-
-**IMPORTANT**
-
-* **YOU NEVER MUST USE** the **zoom image** function as this will transform  markdown images `![]()` to html images `<img ...>` which will not work in our setup. (This will maybe improved in future, see https://github.com/typora/typora-issues/issues/249)
-
-### GitHub Desktop
-
-GitHub Desktop makes it easy to commit and push your changes to GitHub and to keep track of the modifications that have been applied by others.
-
-[GitHub Desktop](https://desktop.github.com/) for runs on Winows and Mac OS. The Windows edition can be downloaded from [https://central.github.com/deployments/desktop/desktop/latest/win32](https://central.github.com/deployments/desktop/desktop/latest/win32).
-
-The process of installing GitHub Desktop and git, as well as setting up a GitHub account is described in [Setting up GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/setting-up-github-desktop).  
-
-For working with GitHub Desktop the documentation on [Committing and reviewing changes to your project](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project) and [Pushing changes to GitHub](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/pushing-changes-to-github) should be sufficient to get started.
