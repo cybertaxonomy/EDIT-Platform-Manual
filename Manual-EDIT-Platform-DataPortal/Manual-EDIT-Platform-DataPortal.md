@@ -22,8 +22,8 @@ header-includes:
     \usepackage[export]{adjustbox}
     \let\includegraphicsbak\includegraphics
     \renewcommand*{\includegraphics}[2][]{\includegraphicsbak[frame,#1]{#2}}
+    \BeforeBeginEnvironment{wrapfigure}{\setlength{\intextsep}{0pt}}
 ...
-
 
 work-in-progress, includes notes taken from emails etc.
 

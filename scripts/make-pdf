@@ -2,13 +2,15 @@
 
 FILE_NAME=$1
 
+if [ -z "$PROJECT_ROOT" ]; then
+  PROJECT_ROOT=..
+fi
 
 echo "making $FILE_NAME ..."
 
-FILTERS_FOLDER=../pandoc-filters
-
-pandoc $FILE_NAME.md -f markdown+auto_identifiers+ascii_identifiers --pdf-engine=xelatex \
-    --filter $FILTERS_FOLDER/pandoc-wrapfig-master/pandoc-wrapfig.py\
+pandoc $FILE_NAME.md -f markdown+auto_identifiers+ascii_identifiers \
+    --pdf-engine=xelatex \
+    --filter $PROJECT_ROOT/pandoc-filters/pandoc-wrapfig/pandoc-wrapfig.py\
     -V geometry:a4paper -V geometry:margin=2cm \
     --toc --number-sections \
     --template=../templates/eisvogel-2.0.0/eisvogel.latex \

@@ -11,3 +11,12 @@ see [AUTHORING.md](AUTHORING.md)
 ## Unfinished draft versions
 
 * [Manual-EDIT-Platform-DataPortal](https://cybertaxonomy.eu/download/platform/manual/Manual-EDIT-Platform-DataPortal.pdf)
+
+## How to convert more manuals from Word docx to pandoc markdown
+
+see [documentation-workflow.md](documentation-workflow.md#Convert-docx-to-Markdown)
+
+## Installation of latex for pfd production
+
+see [documentation-workflow.md](documentation-workflow.md#install-dependencies)
+
