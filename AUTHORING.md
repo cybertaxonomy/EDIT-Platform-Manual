@@ -108,8 +108,8 @@ Above screenshot depicts other useful commands in the toolbar that help managing
 * "Synchronize markdown preview"
 * "Toggle markdown preview"
 
-An Atom editor equipped with the [Markdown-Writer for Atom](https://github.com/zhuochun/md-writer) plugin makes it easy to work with markdown documents, since it adds tons of features.
-Essential commands are available in toolbar provided by the [Toolbar for Markdown-Writer](https://github.com/zhuochun/tool-bar-md-writer). This toolbar makes common markdown syntax elements accessible by a simple click or dialog, so that it is not needed to consult the [Official Pandoc markdown syntax](https://pandoc.org/MANUAL.html#pandocs-markdown), even for  the unexperienced author:
+An Atom editor equipped with the Markdown-Writer for Atom plugin makes it easy to work with markdown documents, since it adds tons of features.
+Essential commands are available in toolbar provided by the Toolbar for Markdown-Writer. This toolbar makes common markdown syntax elements accessible by a simple click or dialog, so that it is not needed to consult the [Official Pandoc markdown syntax](https://pandoc.org/MANUAL.html#pandocs-markdown), even for  the unexperienced author:
 
 ![](media/AUTHORING-a456babe.png)
 
