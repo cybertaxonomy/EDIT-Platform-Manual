@@ -190,7 +190,7 @@ l     | L     | left side of the text
 i     | I     | inside edge–near the binding (if [twoside] document)
 o     | O     | outside edge–far from the binding
 
-for more information please see the [pandoc-wrapfig README.md](./pandoc-filters/pandoc-wrapfig/README.md&target=_blank)
+for more information please see the [pandoc-wrapfig README.md](./pandoc-filters/pandoc-wrapfig/README.md?target=_blank)
 
 **Images can be added the following ways:**
 
