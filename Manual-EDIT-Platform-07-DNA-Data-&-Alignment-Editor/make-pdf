@@ -1,0 +1,7 @@
+#!/bin/bash -e
+
+export SCRIPTS=../scripts
+
+FILE_NAME='Manual-EDIT-Platform-07-DNA-Data-&-Alignement-Editor'
+$SCRIPTS/validate $FILE_NAME
+$SCRIPTS/make-pdf $FILE_NAME

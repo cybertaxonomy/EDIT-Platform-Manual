@@ -12,7 +12,7 @@ Contents
 
 [1 Importing data [2](#importing-data)](#importing-data)
 
-[1.1 S pecimens [2](#s-pecimens)](#s-pecimens)
+[1.1 Specimens [2](#s-pecimens)](#s-pecimens)
 
 [1.1.1 Importing specimens from GBIF [2](#importing-specimens-from-gbif)](#importing-specimens-from-gbif)
 
@@ -77,7 +77,7 @@ Nur bei Book Chapters funktioniert der Import nur teilweise, dafür muss man ja 
 
 # Data export
 
-## CDM-Light 
+## CDM-Light
 
 \[Export of EDIT-CDM data content:
 

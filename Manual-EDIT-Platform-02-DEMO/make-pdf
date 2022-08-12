@@ -1,0 +1,7 @@
+#!/bin/bash -e
+
+export SCRIPTS=../scripts
+
+FILE_NAME='Manual-EDIT-Platform-02-DEMO'
+$SCRIPTS/validate $FILE_NAME
+$SCRIPTS/make-pdf $FILE_NAME
