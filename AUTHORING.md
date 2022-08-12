@@ -4,15 +4,15 @@ This guide is dedicated to authors contributing to the "EDIT Platform manuals".
 
 ## General publishing workflow
 
-The manuals are written in markdown, a lightweight markup language for creating formatted text using a plain-text editor. All markdown files, screenshot images and illustrations are hosted at github in [cybertaxonomy/EDIT-Platform-Manual](https://github.com/cybertaxonomy/EDIT-Platform-Manual). Therefor contributing to the documentation, requires a github account and the ownership of the organization "cybertaxonomy".
+The manuals are written in markdown, a lightweight markup language for creating formatted text using a plain-text editor. All markdown files, screenshot images and illustrations are hosted at github in <a href="https://github.com/cybertaxonomy/EDIT-Platform-Manual" target="_blank">cybertaxonomy/EDIT-Platform-Manual</a>. Therefor contributing to the documentation, requires a github account and the ownership of the organization "cybertaxonomy".
 
 The markdown documents can converted by pandoc, an a universal document converter, to PDF files or other formats like eBook or HTML. For this conversion style templates can be applied to provide a consistent and appealing layout.
 
-This conversion process has been automated. Once changes to the source documents are pushed to the github repository ([cybertaxonomy/EDIT-Platform-Manual](https://github.com/cybertaxonomy/EDIT-Platform-Manual)) the EDIT continuous integration server will pick up the changes to create new PDFs, which subsequently will be uploaded to the download section of the EDIT Platform: [https://cybertaxonomy.eu/download/platform/manual/](https://cybertaxonomy.eu/download/platform/manual/). This process should not take longer than 5 minutes so that the result of changes applied by an author are quickly made public.
+This conversion process has been automated. Once changes to the source documents are pushed to the github repository (<a href="https://github.com/cybertaxonomy/EDIT-Platform-Manual" target="_blank">cybertaxonomy/EDIT-Platform-Manual</a>) the EDIT continuous integration server will pick up the changes to create new PDFs, which subsequently will be uploaded to the download section of the EDIT Platform: <a href="https://cybertaxonomy.eu/download/platform/manual/" target="_blank">https://cybertaxonomy.eu/download/platform/manual/</a>. This process should not take longer than 5 minutes so that the result of changes applied by an author are quickly made public.
 
 The markdown documents can be edited in the github site, where new images also can be uploaded.
 
-For a more comfortable editing experience you can use [Typora](https://www.typora.io/) a markdown WYSIWIG editor or the [**Atom**](https://atom.io/) Editor (see next chapter)
+For a more comfortable editing experience you can use <a href="https://www.typora.io/" target="_blank">Typora</a> a markdown WYSIWIG editor or the <a href="https://atom.io/" target="_blank">Atom</a>) Editor (see next chapter)
 
 ## Tools
 
@@ -30,20 +30,19 @@ Atom is a free and open-source editor for Mac OS, Linux, and Microsoft Windows w
 
 #### Pre: Install Pandoc
 
-Pandoc is needed to render the preview view of the markdown documents in the Atom editor. Since pandoc is not distributable as Atom plugin, we need to install it as native application for your OS. For installing Pandoc please follow the instructions in
-[https://pandoc.org/installing.html](https://pandoc.org/installing.html).
+Pandoc is needed to render the preview view of the markdown documents in the Atom editor. Since pandoc is not distributable as Atom plugin, we need to install it as native application for your OS. For installing Pandoc please follow the instructions in <a href="https://pandoc.org/installing.html" target="_blank">https://pandoc.org/installing.html</a>.
 
 #### Installing Atom and setup
 
 The Installation and setup procedure involved three steps.
 
-At first, we will download the editor and configure it using the **sync-settings** plugin. The presets are stored in a gist : [https://gist.github.com/akohlbecker/25324d74e342f66c8536d9e09e6ed183](https://gist.github.com/akohlbecker/25324d74e342f66c8536d9e09e6ed183) from where the plugin will fetch definitions on required plugins and sensible default settings.
+At first, we will download the editor and configure it using the **sync-settings** plugin. The presets are stored in a gist : <a href="https://gist.github.com/akohlbecker/25324d74e342f66c8536d9e09e6ed183" target="_blank"> https://gist.github.com/akohlbecker/25324d74e342f66c8536d9e09e6ed183</a> from where the plugin will fetch definitions on required plugins and sensible default settings.
 
 Finally the *EDIT-Platform-Manual* project will be cloned to your local file system, so that you can start editing.
 
 ##### 1. Download and install Atom
 
-Download from https://atom.io/ and install the application as usually on your operation system.
+Download from <a href="https://atom.io/" target="_blank">https://atom.io/</a> and install the application as usually on your operation system.
 
 ##### 2. Install plugins and setup the editor
 
@@ -76,7 +75,7 @@ Click on "Restore" to update the settings and close the next green dialog by cli
 
 ##### 3. Clone the EDIT-Platform-Manual project
 
-**Requirements:** You need a GitHub account. In case you don't have an Account at GitHub yet, it is time to sign [up now](https://github.com/signup):
+**Requirements:** You need a GitHub account. In case you don't have an Account at GitHub yet, it is time to sign <a href="https://github.com/signup" target="_blank">[up now]</a>:
 
 Press `Ctrl+Shift+8` to open the GitHub tab and follow the instructions to enter the authentication token. **Note**: Once you are on the github page to "Authorize Atom GitHub package" you need to make sure **cybertaxonomy** is checked in the **Organization access** section!
 
@@ -108,8 +107,8 @@ Above screenshot depicts other useful commands in the toolbar that help managing
 * "Synchronize markdown preview"
 * "Toggle markdown preview"
 
-An Atom editor equipped with the [Markdown-Writer for Atom](https://github.com/zhuochun/md-writer) plugin makes it easy to work with markdown documents, since it adds tons of features.
-Essential commands are available in toolbar provided by the [Toolbar for Markdown-Writer](https://github.com/zhuochun/tool-bar-md-writer). This toolbar makes common markdown syntax elements accessible by a simple click or dialog, so that it is not needed to consult the [Official Pandoc markdown syntax](https://pandoc.org/MANUAL.html#pandocs-markdown), even for  the unexperienced author:
+An Atom editor equipped with the Markdown-Writer for Atom plugin makes it easy to work with markdown documents, since it adds tons of features.
+Essential commands are available in toolbar provided by the Toolbar for Markdown-Writer. This toolbar makes common markdown syntax elements accessible by a simple click or dialog, so that it is not needed to consult the <a href="https://pandoc.org/MANUAL.html#pandocs-markdown" target="_blank">Official Pandoc markdown syntax</a>, even for  the unexperienced author:
 
 ![](media/AUTHORING-a456babe.png)
 
@@ -119,7 +118,7 @@ Essential commands are available in toolbar provided by the [Toolbar for Markdow
 
 There are two limitations which should be noted here:  
 
-The **synchronization** between markdown and preview can have a significant offset, especially in longer documents with many images. This is a known limitation, see [markdown-preview-plus issue 106](https://github.com/atom-community/markdown-preview-plus/issues/106)
+The **synchronization** between markdown and preview can have a significant offset, especially in longer documents with many images. This is a known limitation, see <a href="https://github.com/atom-community/markdown-preview-plus/issues/106" target="_blank">markdown-preview-plus issue 106</a>
 
 Floating of text around images, which is provided by the **Wrapfig** module (see also below) can not be reproduced in the preview.
 
@@ -127,7 +126,7 @@ Floating of text around images, which is provided by the **Wrapfig** module (see
 
 Reference documentation:
 
-* [Official Pandoc markdown syntax](https://pandoc.org/MANUAL.html#pandocs-markdown)
+* <a href="https://pandoc.org/MANUAL.html#pandocs-markdown" target="_blank">Official Pandoc markdown syntax</a>
 
 Pandoc markdown is almost 100% compliant to other well known markdown flavors, but also extends the standard markdown syntax by crucial feature that are important for scientific writing. This includes capabilities to express layout rules for images, citations, etc.
 
@@ -138,7 +137,7 @@ pandoc markdown uses standard LaTeX tags for this purpose:
 * `\newpage` : demand a pagebreak
 * `\pagebreak` : request for a pagebreak
 
-See [http://www.personal.ceu.hu/tex/breaking.htm](http://www.personal.ceu.hu/tex/breaking.htm) for additional information on "LaTeX Line and Page Breaking".
+See <a href="http://www.personal.ceu.hu/tex/breaking.htm" target="_blank">http://www.personal.ceu.hu/tex/breaking.htm</a> for additional information on "LaTeX Line and Page Breaking".
 
 #### Images
 
@@ -168,7 +167,7 @@ Pandoc markdown allows to resize images. The `width` property in curly brackets 
 
 ##### Wrapfig
 
-More advanced positioning of images can be achieved by making use of "[pandoc wrapfig](https://github.com/akohlbecker/pandoc-wrapfig)". This pandoc filter extends the pandoc syntax by the option to use the [LateX wrapfig](https://www.ctan.org/tex-archive/macros/latex/contrib/wrapfig) module. The image in this paragraph is scaled to the width of 5cm and is positioned right aligned  ![{R0cm}](./media/bgbm_gewaechshaeuser_0.jpg){width="5cm"}. The text will be floating around the image if the markdown document is processed with the required pandoc and Latex parameters. Unfortunately this is not (yet?) possible in the Atom editor preview, since "pandoc wrapfig" support has not yet been configured. Advanced pandoc filters like "pandoc wrapfig" are only applied when the final document is being rendered. This the final result can only be seen in the pdf files that are produced by the `make-pdf` scripts in the respective manual sub folders.
+More advanced positioning of images can be achieved by making use of "<a href="https://github.com/akohlbecker/pandoc-wrapfig" target="_blank">pandoc wrapfig</a>". This pandoc filter extends the pandoc syntax by the option to use the <a href="https://www.ctan.org/tex-archive/macros/latex/contrib/wrapfig" target="_blank">LateX wrapfig module</a>. The image in this paragraph is scaled to the width of 5cm and is positioned right aligned  ![{R0cm}](./media/bgbm_gewaechshaeuser_0.jpg){width="5cm"}. The text will be floating around the image if the markdown document is processed with the required pandoc and Latex parameters. Unfortunately this is not (yet?) possible in the Atom editor preview, since "pandoc wrapfig" support has not yet been configured. Advanced pandoc filters like "pandoc wrapfig" are only applied when the final document is being rendered. This the final result can only be seen in the pdf files that are produced by the `make-pdf` scripts in the respective manual sub folders.
 
 **Usage**
 
@@ -191,7 +190,7 @@ l     | L     | left side of the text
 i     | I     | inside edge–near the binding (if [twoside] document)
 o     | O     | outside edge–far from the binding
 
-fro more information please see the [pandoc-wrapfig README.md](./pandoc-filters/pandoc-wrapfig/README.md)
+for more information please see the [pandoc-wrapfig README.md](./pandoc-filters/pandoc-wrapfig/README.md?target=_blank)
 
 **Images can be added the following ways:**
 
